@@ -1,0 +1,10 @@
+[project]
+name = "news-secretary"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "gradio>=6.30.0",
+    "openai>=3.26.1",
+]
