@@ -1,0 +1,7367 @@
+{
+  "medtop:11000000": [
+    "Politics",
+    "Government",
+    "Policy",
+    "Governance"
+  ],
+  "medtop:10000000": [
+    "Lifestyle",
+    "Leisure",
+    "Recreation",
+    "Hobbies"
+  ],
+  "medtop:20000002": [
+    "Arts",
+    "Entertainment",
+    "Performing Arts",
+    "Creative Arts"
+  ],
+  "medtop:20000005": [
+    "Film",
+    "Motion Pictures",
+    "Movies"
+  ],
+  "medtop:06000000": [
+    "Ecology",
+    "Climate",
+    "Conservation"
+  ],
+  "medtop:05000000": [
+    "Schools",
+    "Learning",
+    "Training"
+  ],
+  "medtop:20000006": [
+    "Movie Festival",
+    "Film Showcase",
+    "Screening"
+  ],
+  "medtop:08000000": [
+    "People",
+    "Stories",
+    "Emotions"
+  ],
+  "medtop:02000000": [
+    "Crime",
+    "Law",
+    "Justice",
+    "Offenses"
+  ],
+  "medtop:01000000": [
+    "Arts",
+    "Culture",
+    "Entertainment",
+    "Media"
+  ],
+  "medtop:04000000": [
+    "Economy",
+    "Business",
+    "Finance",
+    "Markets"
+  ],
+  "medtop:09000000": [
+    "Labor",
+    "Workforce",
+    "Employment",
+    "Industries"
+  ],
+  "medtop:15000000": [
+    "Athletics",
+    "Competition",
+    "Games"
+  ],
+  "medtop:07000000": [
+    "Medicine",
+    "Wellness",
+    "Healthcare"
+  ],
+  "medtop:20000007": [
+    "Performing Dance",
+    "Movement",
+    "Ballet"
+  ],
+  "medtop:03000000": [
+    "Disaster",
+    "Accident",
+    "Emergency",
+    "Incidents"
+  ],
+  "medtop:12000000": [
+    "Faith",
+    "Beliefs",
+    "Worship"
+  ],
+  "medtop:16000000": [
+    "Conflict",
+    "War",
+    "Peace",
+    "Security"
+  ],
+  "medtop:20000003": [
+    "Animated Films",
+    "Cartoons",
+    "Motion Graphics"
+  ],
+  "medtop:20000008": [
+    "Classical Dance",
+    "Dance Performance",
+    "Dance Technique"
+  ],
+  "medtop:17000000": [
+    "Climate",
+    "Meteorology",
+    "Forecasts"
+  ],
+  "medtop:13000000": [
+    "Science",
+    "Technology",
+    "Research",
+    "Innovation"
+  ],
+  "medtop:20000004": [
+    "Comic Strip",
+    "Humorous Drawings",
+    "Editorial Cartoons"
+  ],
+  "medtop:14000000": [
+    "Social Issues",
+    "Community",
+    "Public Affairs"
+  ],
+  "medtop:20000009": [
+    "dance forms",
+    "contemporary dance"
+  ],
+  "medtop:20000027": [
+    "rock",
+    "rhythm and blues"
+  ],
+  "medtop:20000010": [
+    "folk dance",
+    "ethnic dance"
+  ],
+  "medtop:20000029": [
+    "stage",
+    "performances"
+  ],
+  "medtop:20000012": [
+    "jewelry",
+    "adornments",
+    "gems"
+  ],
+  "medtop:20000031": [
+    "art",
+    "artworks"
+  ],
+  "medtop:20000014": [
+    "drama",
+    "theatrical works",
+    "stage plays"
+  ],
+  "medtop:20000019": [
+    "instrument",
+    "music device"
+  ],
+  "medtop:20000028": [
+    "operatic works",
+    "classical opera"
+  ],
+  "medtop:20000022": [
+    "orchestral music",
+    "Western music"
+  ],
+  "medtop:20000018": [
+    "sound",
+    "audio"
+  ],
+  "medtop:20000015": [
+    "narrative fiction",
+    "creative writing"
+  ],
+  "medtop:20000016": [
+    "factual writing",
+    "reports"
+  ],
+  "medtop:20000025": [
+    "jazz",
+    "blues music"
+  ],
+  "medtop:20000021": [
+    "music style",
+    "sound genre"
+  ],
+  "medtop:20000024": [
+    "traditional music",
+    "ballads"
+  ],
+  "medtop:20000020": [
+    "concert",
+    "musical event"
+  ],
+  "medtop:20000013": [
+    "written works",
+    "books"
+  ],
+  "medtop:20000023": [
+    "country",
+    "southern music"
+  ],
+  "medtop:20000017": [
+    "verse",
+    "lyric"
+  ],
+  "medtop:20000026": [
+    "pop music",
+    "contemporary music"
+  ],
+  "medtop:20000030": [
+    "musical theatre",
+    "stage musicals"
+  ],
+  "medtop:20000032": [
+    "building design",
+    "structural design"
+  ],
+  "medtop:20000011": [
+    "apparel",
+    "style"
+  ],
+  "medtop:20000050": [
+    "broadcast",
+    "audio media",
+    "radio broadcasting"
+  ],
+  "medtop:20000056": [
+    "warfare",
+    "military conflict",
+    "hostilities"
+  ],
+  "medtop:20000039": [
+    "cultural heritage",
+    "art history",
+    "cultural evolution"
+  ],
+  "medtop:20000037": [
+    "three-dimensional art",
+    "statuary",
+    "art forms"
+  ],
+  "medtop:20000035": [
+    "fine art",
+    "artwork",
+    "canvas art"
+  ],
+  "medtop:20000054": [
+    "bioterrorism",
+    "biological weapons",
+    "terrorist biological attacks",
+    "bioweapon attacks"
+  ],
+  "medtop:20000034": [
+    "sketching",
+    "illustration",
+    "art"
+  ],
+  "medtop:20000048": [
+    "online media",
+    "digital media",
+    "internet media",
+    "web content"
+  ],
+  "medtop:20000053": [
+    "terrorism",
+    "violent extremism",
+    "terror attacks",
+    "extremist violence"
+  ],
+  "medtop:20000036": [
+    "image capture",
+    "photo",
+    "visual media"
+  ],
+  "medtop:20000051": [
+    "broadcast television",
+    "video media",
+    "TV broadcasting"
+  ],
+  "medtop:20000045": [
+    "media outlets",
+    "broadcast media",
+    "media channels"
+  ],
+  "medtop:20000057": [
+    "guerrilla warfare",
+    "insurgency",
+    "resistance movements",
+    "asymmetric warfare"
+  ],
+  "medtop:20000043": [
+    "museums",
+    "libraries",
+    "archives",
+    "cultural collections"
+  ],
+  "medtop:20000033": [
+    "visual art",
+    "design",
+    "artworks",
+    "graphic design"
+  ],
+  "medtop:20000046": [
+    "news outlets",
+    "journalism",
+    "media reporting"
+  ],
+  "medtop:20000040": [
+    "traditions",
+    "customs",
+    "habits",
+    "practices"
+  ],
+  "medtop:20000044": [
+    "heritage sites",
+    "monuments",
+    "historic landmarks",
+    "cultural sites"
+  ],
+  "medtop:20000049": [
+    "periodicals",
+    "magazines",
+    "journals",
+    "newsletters"
+  ],
+  "medtop:20000047": [
+    "daily news",
+    "printed news",
+    "news publications"
+  ],
+  "medtop:20000042": [
+    "linguistics",
+    "verbal communication",
+    "communication"
+  ],
+  "medtop:20000038": [
+    "civilization",
+    "traditions",
+    "customs"
+  ],
+  "medtop:20000055": [
+    "terrorist attacks",
+    "bombings",
+    "explosions",
+    "violent attacks"
+  ],
+  "medtop:20000041": [
+    "celebrations",
+    "festivals",
+    "cultural events",
+    "community events"
+  ],
+  "medtop:20000060": [
+    "occupation force",
+    "hostile takeover"
+  ],
+  "medtop:20000079": [
+    "mine clearance",
+    "explosive ordnance disposal"
+  ],
+  "medtop:20000076": [
+    "negotiations",
+    "conflict discussions"
+  ],
+  "medtop:20000070": [
+    "coup",
+    "regime change",
+    "military takeover"
+  ],
+  "medtop:20000068": [
+    "political upheaval",
+    "regime change"
+  ],
+  "medtop:20000063": [
+    "internal conflict",
+    "domestic war"
+  ],
+  "medtop:20000062": [
+    "armed conflict",
+    "hostilities"
+  ],
+  "medtop:20000078": [
+    "arms reduction",
+    "de-weaponization"
+  ],
+  "medtop:20000073": [
+    "negotiations",
+    "conflict resolution"
+  ],
+  "medtop:20000077": [
+    "post-conflict reconstruction",
+    "reconstruction",
+    "recovery"
+  ],
+  "medtop:20000080": [
+    "POWs",
+    "detained combatants"
+  ],
+  "medtop:20000061": [
+    "missing persons",
+    "missing servicemen",
+    "POW"
+  ],
+  "medtop:20000071": [
+    "slaughter",
+    "large-scale killings"
+  ],
+  "medtop:20000072": [
+    "ethnic cleansing",
+    "mass murder"
+  ],
+  "medtop:20000064": [
+    "war crimes",
+    "violations of war law",
+    "combat offenses"
+  ],
+  "medtop:20000058": [
+    "international intervention",
+    "military intervention",
+    "foreign military"
+  ],
+  "medtop:20000069": [
+    "civil disturbance",
+    "public disorder"
+  ],
+  "medtop:20000066": [
+    "protests",
+    "demonstrations",
+    "public rallies"
+  ],
+  "medtop:20000065": [
+    "public disorder",
+    "social disturbance"
+  ],
+  "medtop:20000074": [
+    "mediator",
+    "diplomatic envoy"
+  ],
+  "medtop:20000067": [
+    "insurrection",
+    "uprising"
+  ],
+  "medtop:20000075": [
+    "peace strategy",
+    "conflict resolution plan"
+  ],
+  "medtop:20000082": [
+    "offense",
+    "legal violation"
+  ],
+  "medtop:20000059": [
+    "peacekeeping",
+    "UN peacekeepers",
+    "peace force"
+  ],
+  "medtop:20000084": [
+    "battery",
+    "physical attack"
+  ],
+  "medtop:20000086": [
+    "cybercrime",
+    "internet crime"
+  ],
+  "medtop:20000097": [
+    "fraudulent activity",
+    "deceptive practices"
+  ],
+  "medtop:20000101": [
+    "organized crime",
+    "gang crime"
+  ],
+  "medtop:20000104": [
+    "robbery",
+    "theft with force"
+  ],
+  "medtop:20000091": [
+    "market manipulation"
+  ],
+  "medtop:20000083": [
+    "incendiary crime",
+    "fire crime"
+  ],
+  "medtop:20000094": [
+    "kickbacks"
+  ],
+  "medtop:20000103": [
+    "extremist violence"
+  ],
+  "medtop:20000089": [
+    "contract breaches",
+    "agreement violations"
+  ],
+  "medtop:20000088": [
+    "antitrust violations",
+    "competition law"
+  ],
+  "medtop:20000100": [
+    "abduction"
+  ],
+  "medtop:20000087": [
+    "corporate misconduct",
+    "business crime"
+  ],
+  "medtop:20000092": [
+    "trade secrets",
+    "restrictive covenants"
+  ],
+  "medtop:20000085": [
+    "sexual offenses",
+    "sex abuse"
+  ],
+  "medtop:20000090": [
+    "financial fraud",
+    "theft of funds"
+  ],
+  "medtop:20000095": [
+    "drug offenses",
+    "illicit substance crimes"
+  ],
+  "medtop:20000096": [
+    "narcotics smuggling"
+  ],
+  "medtop:20000093": [
+    "official misconduct"
+  ],
+  "medtop:20000099": [
+    "unlawful killing"
+  ],
+  "medtop:20000102": [
+    "gang violence",
+    "criminal group activity"
+  ],
+  "medtop:20000098": [
+    "kidnapping for ransom"
+  ],
+  "medtop:20000105": [
+    "war crimes",
+    "violations of the laws of war"
+  ],
+  "medtop:20000106": [
+    "judicial proceedings",
+    "court system"
+  ],
+  "medtop:20000125": [
+    "penal code"
+  ],
+  "medtop:20000116": [
+    "out of court",
+    "alternative dispute resolution"
+  ],
+  "medtop:20000130": [
+    "detention"
+  ],
+  "medtop:20000115": [
+    "testifier"
+  ],
+  "medtop:20000112": [
+    "initial stages"
+  ],
+  "medtop:20000124": [
+    "rules"
+  ],
+  "medtop:20000107": [
+    "tribunal",
+    "[ ]"
+  ],
+  "medtop:20000126": [
+    "public international law"
+  ],
+  "medtop:20000114": [
+    "legal action"
+  ],
+  "medtop:20000123": [
+    "competition law"
+  ],
+  "medtop:20000128": [
+    "international judiciary"
+  ],
+  "medtop:20000109": [
+    "court services"
+  ],
+  "medtop:20000119": [
+    "legal justice"
+  ],
+  "medtop:20000120": [
+    "human rights"
+  ],
+  "medtop:20000108": [
+    "appeal",
+    "review"
+  ],
+  "medtop:20000113": [
+    "respondent"
+  ],
+  "medtop:20000122": [
+    "private law"
+  ],
+  "medtop:20000111": [
+    "trial",
+    "proceedings"
+  ],
+  "medtop:20000121": [
+    "legal code"
+  ],
+  "medtop:20000127": [
+    "surrender"
+  ],
+  "medtop:20000117": [
+    "arbitration",
+    "mediation"
+  ],
+  "medtop:20000118": [
+    "prosecution",
+    "criminal case"
+  ],
+  "medtop:20000129": [
+    "police"
+  ],
+  "medtop:20000110": [
+    "judicial officer"
+  ],
+  "medtop:20000134": [
+    "criminal sentencing",
+    "punishment",
+    "court sentencing",
+    "penalty"
+  ],
+  "medtop:20000132": [
+    "missing person case",
+    "disappearance",
+    "lost person",
+    "unaccounted for individual"
+  ],
+  "medtop:20000131": [
+    "criminal inquiry",
+    "investigation",
+    "probe",
+    "police investigation"
+  ],
+  "medtop:20000137": [
+    "correctional facility",
+    "jail",
+    "detention center"
+  ],
+  "medtop:20000133": [
+    "police force",
+    "law enforcement",
+    "police officers"
+  ],
+  "medtop:20000139": [
+    "emergency response",
+    "incident",
+    "accident",
+    "crisis"
+  ],
+  "medtop:20000135": [
+    "death penalty",
+    "execution",
+    "state-sanctioned execution"
+  ],
+  "medtop:20000136": [
+    "fine payment",
+    "penalty fee",
+    "court fine",
+    "monetary penalty"
+  ],
+  "medtop:20000140": [
+    "blast",
+    "explosion",
+    "incident",
+    "accident"
+  ],
+  "medtop:20000142": [
+    "nuclear event",
+    "radiation incident",
+    "nuclear mishap",
+    "radioactive release"
+  ],
+  "medtop:20000146": [
+    "rail accident",
+    "train incident",
+    "railway mishap",
+    "derailment"
+  ],
+  "medtop:20000144": [
+    "aviation incident",
+    "aircraft accident",
+    "spacecraft incident",
+    "flight mishap"
+  ],
+  "medtop:20000145": [
+    "maritime incident",
+    "ship accident",
+    "marine mishap",
+    "vessel incident"
+  ],
+  "medtop:20000147": [
+    "road crash",
+    "traffic incident",
+    "vehicle collision",
+    "highway accident"
+  ],
+  "medtop:20000141": [
+    "industrial mishap",
+    "workplace accident",
+    "facility incident",
+    "operational error"
+  ],
+  "medtop:20000143": [
+    "vehicle crash",
+    "traffic accident",
+    "road collision",
+    "transport incident"
+  ],
+  "medtop:20000151": [
+    "extreme weather",
+    "weather event",
+    "environmental disaster"
+  ],
+  "medtop:20000150": [
+    "blaze",
+    "inferno",
+    "conflagration"
+  ],
+  "medtop:20000155": [
+    "slope failure",
+    "mudslide",
+    "debris flow"
+  ],
+  "medtop:20000154": [
+    "flash flood",
+    "river flood",
+    "storm surge"
+  ],
+  "medtop:20000152": [
+    "water shortage",
+    "arid conditions",
+    "dry spell"
+  ],
+  "medtop:20000148": [
+    "catastrophe",
+    "emergency",
+    "crisis"
+  ],
+  "medtop:20000153": [
+    "seismic event",
+    "tremor",
+    "shock"
+  ],
+  "medtop:20000149": [
+    "food shortage",
+    "starvation",
+    "hunger"
+  ],
+  "medtop:20000158": [
+    "gale",
+    "high winds",
+    "windstorm",
+    "storm surge"
+  ],
+  "medtop:20000164": [
+    "shipwreck",
+    "maritime disaster",
+    "vessel incident",
+    "sea incident"
+  ],
+  "medtop:20000167": [
+    "disaster planning",
+    "emergency management",
+    "preparedness planning",
+    "contingency planning"
+  ],
+  "medtop:20000161": [
+    "structural collapse",
+    "building failure",
+    "infrastructure failure",
+    "structural damage"
+  ],
+  "medtop:20000157": [
+    "severe weather",
+    "weather event",
+    "storm event",
+    "climate disaster"
+  ],
+  "medtop:20000156": [
+    "snowslide",
+    "slope failure",
+    "snowfall",
+    "mountain fall"
+  ],
+  "medtop:20000159": [
+    "pyroclastic flow",
+    "lava flow",
+    "magma eruption"
+  ],
+  "medtop:20000162": [
+    "vehicle accident",
+    "traffic incident",
+    "road hazard",
+    "transport mishap"
+  ],
+  "medtop:20000165": [
+    "train derailment",
+    "railway accident",
+    "train crash",
+    "rail incident"
+  ],
+  "medtop:20000166": [
+    "road accident",
+    "highway incident",
+    "vehicle crash",
+    "traffic accident"
+  ],
+  "medtop:20000160": [
+    "crisis event",
+    "urgent event",
+    "contingency event",
+    "emergency situation"
+  ],
+  "medtop:20000163": [
+    "spacecraft incident",
+    "aviation incident",
+    "aerospace event",
+    "flight incident"
+  ],
+  "medtop:20000174": [
+    "company insolvency",
+    "debt restructuring",
+    "bankruptcy filings",
+    "business failure"
+  ],
+  "medtop:20000168": [
+    "disaster relief",
+    "crisis management",
+    "emergency services",
+    "incident response"
+  ],
+  "medtop:20000170": [
+    "business news",
+    "corporate affairs",
+    "company information",
+    "business data"
+  ],
+  "medtop:20000173": [
+    "analyst opinions",
+    "market commentary",
+    "equity research",
+    "investment views"
+  ],
+  "medtop:20000178": [
+    "corporate profits",
+    "earnings releases",
+    "financial results",
+    "revenue reports"
+  ],
+  "medtop:20000179": [
+    "earnings projections",
+    "revenue forecasts",
+    "profit estimates",
+    "forecasted earnings"
+  ],
+  "medtop:20000171": [
+    "corporate finance",
+    "financial accounting",
+    "capital markets"
+  ],
+  "medtop:20000180": [
+    "financial reports",
+    "balance sheets",
+    "income statements",
+    "quarterly reports"
+  ],
+  "medtop:20000176": [
+    "credit assessments",
+    "risk ratings",
+    "debt ratings",
+    "credit scores"
+  ],
+  "medtop:20000177": [
+    "share dividends",
+    "stock dividends",
+    "cash distributions",
+    "equity payouts"
+  ],
+  "medtop:20000172": [
+    "audit reports",
+    "accounting standards",
+    "financial audits",
+    "regulatory accounting"
+  ],
+  "medtop:20000175": [
+    "share repurchase",
+    "stock buybacks",
+    "capital returns",
+    "equity buybacks"
+  ],
+  "medtop:20000184": [
+    "recapitalization",
+    "restructuring",
+    "company mergers",
+    "capital restructuring"
+  ],
+  "medtop:20000182": [
+    "distressed firms",
+    "financial distress",
+    "insolvent companies",
+    "corporate distress"
+  ],
+  "medtop:20000186": [
+    "stock trades",
+    "stock movements",
+    "market fluctuations",
+    "stock price"
+  ],
+  "medtop:20000189": [
+    "job cuts",
+    "staff reductions",
+    "workforce reductions",
+    "downsizing"
+  ],
+  "medtop:20000183": [
+    "corporate finance",
+    "capital markets",
+    "investment decisions"
+  ],
+  "medtop:20000190": [
+    "executive leadership",
+    "corporate officers",
+    "board appointments",
+    "senior management"
+  ],
+  "medtop:20000181": [
+    "proxy filings",
+    "shareholder votes",
+    "regulatory filings",
+    "proxy statements"
+  ],
+  "medtop:20000185": [
+    "shareholder actions",
+    "shareholder voting",
+    "equity ownership",
+    "investor activity"
+  ],
+  "medtop:20000187": [
+    "initial public offerings",
+    "stock offerings",
+    "IPO",
+    "capital markets"
+  ],
+  "medtop:20000192": [
+    "business planning",
+    "marketing strategy",
+    "corporate strategy",
+    "sales strategy"
+  ],
+  "medtop:20000191": [
+    "stock options",
+    "employee stock",
+    "equity grants",
+    "incentive plans"
+  ],
+  "medtop:20000188": [
+    "human capital",
+    "employee management",
+    "personnel management",
+    "workforce"
+  ],
+  "medtop:20000201": [
+    "leveraged buyouts",
+    "LBOs",
+    "corporate takeovers",
+    "private equity"
+  ],
+  "medtop:20000202": [
+    "licensing agreements",
+    "intellectual property",
+    "IP licensing",
+    "royalty agreements"
+  ],
+  "medtop:20000204": [
+    "mergers and acquisitions",
+    "M&A",
+    "corporate consolidation",
+    "takeovers"
+  ],
+  "medtop:20000194": [
+    "annual reports",
+    "company financials",
+    "financial statements",
+    "corporate reports"
+  ],
+  "medtop:20000197": [
+    "company spinoffs",
+    "corporate divestitures",
+    "business separations",
+    "spin-offs"
+  ],
+  "medtop:20000200": [
+    "joint ventures",
+    "strategic alliances",
+    "business partnerships",
+    "collaborative ventures"
+  ],
+  "medtop:20000193": [
+    "corporate meetings",
+    "annual reports",
+    "company reports",
+    "shareholder meetings"
+  ],
+  "medtop:20000198": [
+    "globalization",
+    "international trade",
+    "economic integration",
+    "world markets"
+  ],
+  "medtop:20000203": [
+    "management buyouts",
+    "MBOs",
+    "company acquisitions",
+    "internal takeovers"
+  ],
+  "medtop:20000195": [
+    "board meetings",
+    "board appointments",
+    "corporate boards",
+    "directors"
+  ],
+  "medtop:20000199": [
+    "corporate governance",
+    "board oversight",
+    "company governance",
+    "business regulation"
+  ],
+  "medtop:20000196": [
+    "commercial contracts",
+    "business agreements",
+    "supply contracts",
+    "trade agreements"
+  ],
+  "medtop:20000215": [
+    "livestock",
+    "animal husbandry",
+    "meat production"
+  ],
+  "medtop:20000211": [
+    "fish farming",
+    "marine farming"
+  ],
+  "medtop:20000216": [
+    "wine production",
+    "vineyards",
+    "grape cultivation"
+  ],
+  "medtop:20000206": [
+    "intellectual property",
+    "IP rights",
+    "trademarks"
+  ],
+  "medtop:20000212": [
+    "arable land",
+    "crop farming",
+    "grain production"
+  ],
+  "medtop:20000210": [
+    "crop production",
+    "farming"
+  ],
+  "medtop:20000213": [
+    "seafood production",
+    "fisheries"
+  ],
+  "medtop:20000209": [
+    "goods",
+    "services",
+    "consumer products"
+  ],
+  "medtop:20000214": [
+    "forestry",
+    "timber production",
+    "wood products"
+  ],
+  "medtop:20000205": [
+    "new releases",
+    "product launches",
+    "market introductions"
+  ],
+  "medtop:20000208": [
+    "R&D",
+    "innovation",
+    "research programs"
+  ],
+  "medtop:20000207": [
+    "product recalls",
+    "defective products",
+    "recall notices"
+  ],
+  "medtop:20000222": [
+    "organic compounds",
+    "carbon compounds",
+    "bio chemicals",
+    "biochemicals"
+  ],
+  "medtop:20000224": [
+    "plastics",
+    "polymer",
+    "synthetic materials",
+    "plastic products"
+  ],
+  "medtop:20000227": [
+    "networking",
+    "data communication",
+    "computer networks",
+    "network protocols"
+  ],
+  "medtop:20000226": [
+    "hardware",
+    "telecom equipment",
+    "computer devices",
+    "IT devices"
+  ],
+  "medtop:20000223": [
+    "drugs",
+    "medicines",
+    "pharmaceuticals",
+    "medications"
+  ],
+  "medtop:20000221": [
+    "minerals",
+    "metals",
+    "inorganic compounds",
+    "nonmetals"
+  ],
+  "medtop:20000228": [
+    "satellite",
+    "space technology",
+    "orbital systems",
+    "communication satellites"
+  ],
+  "medtop:20000217": [
+    "substances",
+    "materials",
+    "compounds"
+  ],
+  "medtop:20000219": [
+    "fertilizers",
+    "agrochemicals",
+    "plant food",
+    "nutrient"
+  ],
+  "medtop:20000225": [
+    "IT",
+    "information technology",
+    "computing",
+    "digital technology"
+  ],
+  "medtop:20000220": [
+    "cosmetics",
+    "personal care",
+    "beauty supplies",
+    "fragrances"
+  ],
+  "medtop:20000218": [
+    "biotech",
+    "biotechnology",
+    "biobusiness",
+    "bioproducts"
+  ],
+  "medtop:20000229": [
+    "cybersecurity",
+    "IT security",
+    "data security",
+    "network security"
+  ],
+  "medtop:20000235": [
+    "real estate",
+    "property development",
+    "construction sector",
+    "housing"
+  ],
+  "medtop:20000240": [
+    "land valuation",
+    "property values",
+    "real estate prices",
+    "land costs"
+  ],
+  "medtop:20000239": [
+    "residential construction",
+    "housing development",
+    "building construction",
+    "new homes"
+  ],
+  "medtop:20000231": [
+    "software",
+    "applications",
+    "programs",
+    "operating systems"
+  ],
+  "medtop:20000234": [
+    "wireless networks",
+    "radio technology",
+    "mobile networks",
+    "Wi-Fi"
+  ],
+  "medtop:20000236": [
+    "engineering design",
+    "architectural design",
+    "civil engineering",
+    "product design"
+  ],
+  "medtop:20000230": [
+    "semiconductors",
+    "integrated circuits",
+    "chips",
+    "electronics"
+  ],
+  "medtop:20000237": [
+    "agriculture",
+    "farmlands",
+    "livestock",
+    "crop production"
+  ],
+  "medtop:20000238": [
+    "large construction",
+    "infrastructure projects",
+    "civil engineering",
+    "mega-projects"
+  ],
+  "medtop:20000233": [
+    "telecom services",
+    "communication services",
+    "network services",
+    "connectivity"
+  ],
+  "medtop:20000232": [
+    "telecom equipment",
+    "communication devices",
+    "network gear",
+    "switchgear"
+  ],
+  "medtop:20000244": [
+    "drinks",
+    "liquor",
+    "soft drinks"
+  ],
+  "medtop:20000246": [
+    "retail store",
+    "variety store",
+    "shop"
+  ],
+  "medtop:20000250": [
+    "catalog order",
+    "distance selling",
+    "direct mail"
+  ],
+  "medtop:20000242": [
+    "preservation",
+    "renovation",
+    "conservation"
+  ],
+  "medtop:20000252": [
+    "sales",
+    "merchandise",
+    "shop"
+  ],
+  "medtop:20000245": [
+    "apparel",
+    "fashion",
+    "garments"
+  ],
+  "medtop:20000243": [
+    "goods",
+    "products",
+    "merchandise"
+  ],
+  "medtop:20000247": [
+    "e-commerce",
+    "internet retail",
+    "digital retail"
+  ],
+  "medtop:20000241": [
+    "property",
+    "housing",
+    "land"
+  ],
+  "medtop:20000249": [
+    "premium goods",
+    "high-end goods",
+    "designer goods"
+  ],
+  "medtop:20000248": [
+    "food",
+    "provisions",
+    "groceries"
+  ],
+  "medtop:20000251": [
+    "short-term goods",
+    "consumables",
+    "disposables"
+  ],
+  "medtop:20000254": [
+    "toys",
+    "games",
+    "children's products"
+  ],
+  "medtop:20000259": [
+    "diesel",
+    "fuel oil",
+    "marine fuel"
+  ],
+  "medtop:20000263": [
+    "methane",
+    "gas"
+  ],
+  "medtop:20000260": [
+    "power",
+    "grid"
+  ],
+  "medtop:20000258": [
+    "anthracite",
+    "bituminous"
+  ],
+  "medtop:20000255": [
+    "distribution",
+    "bulk sales"
+  ],
+  "medtop:20000256": [
+    "energy",
+    "resources",
+    "power"
+  ],
+  "medtop:20000257": [
+    "renewables",
+    "green energy",
+    "sustainable power"
+  ],
+  "medtop:20000262": [
+    "kerosene",
+    "paraffin",
+    "aviation fuel"
+  ],
+  "medtop:20000253": [
+    "retail",
+    "stores",
+    "merchandise"
+  ],
+  "medtop:20000265": [
+    "nuclear",
+    "atomic power",
+    "radioactive power"
+  ],
+  "medtop:20000261": [
+    "energy sector",
+    "power sector",
+    "energy companies"
+  ],
+  "medtop:20000269": [
+    "garbage disposal",
+    "recycling",
+    "waste disposal",
+    "solid waste"
+  ],
+  "medtop:20000274": [
+    "commercial banking",
+    "deposit accounts",
+    "financial transactions",
+    "bank services"
+  ],
+  "medtop:20000267": [
+    "upstream",
+    "exploration",
+    "drilling",
+    "oil production"
+  ],
+  "medtop:20000268": [
+    "gasoline",
+    "petro",
+    "fuel",
+    "motor fuel"
+  ],
+  "medtop:20000270": [
+    "water utilities",
+    "water services",
+    "water distribution"
+  ],
+  "medtop:20000271": [
+    "financial services",
+    "banking sector",
+    "capital markets",
+    "investment services"
+  ],
+  "medtop:20000273": [
+    "liquidation sales",
+    "public auctions",
+    "sealed bids",
+    "competitive bidding"
+  ],
+  "medtop:20000272": [
+    "auditing",
+    "accounting",
+    "financial reporting",
+    "financial statement analysis"
+  ],
+  "medtop:20000277": [
+    "death care",
+    "cremation services",
+    "funeral homes",
+    "mortuary services"
+  ],
+  "medtop:20000276": [
+    "recruitment agencies",
+    "job placement",
+    "human resources",
+    "employment services"
+  ],
+  "medtop:20000275": [
+    "management consulting",
+    "business consulting",
+    "expert advice",
+    "professional services"
+  ],
+  "medtop:20000266": [
+    "refining",
+    "distribution",
+    "oil markets",
+    "petroleum products"
+  ],
+  "medtop:20000282": [
+    "legal counsel",
+    "legal services",
+    "attorney services",
+    "law firms"
+  ],
+  "medtop:20000288": [
+    "customer services",
+    "support services",
+    "intangible services",
+    "client services"
+  ],
+  "medtop:20000278": [
+    "healthcare",
+    "medical providers",
+    "clinics",
+    "health systems"
+  ],
+  "medtop:20000286": [
+    "individual income",
+    "earnings",
+    "salary",
+    "revenue"
+  ],
+  "medtop:20000280": [
+    "financial advising",
+    "investment advice",
+    "wealth management",
+    "financial planning"
+  ],
+  "medtop:20000281": [
+    "cleaning services",
+    "facility maintenance",
+    "janitorial support",
+    "building services"
+  ],
+  "medtop:20000289": [
+    "print services",
+    "printing operations",
+    "graphic services",
+    "publication services"
+  ],
+  "medtop:20000284": [
+    "consumer trends",
+    "market dynamics",
+    "sales patterns",
+    "demand analysis"
+  ],
+  "medtop:20000287": [
+    "investment planning",
+    "savings investments",
+    "asset management",
+    "portfolio management"
+  ],
+  "medtop:20000279": [
+    "insurance coverage",
+    "health insurance",
+    "medical payments",
+    "risk management"
+  ],
+  "medtop:20000285": [
+    "financial management",
+    "personal budgeting",
+    "cash flow",
+    "money management"
+  ],
+  "medtop:20000283": [
+    "consumer research",
+    "market analysis",
+    "data gathering",
+    "customer insights"
+  ],
+  "medtop:20000294": [
+    "manufacturing",
+    "engineering",
+    "production",
+    "fabrication"
+  ],
+  "medtop:20000292": [
+    "stock trading",
+    "brokerage",
+    "share trading",
+    "equity"
+  ],
+  "medtop:20000293": [
+    "weddings",
+    "marriage services",
+    "ceremonies",
+    "event planning"
+  ],
+  "medtop:20000295": [
+    "aviation",
+    "spacecraft",
+    "aircraft"
+  ],
+  "medtop:20000297": [
+    "defence",
+    "military equipment",
+    "arms",
+    "security"
+  ],
+  "medtop:20000299": [
+    "heavy machinery",
+    "construction equipment",
+    "large equipment",
+    "industrial equipment"
+  ],
+  "medtop:20000301": [
+    "instrumentation",
+    "measurement tools",
+    "calibration instruments",
+    "testing equipment"
+  ],
+  "medtop:20000298": [
+    "appliances",
+    "electrical goods",
+    "home appliances",
+    "consumer electronics"
+  ],
+  "medtop:20000296": [
+    "vehicles",
+    "car manufacturing",
+    "transportation"
+  ],
+  "medtop:20000291": [
+    "shipping",
+    "postal",
+    "courier",
+    "delivery"
+  ],
+  "medtop:20000290": [
+    "rental",
+    "leasing",
+    "equipment rental",
+    "hire"
+  ],
+  "medtop:20000300": [
+    "components",
+    "mechanical parts",
+    "industrial parts",
+    "machine parts"
+  ],
+  "medtop:20000305": [
+    "advertising sector",
+    "marketing",
+    "promotional services",
+    "brand promotion"
+  ],
+  "medtop:20000307": [
+    "film production",
+    "motion pictures",
+    "cinema",
+    "movie industry"
+  ],
+  "medtop:20000308": [
+    "music recording",
+    "sound recording",
+    "audio production",
+    "music publishing"
+  ],
+  "medtop:20000312": [
+    "corporate communications",
+    "public affairs",
+    "PR agencies",
+    "stakeholder relations"
+  ],
+  "medtop:20000304": [
+    "entertainment",
+    "media sector",
+    "creative industries",
+    "broadcast media"
+  ],
+  "medtop:20000302": [
+    "industrial machinery",
+    "power generation",
+    "mechanical engineering",
+    "equipment manufacturing"
+  ],
+  "medtop:20000303": [
+    "maritime",
+    "shipyards",
+    "vessel construction",
+    "naval engineering"
+  ],
+  "medtop:20000310": [
+    "print media",
+    "newspapers",
+    "periodicals",
+    "newsprint"
+  ],
+  "medtop:20000309": [
+    "news distribution",
+    "press agencies",
+    "wire services",
+    "information services"
+  ],
+  "medtop:20000306": [
+    "book publishing",
+    "print media",
+    "editorial",
+    "printed books"
+  ],
+  "medtop:20000311": [
+    "digital media",
+    "online publishing",
+    "internet news",
+    "web publishing"
+  ],
+  "medtop:20000313": [
+    "radio broadcasting",
+    "audio media",
+    "station networks",
+    "broadcast radio"
+  ],
+  "medtop:20000325": [
+    "furniture manufacturing",
+    "home furnishings",
+    "interior design",
+    "wall coverings"
+  ],
+  "medtop:20000314": [
+    "satellite TV",
+    "cable networks",
+    "broadcast services",
+    "pay TV"
+  ],
+  "medtop:20000322": [
+    "chemical industry",
+    "manufacturing sector",
+    "industrial production",
+    "bulk chemicals"
+  ],
+  "medtop:20000321": [
+    "non-ferrous metals",
+    "aluminum mining",
+    "zinc production",
+    "copper mining"
+  ],
+  "medtop:20000323": [
+    "liquor production",
+    "brewery operations",
+    "alcoholic beverages",
+    "distilling"
+  ],
+  "medtop:20000320": [
+    "mining operations",
+    "extraction industry",
+    "resource extraction",
+    "ore mining"
+  ],
+  "medtop:20000324": [
+    "food production",
+    "grocery sales",
+    "consumer food",
+    "beverage industry"
+  ],
+  "medtop:20000318": [
+    "precious metals",
+    "rare earth metals",
+    "gold mining",
+    "silver mining"
+  ],
+  "medtop:20000316": [
+    "mineral extraction",
+    "metal mining",
+    "ore production",
+    "quarrying"
+  ],
+  "medtop:20000319": [
+    "steel production",
+    "iron ore",
+    "ferrous metals",
+    "metal fabrication"
+  ],
+  "medtop:20000315": [
+    "TV industry",
+    "television broadcasting",
+    "broadcast media",
+    "TV networks"
+  ],
+  "medtop:20000317": [
+    "building materials",
+    "construction supplies",
+    "lumber",
+    "wallboard"
+  ],
+  "medtop:20000335": [
+    "restaurants",
+    "catering"
+  ],
+  "medtop:20000330": [
+    "tobacco",
+    "nicotine"
+  ],
+  "medtop:20000327": [
+    "rubber",
+    "elastomers"
+  ],
+  "medtop:20000333": [
+    "hotels",
+    "lodging"
+  ],
+  "medtop:20000328": [
+    "beverages"
+  ],
+  "medtop:20000329": [
+    "textiles",
+    "fabrics"
+  ],
+  "medtop:20000326": [
+    "paper",
+    "packaging"
+  ],
+  "medtop:20000337": [
+    "travel"
+  ],
+  "medtop:20000331": [
+    "tourism",
+    "leisure"
+  ],
+  "medtop:20000334": [
+    "sports goods",
+    "recreation"
+  ],
+  "medtop:20000336": [
+    "tour operators",
+    "trip organizers"
+  ],
+  "medtop:20000332": [
+    "casinos",
+    "gaming"
+  ],
+  "medtop:20000349": [
+    "business operations",
+    "corporate structure",
+    "private sector",
+    "commercial enterprises"
+  ],
+  "medtop:20000346": [
+    "economic indicators",
+    "market trends",
+    "economic data",
+    "business cycles"
+  ],
+  "medtop:20000347": [
+    "fixed income",
+    "government bonds",
+    "corporate bonds",
+    "debt securities"
+  ],
+  "medtop:20000344": [
+    "macroeconomics",
+    "economic performance",
+    "national economy",
+    "economic activity"
+  ],
+  "medtop:20000338": [
+    "aviation",
+    "flights",
+    "air travel",
+    "commercial aviation"
+  ],
+  "medtop:20000340": [
+    "rail transport",
+    "railways",
+    "trains",
+    "rail networks"
+  ],
+  "medtop:20000348": [
+    "fiscal planning",
+    "budget management",
+    "financial forecasting",
+    "cost accounting"
+  ],
+  "medtop:20000341": [
+    "highway transport",
+    "trucking",
+    "vehicle traffic"
+  ],
+  "medtop:20000339": [
+    "commuting patterns",
+    "daily travel",
+    "travel to work",
+    "transport to work"
+  ],
+  "medtop:20000342": [
+    "traffic congestion",
+    "road blockage",
+    "traffic alerts",
+    "traffic reports"
+  ],
+  "medtop:20000345": [
+    "fiscal policy",
+    "government finance",
+    "monetary policy",
+    "economic regulation"
+  ],
+  "medtop:20000343": [
+    "maritime transport",
+    "shipping",
+    "ports",
+    "waterborne transport"
+  ],
+  "medtop:20000352": [
+    "consumer sentiment",
+    "consumer outlook",
+    "consumer morale"
+  ],
+  "medtop:20000355": [
+    "money",
+    "finance",
+    "valuations"
+  ],
+  "medtop:20000353": [
+    "retail issues",
+    "price concerns",
+    "product quality"
+  ],
+  "medtop:20000358": [
+    "economic data",
+    "market indicators",
+    "economic statistics"
+  ],
+  "medtop:20000350": [
+    "monetary policy",
+    "bank",
+    "financial regulator"
+  ],
+  "medtop:20000357": [
+    "gdp growth",
+    "economic expansion",
+    "growth rate"
+  ],
+  "medtop:20000351": [
+    "buyers",
+    "public",
+    "retailers"
+  ],
+  "medtop:20000361": [
+    "stock levels",
+    "inventory management",
+    "warehouse holdings"
+  ],
+  "medtop:20000354": [
+    "loans",
+    "borrowing",
+    "obligations"
+  ],
+  "medtop:20000359": [
+    "gdp",
+    "national income",
+    "economic output"
+  ],
+  "medtop:20000356": [
+    "price decline",
+    "negative inflation",
+    "falling prices"
+  ],
+  "medtop:20000360": [
+    "manufacturing",
+    "factory output",
+    "industrial activity"
+  ],
+  "medtop:20000366": [
+    "trade flows",
+    "goods exports",
+    "export sales",
+    "production sales"
+  ],
+  "medtop:20000370": [
+    "price increases",
+    "cost inflation",
+    "consumer prices",
+    "purchasing power"
+  ],
+  "medtop:20000364": [
+    "developing economies",
+    "emerging nations",
+    "frontier markets",
+    "new economies"
+  ],
+  "medtop:20000371": [
+    "lending rates",
+    "bank rates",
+    "interest charges",
+    "money rates"
+  ],
+  "medtop:20000365": [
+    "job growth",
+    "unemployment rates",
+    "wage trends",
+    "labor statistics"
+  ],
+  "medtop:20000367": [
+    "foreign aid",
+    "government grants",
+    "donor assistance",
+    "fiscal aid"
+  ],
+  "medtop:20000372": [
+    "IMF",
+    "World Bank",
+    "WTO",
+    "UNIDO"
+  ],
+  "medtop:20000362": [
+    "output",
+    "performance",
+    "efficiency",
+    "production"
+  ],
+  "medtop:20000368": [
+    "public debt",
+    "government borrowing",
+    "national debt",
+    "fiscal debt"
+  ],
+  "medtop:20000373": [
+    "cross-border trade",
+    "global commerce",
+    "international commerce",
+    "trade volumes"
+  ],
+  "medtop:20000369": [
+    "goods imports",
+    "foreign purchases",
+    "imported goods",
+    "trade inflows"
+  ],
+  "medtop:20000363": [
+    "business associations",
+    "trade groups",
+    "private sector",
+    "industry"
+  ],
+  "medtop:20000375": [
+    "trade deficit",
+    "trade surplus",
+    "balance of payments",
+    "export-import"
+  ],
+  "medtop:20000379": [
+    "interest rates",
+    "money supply",
+    "credit policy"
+  ],
+  "medtop:20000380": [
+    "home loans",
+    "mortgage rates",
+    "housing finance",
+    "property loans"
+  ],
+  "medtop:20000381": [
+    "investment funds",
+    "pooled investments",
+    "share funds"
+  ],
+  "medtop:20000376": [
+    "trade conflicts",
+    "trade disputes",
+    "trade disagreements",
+    "trade controversies"
+  ],
+  "medtop:20000378": [
+    "capital investments",
+    "asset investments",
+    "market investments",
+    "financial investments"
+  ],
+  "medtop:20000382": [
+    "price levels",
+    "commodity prices",
+    "market prices",
+    "cost indices"
+  ],
+  "medtop:20000383": [
+    "economic downturn",
+    "recessionary periods",
+    "economic contraction",
+    "GDP decline"
+  ],
+  "medtop:20000384": [
+    "import duties",
+    "customs tariffs",
+    "trade tariffs",
+    "protective tariffs"
+  ],
+  "medtop:20000385": [
+    "stock markets",
+    "currency markets",
+    "commodity markets",
+    "financial markets"
+  ],
+  "medtop:20000374": [
+    "trade deals",
+    "commercial agreements",
+    "import-export",
+    "trade relations"
+  ],
+  "medtop:20000377": [
+    "trade regulations",
+    "trade rules",
+    "trade measures",
+    "trade practices"
+  ],
+  "medtop:20000390": [
+    "debt",
+    "bonds",
+    "fixed income",
+    "credit markets"
+  ],
+  "medtop:20000391": [
+    "forex",
+    "currency markets",
+    "exchange rates",
+    "international currency"
+  ],
+  "medtop:20000394": [
+    "stocks",
+    "bonds",
+    "capital markets"
+  ],
+  "medtop:20000395": [
+    "futures",
+    "options",
+    "swaps"
+  ],
+  "medtop:20000388": [
+    "metals",
+    "base metals",
+    "minerals",
+    "steel"
+  ],
+  "medtop:20000389": [
+    "softs",
+    "agricultural commodities",
+    "crop markets",
+    "grain markets"
+  ],
+  "medtop:20000387": [
+    "energy",
+    "markets",
+    "fuels",
+    "power"
+  ],
+  "medtop:20000398": [
+    "PTA",
+    "parent groups",
+    "school associations",
+    "guardian groups"
+  ],
+  "medtop:20000396": [
+    "stocks",
+    "shares",
+    "equities",
+    "bonds"
+  ],
+  "medtop:20000386": [
+    "commodities",
+    "markets",
+    "trading",
+    "prices"
+  ],
+  "medtop:20000392": [
+    "loans",
+    "mortgages",
+    "credit",
+    "financing"
+  ],
+  "medtop:20000393": [
+    "loans",
+    "lending",
+    "credit agreements",
+    "borrowing"
+  ],
+  "medtop:20000407": [
+    "higher university",
+    "research university",
+    "tertiary university"
+  ],
+  "medtop:20000401": [
+    "elementary school",
+    "primary schooling",
+    "grade school",
+    "basic education"
+  ],
+  "medtop:20000400": [
+    "schools",
+    "educational institutions",
+    "learning centers",
+    "primary education"
+  ],
+  "medtop:20000410": [
+    "social pedagogy",
+    "behavioral learning",
+    "group learning",
+    "peer learning"
+  ],
+  "medtop:20000408": [
+    "middle school",
+    "junior high",
+    "secondary lower",
+    "basic secondary"
+  ],
+  "medtop:20000399": [
+    "religious instruction",
+    "faith-based learning",
+    "religious training",
+    "spiritual education"
+  ],
+  "medtop:20000405": [
+    "higher learning",
+    "graduate studies",
+    "tertiary institutions",
+    "research universities"
+  ],
+  "medtop:20000402": [
+    "higher education",
+    "post-secondary education",
+    "tertiary education",
+    "advanced learning"
+  ],
+  "medtop:20000404": [
+    "secondary education",
+    "high school",
+    "upper grade",
+    "post-primary education"
+  ],
+  "medtop:20000403": [
+    "adult learning",
+    "continuing studies",
+    "professional development",
+    "lifelong learning"
+  ],
+  "medtop:20000409": [
+    "pre-K",
+    "early schooling",
+    "child education",
+    "primary learning"
+  ],
+  "medtop:20000406": [
+    "higher college",
+    "institution of higher learning",
+    "academy"
+  ],
+  "medtop:20000411": [
+    "education",
+    "learning",
+    "schools",
+    "instruction"
+  ],
+  "medtop:20000418": [
+    "climate",
+    "weather",
+    "global temperature",
+    "environmental science"
+  ],
+  "medtop:20000412": [
+    "courses",
+    "programs",
+    "syllabus"
+  ],
+  "medtop:20000422": [
+    "nature reserves",
+    "protected areas",
+    "national parks",
+    "wildlife sanctuaries"
+  ],
+  "medtop:20000416": [
+    "professors",
+    "educators",
+    "instructors"
+  ],
+  "medtop:20000414": [
+    "admissions",
+    "entry exams",
+    "college entrance",
+    "university entrance"
+  ],
+  "medtop:20000413": [
+    "testing",
+    "exams",
+    "assessments",
+    "evaluation"
+  ],
+  "medtop:20000415": [
+    "pupils",
+    "scholars",
+    "learners"
+  ],
+  "medtop:20000423": [
+    "environmental regulations",
+    "climate policy",
+    "pollution control",
+    "green initiatives"
+  ],
+  "medtop:20000421": [
+    "energy efficiency",
+    "power conservation",
+    "electricity saving",
+    "resource management"
+  ],
+  "medtop:20000419": [
+    "climate change",
+    "temperature trends",
+    "greenhouse effect"
+  ],
+  "medtop:20000420": [
+    "wildlife",
+    "biodiversity",
+    "ecological preservation"
+  ],
+  "medtop:20000434": [
+    "mountains",
+    "hill ranges",
+    "upland areas",
+    "terrestrial landscapes"
+  ],
+  "medtop:20000425": [
+    "air quality",
+    "atmospheric pollution",
+    "smog",
+    "airborne contaminants"
+  ],
+  "medtop:20000433": [
+    "forests",
+    "woodlands",
+    "timberlands",
+    "tree cover"
+  ],
+  "medtop:20000427": [
+    "hazardous substances",
+    "toxic chemicals",
+    "dangerous materials",
+    "toxic waste"
+  ],
+  "medtop:20000426": [
+    "site remediation",
+    "pollution cleanup",
+    "environmental restoration",
+    "hazard removal"
+  ],
+  "medtop:20000431": [
+    "fossil fuels",
+    "energy sources",
+    "power generation",
+    "fuel resources"
+  ],
+  "medtop:20000424": [
+    "pollution",
+    "environmental damage",
+    "contaminants",
+    "toxic waste"
+  ],
+  "medtop:20000430": [
+    "natural assets",
+    "natural resources",
+    "ecological resources",
+    "environmental assets"
+  ],
+  "medtop:20000435": [
+    "human population",
+    "demographic growth",
+    "population trends",
+    "population dynamics"
+  ],
+  "medtop:20000428": [
+    "waste disposal",
+    "discarded materials",
+    "municipal waste",
+    "solid waste"
+  ],
+  "medtop:20000432": [
+    "ground resources",
+    "land use",
+    "soil resources",
+    "geological resources"
+  ],
+  "medtop:20000429": [
+    "water contamination",
+    "aquatic pollution",
+    "waterborne contaminants",
+    "hydrological pollution"
+  ],
+  "medtop:20000438": [
+    "marine",
+    "sea",
+    "oceanography",
+    "coastal"
+  ],
+  "medtop:20000439": [
+    "streams",
+    "rivers",
+    "waterways",
+    "aquatic"
+  ],
+  "medtop:20000441": [
+    "wildlife",
+    "environment",
+    "natural world",
+    "biodiversity"
+  ],
+  "medtop:20000446": [
+    "health issues",
+    "medical conditions",
+    "human illness",
+    "patient health"
+  ],
+  "medtop:20000447": [
+    "malignancy",
+    "tumor",
+    "neoplasm",
+    "cell cancer"
+  ],
+  "medtop:20000448": [
+    "infectious diseases",
+    "transmissible diseases",
+    "contagious diseases",
+    "epidemics"
+  ],
+  "medtop:20000440": [
+    "marshland",
+    "floodplain",
+    "aquifer",
+    "peatland"
+  ],
+  "medtop:20000437": [
+    "freshwater",
+    "water resources",
+    "hydrology",
+    "water supply"
+  ],
+  "medtop:20000442": [
+    "biota",
+    "habitat",
+    "ecological systems",
+    "ecological zones"
+  ],
+  "medtop:20000443": [
+    "threatened species",
+    "vulnerable species",
+    "conservation status",
+    "protected species"
+  ],
+  "medtop:20000436": [
+    "solar power",
+    "wind energy",
+    "green energy",
+    "clean energy"
+  ],
+  "medtop:20000444": [
+    "exotic species",
+    "non-native species",
+    "introduced species",
+    "alien species"
+  ],
+  "medtop:20000452": [
+    "HIV",
+    "AIDS",
+    "human immunodeficiency virus",
+    "acquired immunodeficiency syndrome"
+  ],
+  "medtop:20000451": [
+    "viral infection",
+    "virus",
+    "viral",
+    "infectious virus"
+  ],
+  "medtop:20000456": [
+    "physical injury",
+    "trauma",
+    "accidental injury",
+    "harm"
+  ],
+  "medtop:20000450": [
+    "plague",
+    "pestis",
+    "bacterial infection",
+    "infectious disease"
+  ],
+  "medtop:20000460": [
+    "excess weight",
+    "overweight",
+    "corpulence"
+  ],
+  "medtop:20000454": [
+    "cardiovascular disease",
+    "heart problems",
+    "coronary artery disease",
+    "heart failure"
+  ],
+  "medtop:20000458": [
+    "mental illness",
+    "psychological disorder",
+    "neurological disorder",
+    "mental health condition"
+  ],
+  "medtop:20000459": [
+    "anorexia",
+    "bulimia",
+    "weight disorder"
+  ],
+  "medtop:20000449": [
+    "pandemic",
+    "epidemic",
+    "outbreak",
+    "disease spread"
+  ],
+  "medtop:20000453": [
+    "RNA virus",
+    "viral retrovirus",
+    "leukemia virus"
+  ],
+  "medtop:20000457": [
+    "medical ailment",
+    "health problem",
+    "disease state",
+    "physiological disorder"
+  ],
+  "medtop:20000455": [
+    "sickness",
+    "malady",
+    "medical issue"
+  ],
+  "medtop:20000470": [
+    "medical approach",
+    "treatment strategy",
+    "healthcare method",
+    "clinical method"
+  ],
+  "medtop:20000463": [
+    "health organization",
+    "medical association",
+    "healthcare group",
+    "health agency"
+  ],
+  "medtop:20000461": [
+    "clinic",
+    "medical center",
+    "healthcare facility",
+    "hospital"
+  ],
+  "medtop:20000466": [
+    "supplement",
+    "nutritional supplement",
+    "dietary aid",
+    "vitamin"
+  ],
+  "medtop:20000472": [
+    "alternative medicine",
+    "integrative medicine",
+    "wellness medicine"
+  ],
+  "medtop:20000464": [
+    "medical treatment",
+    "therapeutic intervention",
+    "health therapy",
+    "clinical procedure"
+  ],
+  "medtop:20000469": [
+    "diagnostic test",
+    "medical examination",
+    "clinical test",
+    "laboratory test"
+  ],
+  "medtop:20000467": [
+    "OTC drug",
+    "over-the-counter medication",
+    "non-Rx drug",
+    "self-medication"
+  ],
+  "medtop:20000468": [
+    "Rx drug",
+    "medication",
+    "controlled substance"
+  ],
+  "medtop:20000471": [
+    "botanical medicine",
+    "traditional medicine",
+    "phytomedicine"
+  ],
+  "medtop:20000462": [
+    "medical center",
+    "health facility",
+    "clinic"
+  ],
+  "medtop:20000465": [
+    "nutrition",
+    "eating plan",
+    "food therapy"
+  ],
+  "medtop:20000474": [
+    "Modern Medicine",
+    "Allopathic Medicine",
+    "Western Medicine"
+  ],
+  "medtop:20000483": [
+    "Medical Insurance",
+    "Health Coverage",
+    "Insurance Plans"
+  ],
+  "medtop:20000482": [
+    "Senior Health Insurance",
+    "Government Health Program",
+    "Elderly Health"
+  ],
+  "medtop:20000476": [
+    "Preventive Medicine",
+    "Public Health",
+    "Wellness Programs",
+    "Disease Prevention"
+  ],
+  "medtop:20000484": [
+    "Private Healthcare",
+    "For-Profit Healthcare",
+    "Commercial Healthcare"
+  ],
+  "medtop:20000473": [
+    "TCM",
+    "East Asian Medicine",
+    "Chinese Medicine"
+  ],
+  "medtop:20000475": [
+    "Exercise",
+    "Wellness",
+    "Fitness Programs"
+  ],
+  "medtop:20000479": [
+    "Health Regulations",
+    "Health Legislation",
+    "Public Health Policy"
+  ],
+  "medtop:20000481": [
+    "Healthcare Assistance",
+    "Government Health Insurance",
+    "Low-Income Health"
+  ],
+  "medtop:20000480": [
+    "Public Health Programs",
+    "State Health Care",
+    "National Health Care"
+  ],
+  "medtop:20000477": [
+    "Immunization",
+    "Vaccinations",
+    "Antigens"
+  ],
+  "medtop:20000478": [
+    "Medical Treatment",
+    "Rehabilitation",
+    "Patient Care"
+  ],
+  "medtop:20000491": [
+    "fertility treatment",
+    "reproductive technology",
+    "IVF",
+    "assisted reproduction"
+  ],
+  "medtop:20000486": [
+    "medical tests",
+    "diagnostic services",
+    "clinical trials",
+    "healthcare services"
+  ],
+  "medtop:20000497": [
+    "human achievements",
+    "success stories",
+    "award winners",
+    "record breakers"
+  ],
+  "medtop:20000495": [
+    "plant pathology",
+    "crop diseases",
+    "horticultural diseases",
+    "phytopathology"
+  ],
+  "medtop:20000492": [
+    "hospital staff",
+    "clinical personnel",
+    "medical professionals",
+    "healthcare workers"
+  ],
+  "medtop:20000494": [
+    "livestock disease",
+    "animal infections",
+    "veterinary diseases",
+    "zoonotic infections"
+  ],
+  "medtop:20000488": [
+    "geriatric care",
+    "elderly medicine",
+    "aging care",
+    "geriatric health"
+  ],
+  "medtop:20000487": [
+    "medical specialties",
+    "clinical specialties",
+    "surgical specialties",
+    "medical fields"
+  ],
+  "medtop:20000493": [
+    "animal health",
+    "veterinary medicine",
+    "zoonotic diseases",
+    "wildlife diseases"
+  ],
+  "medtop:20000485": [
+    "doctors",
+    "medical staff",
+    "healthcare",
+    "physicians"
+  ],
+  "medtop:20000489": [
+    "women's health",
+    "obstetrics",
+    "gynaecology",
+    "reproductive health"
+  ],
+  "medtop:20000490": [
+    "child health",
+    "pediatrics",
+    "neonatology",
+    "infant care"
+  ],
+  "medtop:20000500": [
+    "wildlife",
+    "animals",
+    "fauna",
+    "livestock"
+  ],
+  "medtop:20000501": [
+    "events",
+    "rituals",
+    "ceremonies",
+    "commissions"
+  ],
+  "medtop:20000502": [
+    "individuals",
+    "persons",
+    "humanities"
+  ],
+  "medtop:20000503": [
+    "errors",
+    "mistakes",
+    "accidents",
+    "incidents"
+  ],
+  "medtop:20000509": [
+    "work",
+    "labor",
+    "jobs"
+  ],
+  "medtop:20000510": [
+    "training",
+    "learnerships",
+    "traineeships",
+    "apprenticeships"
+  ],
+  "medtop:20000506": [
+    "monarchy",
+    "nobility",
+    "royal family"
+  ],
+  "medtop:20000498": [
+    "awards",
+    "recognitions",
+    "prizes",
+    "honors"
+  ],
+  "medtop:20000504": [
+    "elite",
+    "gentry",
+    "upper class"
+  ],
+  "medtop:20000499": [
+    "records",
+    "achievements",
+    "milestones",
+    "accomplishments"
+  ],
+  "medtop:20000505": [
+    "celebrities",
+    "famous people",
+    "public figures",
+    "stars"
+  ],
+  "medtop:20000507": [
+    "flora",
+    "botany",
+    "horticulture",
+    "plants"
+  ],
+  "medtop:20000511": [
+    "child labor",
+    "juvenile employment",
+    "child workforce",
+    "child exploitation"
+  ],
+  "medtop:20000520": [
+    "pensions",
+    "social welfare",
+    "income support"
+  ],
+  "medtop:20000514": [
+    "training",
+    "skills development",
+    "job training",
+    "professional development"
+  ],
+  "medtop:20000519": [
+    "employer benefits",
+    "benefits package",
+    "employee perks"
+  ],
+  "medtop:20000518": [
+    "wages",
+    "compensation",
+    "benefits",
+    "employee rewards"
+  ],
+  "medtop:20000516": [
+    "re-training",
+    "skills upgrade",
+    "job transition"
+  ],
+  "medtop:20000517": [
+    "professions",
+    "trades",
+    "callings"
+  ],
+  "medtop:20000522": [
+    "workplace safety",
+    "health and safety",
+    "OSH",
+    "workplace security"
+  ],
+  "medtop:20000521": [
+    "employment law",
+    "labor law",
+    "work laws",
+    "employment regulations"
+  ],
+  "medtop:20000515": [
+    "further training",
+    "specialized training",
+    "upskilling"
+  ],
+  "medtop:20000513": [
+    "company",
+    "business owner"
+  ],
+  "medtop:20000512": [
+    "worker",
+    "staff",
+    "personnel"
+  ],
+  "medtop:20000529": [
+    "labor disputes",
+    "workplace conflicts",
+    "employee disputes",
+    "union disputes"
+  ],
+  "medtop:20000525": [
+    "collective bargaining",
+    "union contracts",
+    "employment agreements",
+    "labor contracts"
+  ],
+  "medtop:20000530": [
+    "employee strikes",
+    "labor strikes",
+    "work stoppages",
+    "strike action"
+  ],
+  "medtop:20000533": [
+    "jobless",
+    "unemployment rate",
+    "labor statistics",
+    "workless"
+  ],
+  "medtop:20000531": [
+    "retirement planning",
+    "post-work life",
+    "end of career",
+    "senior years"
+  ],
+  "medtop:20000532": [
+    "retirement funds",
+    "pension schemes",
+    "retirement savings",
+    "employee pensions"
+  ],
+  "medtop:20000534": [
+    "staff reductions",
+    "workforce cuts",
+    "job losses",
+    "redundancies"
+  ],
+  "medtop:20000524": [
+    "labor relations",
+    "employee relations",
+    "workforce relations",
+    "union negotiations"
+  ],
+  "medtop:20000526": [
+    "healthcare contracts",
+    "benefits contracts",
+    "staff contracts",
+    "health care agreements"
+  ],
+  "medtop:20000528": [
+    "work rules",
+    "employment rules",
+    "staff regulations",
+    "workplace policies"
+  ],
+  "medtop:20000527": [
+    "wage contracts",
+    "salary agreements",
+    "remuneration contracts",
+    "pay scales"
+  ],
+  "medtop:20000523": [
+    "employment",
+    "workforce",
+    "labor supply",
+    "job market"
+  ],
+  "medtop:20000538": [
+    "recreation",
+    "leisure activities",
+    "spare time",
+    "pastimes"
+  ],
+  "medtop:20000541": [
+    "board games",
+    "tabletop games",
+    "strategy games",
+    "game boards"
+  ],
+  "medtop:20000542": [
+    "card games",
+    "playing cards",
+    "deck games",
+    "card contests"
+  ],
+  "medtop:20000545": [
+    "outdoor games",
+    "park games",
+    "field games",
+    "open air games"
+  ],
+  "medtop:20000547": [
+    "tile games",
+    "strategy tiles",
+    "tile contests",
+    "tile puzzles"
+  ],
+  "medtop:20000540": [
+    "competitive games",
+    "amusement games",
+    "play games",
+    "game contests"
+  ],
+  "medtop:20000539": [
+    "hobby clubs",
+    "interest groups",
+    "social clubs",
+    "associations"
+  ],
+  "medtop:20000543": [
+    "children's games",
+    "kids' games",
+    "youth games",
+    "play games"
+  ],
+  "medtop:20000535": [
+    "jobless benefits",
+    "unemployment assistance",
+    "workless",
+    "benefits"
+  ],
+  "medtop:20000544": [
+    "dice games",
+    "roll and play",
+    "dice contests",
+    "chance games"
+  ],
+  "medtop:20000536": [
+    "labor unions",
+    "trade unions",
+    "worker organizations",
+    "collective bargaining"
+  ],
+  "medtop:20000546": [
+    "logic puzzles",
+    "brain teasers",
+    "problem games",
+    "puzzle games"
+  ],
+  "medtop:20000548": [
+    "video games",
+    "gaming",
+    "interactive games",
+    "digital games"
+  ],
+  "medtop:20000556": [
+    "cafes",
+    "coffee shops",
+    "snack bars",
+    "dining establishments"
+  ],
+  "medtop:20000550": [
+    "pastimes",
+    "recreation",
+    "hobbies",
+    "leisure activities"
+  ],
+  "medtop:20000557": [
+    "nightclubs",
+    "dance clubs",
+    "music venues",
+    "entertainment venues"
+  ],
+  "medtop:20000558": [
+    "restaurants",
+    "eating establishments",
+    "food service",
+    "dining"
+  ],
+  "medtop:20000559": [
+    "sports grounds",
+    "athletic facilities",
+    "gymnasiums",
+    "stadiums"
+  ],
+  "medtop:20000549": [
+    "lottery",
+    "gambling",
+    "gaming lottery",
+    "number games"
+  ],
+  "medtop:20000553": [
+    "entertainment venues",
+    "sport venues",
+    "recreation areas",
+    "leisure spaces"
+  ],
+  "medtop:20000552": [
+    "official holiday",
+    "national holiday",
+    "celebration day"
+  ],
+  "medtop:20000554": [
+    "theme parks",
+    "amusement parks",
+    "family attractions",
+    "rides"
+  ],
+  "medtop:20000555": [
+    "pubs",
+    "bars",
+    "liquor stores",
+    "drinking establishments"
+  ],
+  "medtop:20000551": [
+    "vacation",
+    "break",
+    "time off"
+  ],
+  "medtop:20000566": [
+    "car enthusiasm",
+    "automotive passion",
+    "classic cars",
+    "vehicle interest"
+  ],
+  "medtop:20000571": [
+    "motorcycle interest",
+    "cycle enthusiasm",
+    "motorcycle passion"
+  ],
+  "medtop:20000562": [
+    "game hunting",
+    "wildlife management",
+    "big game"
+  ],
+  "medtop:20000565": [
+    "lifestyles",
+    "personal habits",
+    "consumer habits"
+  ],
+  "medtop:20000567": [
+    "cycling interest",
+    "manpowered cycles",
+    "bike interest"
+  ],
+  "medtop:20000564": [
+    "visitor",
+    "travel tourism",
+    "destination travel"
+  ],
+  "medtop:20000569": [
+    "natural food",
+    "sustainable food",
+    "farm food"
+  ],
+  "medtop:20000560": [
+    "outdoor activities",
+    "recreation",
+    "nature pursuits",
+    "wildlife"
+  ],
+  "medtop:20000568": [
+    "food enthusiasm",
+    "drink enthusiasm",
+    "culinary interest",
+    "gastronomy"
+  ],
+  "medtop:20000570": [
+    "house interest",
+    "home interest",
+    "residential",
+    "property"
+  ],
+  "medtop:20000561": [
+    "angling",
+    "sport fishing",
+    "lake fishing"
+  ],
+  "medtop:20000563": [
+    "travel",
+    "tourism",
+    "vacation",
+    "holiday"
+  ],
+  "medtop:20000581": [
+    "campaign funding",
+    "election finance",
+    "political donations",
+    "campaign costs"
+  ],
+  "medtop:20000580": [
+    "political races",
+    "campaigns",
+    "election campaigns",
+    "political activity"
+  ],
+  "medtop:20000577": [
+    "international elections",
+    "global elections",
+    "interstate elections",
+    "UN elections"
+  ],
+  "medtop:20000574": [
+    "elections",
+    "voting",
+    "ballots",
+    "political contests"
+  ],
+  "medtop:20000582": [
+    "political nominees",
+    "candidates",
+    "election candidates",
+    "contestants"
+  ],
+  "medtop:20000583": [
+    "preliminary elections",
+    "primary contests",
+    "party primaries",
+    "caucus elections"
+  ],
+  "medtop:20000576": [
+    "electoral systems",
+    "voting procedures",
+    "ballot systems",
+    "election rules"
+  ],
+  "medtop:20000579": [
+    "presidential elections",
+    "general elections",
+    "state elections"
+  ],
+  "medtop:20000584": [
+    "referendums",
+    "ballot initiatives",
+    "citizen votes",
+    "public votes"
+  ],
+  "medtop:20000578": [
+    "municipal elections",
+    "city elections",
+    "local government",
+    "district elections"
+  ],
+  "medtop:20000575": [
+    "recall elections",
+    "citizen initiatives",
+    "legislative proposals",
+    "ballot measures"
+  ],
+  "medtop:20000572": [
+    "trends",
+    "fashion",
+    "popular",
+    "current affairs"
+  ],
+  "medtop:20000590": [
+    "religious freedom",
+    "faith",
+    "belief systems"
+  ],
+  "medtop:20000596": [
+    "elected officials",
+    "government officials",
+    "political appointees"
+  ],
+  "medtop:20000587": [
+    "human rights",
+    "civil rights",
+    "fundamental liberties",
+    "basic rights"
+  ],
+  "medtop:20000586": [
+    "ballot",
+    "elections",
+    "polling"
+  ],
+  "medtop:20000588": [
+    "censorship",
+    "freedom of speech",
+    "speech restrictions",
+    "press freedom"
+  ],
+  "medtop:20000585": [
+    "state elections",
+    "provincial elections",
+    "local elections"
+  ],
+  "medtop:20000594": [
+    "civil service",
+    "public service",
+    "government service",
+    "public sector"
+  ],
+  "medtop:20000591": [
+    "press freedom",
+    "journalist protection",
+    "media rights"
+  ],
+  "medtop:20000593": [
+    "state",
+    "public administration",
+    "political authority"
+  ],
+  "medtop:20000592": [
+    "civil rights",
+    "rights",
+    "legal rights"
+  ],
+  "medtop:20000597": [
+    "constitution",
+    "supreme law",
+    "charter",
+    "fundamental law"
+  ],
+  "medtop:20000595": [
+    "public servant",
+    "civil servant",
+    "state employee"
+  ],
+  "medtop:20000598": [
+    "national defense",
+    "state security",
+    "defense policy",
+    "security affairs"
+  ],
+  "medtop:20000603": [
+    "defense measures",
+    "security protocols",
+    "protective measures",
+    "safeguards"
+  ],
+  "medtop:20000606": [
+    "executive branch",
+    "presidential administration",
+    "government executive",
+    "central government"
+  ],
+  "medtop:20000602": [
+    "arms trade",
+    "defense industry",
+    "armament",
+    "weaponry"
+  ],
+  "medtop:20000607": [
+    "fiscal policy",
+    "government spending",
+    "budget allocation",
+    "public expenditure"
+  ],
+  "medtop:20000601": [
+    "military hardware",
+    "defense equipment",
+    "armed forces gear",
+    "weapons systems"
+  ],
+  "medtop:20000604": [
+    "strategic security",
+    "border security",
+    "national protection",
+    "state defense"
+  ],
+  "medtop:20000599": [
+    "military",
+    "defense forces",
+    "national guard"
+  ],
+  "medtop:20000609": [
+    "ministries",
+    "government agencies",
+    "department of state",
+    "federal agencies"
+  ],
+  "medtop:20000605": [
+    "intelligence gathering",
+    "covert operations",
+    "spy activity",
+    "signals intelligence"
+  ],
+  "medtop:20000608": [
+    "taxation",
+    "government finance",
+    "public accounting",
+    "fiscal management"
+  ],
+  "medtop:20000600": [
+    "veterans",
+    "military retirees",
+    "service members",
+    "armed forces personnel"
+  ],
+  "medtop:20000619": [
+    "citizen safety",
+    "public safety",
+    "security",
+    "protection"
+  ],
+  "medtop:20000620": [
+    "tax policy",
+    "taxation",
+    "revenue",
+    "fiscal policy"
+  ],
+  "medtop:20000612": [
+    "local government",
+    "municipal authority",
+    "city council",
+    "county government"
+  ],
+  "medtop:20000616": [
+    "lower house",
+    "house of representatives",
+    "deputy",
+    "chamber"
+  ],
+  "medtop:20000610": [
+    "chief executive",
+    "state leader",
+    "national leader"
+  ],
+  "medtop:20000611": [
+    "trial",
+    "charges",
+    "removal"
+  ],
+  "medtop:20000617": [
+    "upper house",
+    "senate",
+    "chamber",
+    "advisor"
+  ],
+  "medtop:20000614": [
+    "federal government",
+    "central government",
+    "state government"
+  ],
+  "medtop:20000618": [
+    "state government",
+    "provincial government",
+    "regional council"
+  ],
+  "medtop:20000613": [
+    "minister",
+    "secretary of state",
+    "government official",
+    "cabinet member"
+  ],
+  "medtop:20000621": [
+    "state policy",
+    "public policy",
+    "governance"
+  ],
+  "medtop:20000615": [
+    "legislature",
+    "parliament",
+    "congress",
+    "assembly"
+  ],
+  "medtop:20000632": [
+    "firearm regulation",
+    "weapons control",
+    "gun control",
+    "firearms policy"
+  ],
+  "medtop:20000629": [
+    "indigenous affairs",
+    "native policy",
+    "aboriginal policy",
+    "first nations policy"
+  ],
+  "medtop:20000626": [
+    "domestic policy",
+    "internal affairs",
+    "home policy",
+    "public order"
+  ],
+  "medtop:20000625": [
+    "state firms",
+    "public corporations",
+    "government holdings",
+    "SOEs"
+  ],
+  "medtop:20000630": [
+    "social security",
+    "welfare programs",
+    "pension schemes",
+    "benefit systems"
+  ],
+  "medtop:20000631": [
+    "data collection",
+    "information gathering",
+    "privacy protocols",
+    "personal data"
+  ],
+  "medtop:20000624": [
+    "privatization",
+    "private sector",
+    "market liberalization",
+    "de-nationalization"
+  ],
+  "medtop:20000628": [
+    "urban development",
+    "housing policy",
+    "land use planning",
+    "city planning"
+  ],
+  "medtop:20000627": [
+    "data protection",
+    "privacy regulations",
+    "information security",
+    "data governance"
+  ],
+  "medtop:20000633": [
+    "planning consultations",
+    "public inquiries",
+    "development reviews",
+    "planning hearings"
+  ],
+  "medtop:20000623": [
+    "nationalization",
+    "state control",
+    "public ownership",
+    "government takeover"
+  ],
+  "medtop:20000634": [
+    "immigration rules",
+    "border control",
+    "visa policies",
+    "migration policy"
+  ],
+  "medtop:20000643": [
+    "foreign assistance",
+    "development aid",
+    "humanitarian aid",
+    "donor nations"
+  ],
+  "medtop:20000642": [
+    "trade penalties",
+    "economic restrictions",
+    "sanctions regimes",
+    "embargoes"
+  ],
+  "medtop:20000638": [
+    "state relations",
+    "interstate affairs",
+    "foreign policy",
+    "national diplomacy"
+  ],
+  "medtop:20000635": [
+    "nuclear strategy",
+    "atomic policy",
+    "weapons programs",
+    "nuclear arms"
+  ],
+  "medtop:20000637": [
+    "food safety",
+    "food standards",
+    "food legislation",
+    "food regulations"
+  ],
+  "medtop:20000645": [
+    "asylum seekers",
+    "displaced persons",
+    "refugee populations",
+    "stateless individuals"
+  ],
+  "medtop:20000646": [
+    "civil society organizations",
+    "non-state actors",
+    "advocacy groups",
+    "public interest groups"
+  ],
+  "medtop:20000639": [
+    "statecraft",
+    "diplomatic negotiations",
+    "treaty talks",
+    "international dialogue"
+  ],
+  "medtop:20000640": [
+    "presidential summits",
+    "state meetings",
+    "foreign gatherings",
+    "heads of state meetings"
+  ],
+  "medtop:20000641": [
+    "international agreements",
+    "treaty obligations",
+    "conventions",
+    "compacts"
+  ],
+  "medtop:20000636": [
+    "industry regulation",
+    "corporate governance",
+    "regulatory oversight",
+    "business rules"
+  ],
+  "medtop:20000644": [
+    "multilateral bodies",
+    "international agencies",
+    "global organizations",
+    "intergovernmental bodies"
+  ],
+  "medtop:20000658": [
+    "Buddhist practice",
+    "Theravada",
+    "Mahayana",
+    "Zen"
+  ],
+  "medtop:20000648": [
+    "political detainees",
+    "dissidents",
+    "political prisoners",
+    "protestors"
+  ],
+  "medtop:20000652": [
+    "state formation",
+    "political evolution",
+    "governance history",
+    "political change"
+  ],
+  "medtop:20000649": [
+    "electoral process",
+    "policy making",
+    "governance",
+    "political action"
+  ],
+  "medtop:20000653": [
+    "government structure",
+    "political framework",
+    "state governance",
+    "political order"
+  ],
+  "medtop:20000650": [
+    "government relations",
+    "lobbying efforts",
+    "advocacy",
+    "political influence"
+  ],
+  "medtop:20000657": [
+    "religious ideologies",
+    "worldviews",
+    "moral codes",
+    "faith systems"
+  ],
+  "medtop:20000659": [
+    "Christian theology",
+    "orthodox faith",
+    "Catholicism",
+    "Protestantism"
+  ],
+  "medtop:20000647": [
+    "government collapse",
+    "political instability",
+    "state crisis",
+    "regime change"
+  ],
+  "medtop:20000651": [
+    "political groups",
+    "campaigns",
+    "political organizations",
+    "interest groups"
+  ],
+  "medtop:20000655": [
+    "authoritarian rule",
+    "single-party state",
+    "military regimes",
+    "dictatorial control"
+  ],
+  "medtop:20000654": [
+    "representative government",
+    "popular sovereignty",
+    "electoral systems",
+    "rule of law"
+  ],
+  "medtop:20000663": [
+    "Eastern Orthodoxy",
+    "Oriental Orthodoxy",
+    "Byzantine Rite",
+    "Greek Orthodoxy"
+  ],
+  "medtop:20000671": [
+    "Roman Catholic Church",
+    "Catholicism",
+    "Catholicism Church",
+    "Catholic dogma"
+  ],
+  "medtop:20000670": [
+    "Calvinism",
+    "Reformed theology",
+    "Geneva theology",
+    "Zwinglianism"
+  ],
+  "medtop:20000662": [
+    "Old Rite",
+    "Old Catholicism",
+    "Anti-papal",
+    "Catholic schism"
+  ],
+  "medtop:20000661": [
+    "Mormon Church",
+    "Latter Day Saints",
+    "The Church of Jesus Christ",
+    "JS Church"
+  ],
+  "medtop:20000666": [
+    "Baptist churches",
+    "Baptist congregations",
+    "Adult baptism",
+    "Baptismal practice"
+  ],
+  "medtop:20000664": [
+    "Reformation",
+    "Protestant movement",
+    "Reform movement",
+    "Denominations"
+  ],
+  "medtop:20000665": [
+    "Anglican Communion",
+    "Episcopalian",
+    "High Church",
+    "Church of England"
+  ],
+  "medtop:20000668": [
+    "Mennonite churches",
+    "Mennonite faith",
+    "Anabaptist",
+    "Pacifist Christian"
+  ],
+  "medtop:20000660": [
+    "Christian unity",
+    "Ecclesiology",
+    "Interfaith relations",
+    "Church relations"
+  ],
+  "medtop:20000667": [
+    "Lutheranism",
+    "Lutheran churches",
+    "Lutheran theology",
+    "Martin Luther"
+  ],
+  "medtop:20000669": [
+    "Wesleyan",
+    "Methodist Church",
+    "Wesleyanism",
+    "John Wesley"
+  ],
+  "medtop:20000677": [
+    "Islamic belief"
+  ],
+  "medtop:20000676": [
+    "Hindu faith"
+  ],
+  "medtop:20000674": [
+    "new religious movement"
+  ],
+  "medtop:20000672": [
+    "ecclesiastical agreement"
+  ],
+  "medtop:20000675": [
+    "lodge system"
+  ],
+  "medtop:20000679": [
+    "Jewish faith"
+  ],
+  "medtop:20000680": [
+    "animism"
+  ],
+  "medtop:20000678": [
+    "Jain traditions"
+  ],
+  "medtop:20000682": [
+    "Hubbard teachings"
+  ],
+  "medtop:20000683": [
+    "Shinto practices"
+  ],
+  "medtop:20000673": [
+    "Confucian thought"
+  ],
+  "medtop:20000681": [],
+  "medtop:20000684": [],
+  "medtop:20000687": [
+    "Interfaith dialogue"
+  ],
+  "medtop:20000693": [],
+  "medtop:20000690": [
+    "Religious holidays"
+  ],
+  "medtop:20000686": [],
+  "medtop:20000685": [],
+  "medtop:20000688": [],
+  "medtop:20000691": [],
+  "medtop:20000689": [
+    "Religious events"
+  ],
+  "medtop:20000692": [],
+  "medtop:20000694": [],
+  "medtop:20000695": [],
+  "medtop:20000707": [
+    "Islamic scripture",
+    "Quran text",
+    "Koran",
+    "Holy Quran"
+  ],
+  "medtop:20000701": [
+    "religious edifice",
+    "place of worship",
+    "sacred building",
+    "temple structure"
+  ],
+  "medtop:20000696": [
+    "religious ceremony",
+    "worship practice",
+    "sacred rite",
+    "faith ritual"
+  ],
+  "medtop:20000697": [
+    "place of worship",
+    "religious building",
+    "house of worship",
+    "faith center"
+  ],
+  "medtop:20000704": [
+    "Catholic head",
+    "pontiff",
+    "Pope Benedict XVI",
+    "Supreme Pontiff"
+  ],
+  "medtop:20000705": [
+    "holy scripture",
+    "sacred text",
+    "religious canon",
+    "faith document"
+  ],
+  "medtop:20000698": [
+    "Christian church",
+    "congregation hall",
+    "place of Christian worship",
+    "church building"
+  ],
+  "medtop:20000702": [
+    "faith and state",
+    "religion government",
+    "clergy-state relations",
+    "religious policy"
+  ],
+  "medtop:20000700": [
+    "Jewish place of worship",
+    "synagogue building",
+    "temple",
+    "shul"
+  ],
+  "medtop:20000703": [
+    "religious figure",
+    "faith leader",
+    "clergy member",
+    "spiritual leader"
+  ],
+  "medtop:20000699": [
+    "Islamic place of worship",
+    "mosque building",
+    "masjid",
+    "prayer hall"
+  ],
+  "medtop:20000706": [
+    "Christian scripture",
+    "Bible text",
+    "Holy Bible",
+    "Scripture"
+  ],
+  "medtop:20000718": [
+    "space science",
+    "celestial mechanics",
+    "astrophysics",
+    "planetary science"
+  ],
+  "medtop:20000719": [
+    "cell biology",
+    "organismal biology",
+    "zoology",
+    "evolutionary biology"
+  ],
+  "medtop:20000714": [
+    "animal health",
+    "veterinary science",
+    "zoonotic medicine",
+    "animal care"
+  ],
+  "medtop:20000713": [
+    "drug research",
+    "pharmaceutical science",
+    "pharmacokinetics",
+    "drug development"
+  ],
+  "medtop:20000712": [
+    "dental care",
+    "oral health",
+    "dental medicine",
+    "dental practice"
+  ],
+  "medtop:20000708": [
+    "Jewish scripture",
+    "Hebrew Bible",
+    "Torah scroll",
+    "Halakha"
+  ],
+  "medtop:20000716": [
+    "mechanical systems",
+    "machine design",
+    "engineering mechanics",
+    "industrial design"
+  ],
+  "medtop:20000717": [
+    "physical science",
+    "earth science",
+    "scientific research",
+    "scientific study"
+  ],
+  "medtop:20000710": [
+    "medical research",
+    "clinical science",
+    "health science",
+    "biological science"
+  ],
+  "medtop:20000720": [
+    "plant science",
+    "phytology",
+    "flora",
+    "vegetation science"
+  ],
+  "medtop:20000711": [
+    "genetic engineering",
+    "bioengineering",
+    "molecular biology",
+    "applied biology"
+  ],
+  "medtop:20000715": [
+    "mathematical science",
+    "pure math",
+    "algebra",
+    "calculus"
+  ],
+  "medtop:20000727": [
+    "earth science",
+    "geomorphology",
+    "rock science"
+  ],
+  "medtop:20000724": [
+    "animal science",
+    "wildlife",
+    "fauna"
+  ],
+  "medtop:20000731": [
+    "fundamental science",
+    "quantum physics",
+    "classical physics"
+  ],
+  "medtop:20000722": [
+    "paleontology",
+    "fossil record",
+    "paleo",
+    "ancient life"
+  ],
+  "medtop:20000730": [
+    "weather science",
+    "atmospheric science",
+    "climate science"
+  ],
+  "medtop:20000732": [
+    "magnetic fields",
+    "electrical science",
+    "EM theory"
+  ],
+  "medtop:20000728": [
+    "plant science",
+    "crop science",
+    "landscaping"
+  ],
+  "medtop:20000721": [
+    "DNA",
+    "gene science",
+    "heredity"
+  ],
+  "medtop:20000725": [
+    "chemical science",
+    "molecular science",
+    "compound study"
+  ],
+  "medtop:20000729": [
+    "oceanography",
+    "aquatic science",
+    "sea biology"
+  ],
+  "medtop:20000723": [
+    "human function",
+    "organ systems",
+    "biofunction"
+  ],
+  "medtop:20000726": [
+    "universe study",
+    "astronomy",
+    "space science"
+  ],
+  "medtop:20000740": [
+    "research publishing",
+    "academic publishing",
+    "scientific journals"
+  ],
+  "medtop:20000743": [
+    "cultural anthropology",
+    "social anthropology",
+    "human evolution"
+  ],
+  "medtop:20000736": [
+    "technological innovation",
+    "R&D",
+    "new technologies"
+  ],
+  "medtop:20000741": [
+    "research institute",
+    "academic institution",
+    "science center"
+  ],
+  "medtop:20000739": [
+    "astronautical research",
+    "planetary exploration",
+    "space missions"
+  ],
+  "medtop:20000744": [
+    "paleoarchaeology",
+    "historical archaeology",
+    "artifact research"
+  ],
+  "medtop:20000733": [
+    "atomic physics",
+    "nucleon studies",
+    "nucleus research"
+  ],
+  "medtop:20000735": [
+    "research studies",
+    "scientific investigation",
+    "research projects"
+  ],
+  "medtop:20000738": [
+    "research expeditions",
+    "scientific surveys",
+    "exploration research"
+  ],
+  "medtop:20000742": [
+    "human sciences",
+    "behavioral sciences",
+    "social studies"
+  ],
+  "medtop:20000734": [
+    "high energy physics",
+    "elementary particle research",
+    "quantum field theory"
+  ],
+  "medtop:20000737": [
+    "clinical trials",
+    "health research",
+    "biomedical research"
+  ],
+  "medtop:20000754": [
+    "social studies",
+    "social research",
+    "community studies"
+  ],
+  "medtop:20000745": [
+    "finance",
+    "market analysis",
+    "business"
+  ],
+  "medtop:20000753": [
+    "behavioral science",
+    "cognitive science",
+    "mental health"
+  ],
+  "medtop:20000749": [
+    "law",
+    "legal studies",
+    "jurisprudence",
+    "statutes"
+  ],
+  "medtop:20000746": [
+    "earth science",
+    "cartography",
+    "spatial analysis"
+  ],
+  "medtop:20000752": [
+    "government studies",
+    "public policy",
+    "political theory"
+  ],
+  "medtop:20000756": [
+    "applied science",
+    "industrial technology",
+    "engineering design"
+  ],
+  "medtop:20000755": [
+    "calibration",
+    "measurement standards",
+    "instrumentation"
+  ],
+  "medtop:20000748": [
+    "data science",
+    "knowledge management",
+    "information systems"
+  ],
+  "medtop:20000751": [
+    "theoretical studies",
+    "ethics",
+    "logic"
+  ],
+  "medtop:20000747": [
+    "historical studies",
+    "chronology",
+    "past events"
+  ],
+  "medtop:20000750": [
+    "language studies",
+    "semantics",
+    "phonetics"
+  ],
+  "medtop:20000759": [
+    "agri tech",
+    "farm tech"
+  ],
+  "medtop:20000768": [
+    "local areas",
+    "neighborhoods"
+  ],
+  "medtop:20000765": [
+    "micro tech",
+    "micro systems"
+  ],
+  "medtop:20000762": [
+    "biometrics",
+    "facial recognition"
+  ],
+  "medtop:20000764": [
+    "materials research",
+    "materials analysis"
+  ],
+  "medtop:20000761": [
+    "electrical engineering",
+    "circuitry"
+  ],
+  "medtop:20000766": [
+    "molecular tech",
+    "nano systems"
+  ],
+  "medtop:20000763": [
+    "computer science",
+    "IT systems"
+  ],
+  "medtop:20000760": [
+    "structural engineering",
+    "civil works"
+  ],
+  "medtop:20000757": [
+    "aviation",
+    "aircraft",
+    "spacecraft"
+  ],
+  "medtop:20000758": [
+    "rocket science",
+    "propulsion"
+  ],
+  "medtop:20000769": [
+    "online networks",
+    "social platforms"
+  ],
+  "medtop:20000778": [
+    "faith-based discrimination",
+    "sectarian discrimination",
+    "religious bias"
+  ],
+  "medtop:20000775": [
+    "prejudice",
+    "social inequality",
+    "bias"
+  ],
+  "medtop:20000780": [
+    "family structure",
+    "household",
+    "kinship",
+    "family units"
+  ],
+  "medtop:20000776": [
+    "elder abuse",
+    "generational bias",
+    "age discrimination"
+  ],
+  "medtop:20000777": [
+    "racial discrimination",
+    "ethnic discrimination",
+    "racial bias"
+  ],
+  "medtop:20000774": [
+    "population counts",
+    "census figures",
+    "population surveys",
+    "demographic data"
+  ],
+  "medtop:20000773": [
+    "irregular migration",
+    "unauthorized immigration",
+    "undocumented migration"
+  ],
+  "medtop:20000770": [
+    "population trends",
+    "census data",
+    "population statistics"
+  ],
+  "medtop:20000771": [
+    "migration patterns",
+    "in-migration",
+    "emigration"
+  ],
+  "medtop:20000781": [
+    "child placement",
+    "legal adoption",
+    "parental adoption"
+  ],
+  "medtop:20000772": [
+    "out-migration",
+    "exodus",
+    "migration"
+  ],
+  "medtop:20000779": [
+    "gender discrimination",
+    "patriarchy",
+    "sex bias"
+  ],
+  "medtop:20000785": [
+    "induced abortion",
+    "termination",
+    "pregnancy loss",
+    "abortions"
+  ],
+  "medtop:20000783": [
+    "divorce proceedings",
+    "marriage dissolution",
+    "separation",
+    "divorces"
+  ],
+  "medtop:20000787": [
+    "child rearing",
+    "parent care",
+    "child development",
+    "family support"
+  ],
+  "medtop:20000784": [
+    "fertility",
+    "reproductive health",
+    "contraception"
+  ],
+  "medtop:20000782": [
+    "relationships",
+    "dating",
+    "partnerships",
+    "courtship"
+  ],
+  "medtop:20000786": [
+    "weddings",
+    "marriages",
+    "ceremonies",
+    "union"
+  ],
+  "medtop:20000790": [
+    "youth",
+    "young people",
+    "minors"
+  ],
+  "medtop:20000792": [
+    "LGBT",
+    "sexual orientation",
+    "gender identity",
+    "queer"
+  ],
+  "medtop:20000793": [
+    "sex classification",
+    "gender identity",
+    "gender roles",
+    "sex determination"
+  ],
+  "medtop:20000789": [
+    "young adults",
+    "mature individuals",
+    "elderly"
+  ],
+  "medtop:20000791": [
+    "impairments",
+    "physical disabilities",
+    "mental disabilities",
+    "special needs"
+  ],
+  "medtop:20000788": [
+    "population groups",
+    "social demographics",
+    "age groups",
+    "cohorts"
+  ],
+  "medtop:20000795": [
+    "minorities",
+    "ethnic groups",
+    "cultural minorities",
+    "minority populations"
+  ],
+  "medtop:20000794": [
+    "newborns",
+    "babies",
+    "young children"
+  ],
+  "medtop:20000804": [
+    "substance abuse",
+    "dependence",
+    "compulsive behaviour"
+  ],
+  "medtop:20000801": [
+    "economic hardship",
+    "financial distress",
+    "low income"
+  ],
+  "medtop:20000803": [
+    "abuse",
+    "harmful behaviour",
+    "domestic abuse",
+    "violent behaviour"
+  ],
+  "medtop:20000802": [
+    "social issues",
+    "public concerns",
+    "community challenges",
+    "societal problems"
+  ],
+  "medtop:20000805": [
+    "juvenile crime",
+    "youth crime",
+    "minor offenses",
+    "adolescent delinquency"
+  ],
+  "medtop:20000799": [
+    "social issues",
+    "social problems",
+    "socioeconomic issues",
+    "community issues"
+  ],
+  "medtop:20000797": [
+    "elderly",
+    "older adults",
+    "geriatric population"
+  ],
+  "medtop:20000800": [
+    "street populations",
+    "no fixed abode",
+    "housing crisis"
+  ],
+  "medtop:20000798": [
+    "adolescents",
+    "youth",
+    "young adults"
+  ],
+  "medtop:20000796": [
+    "radiation victims",
+    "nuclear victims",
+    "atomic bomb victims",
+    "antinuclear casualties"
+  ],
+  "medtop:20000814": [
+    "moral codes",
+    "moral standards",
+    "ethical conduct"
+  ],
+  "medtop:20000806": [
+    "sex work",
+    "sexual exploitation",
+    "pimping"
+  ],
+  "medtop:20000816": [
+    "sexual behavior",
+    "sexual conduct",
+    "sexual activity",
+    "intimate behavior"
+  ],
+  "medtop:20000817": [
+    "social assistance",
+    "public assistance",
+    "need-based aid"
+  ],
+  "medtop:20000812": [
+    "self-deliverance",
+    "physician-assisted death",
+    "PAD"
+  ],
+  "medtop:20000811": [
+    "assisted death",
+    "voluntary euthanasia",
+    "mercy killing"
+  ],
+  "medtop:20000815": [
+    "adult films",
+    "explicit content",
+    "obscene material"
+  ],
+  "medtop:20000808": [
+    "morals",
+    "ethics",
+    "principles"
+  ],
+  "medtop:20000809": [
+    "fraud",
+    "abuse of power",
+    "misconduct"
+  ],
+  "medtop:20000807": [
+    "human trafficking",
+    "servitude",
+    "forced labor"
+  ],
+  "medtop:20000813": [
+    "self-harm",
+    "completed suicide",
+    "fatal suicide"
+  ],
+  "medtop:20000810": [
+    "death",
+    "dying",
+    "end of life",
+    "bereavement"
+  ],
+  "medtop:20000818": [
+    "philanthropy",
+    "aid",
+    "donations"
+  ],
+  "medtop:20000828": [
+    "cross-country",
+    "trail running",
+    "off-road running",
+    "long-distance running"
+  ],
+  "medtop:20000823": [
+    "gridiron",
+    "football",
+    "NCAA football"
+  ],
+  "medtop:20000826": [
+    "traditional archery",
+    "historical archery",
+    "bow shooting"
+  ],
+  "medtop:20000820": [
+    "community programs",
+    "public welfare",
+    "social support"
+  ],
+  "medtop:20000827": [
+    "track and field",
+    "running events",
+    "sports competitions"
+  ],
+  "medtop:20000825": [
+    "crossbow",
+    "projectile weapons",
+    "bow shooting"
+  ],
+  "medtop:20000830": [
+    "shot put",
+    "throwing events",
+    "track and field"
+  ],
+  "medtop:20000819": [
+    "elder care",
+    "chronic care",
+    "disability services"
+  ],
+  "medtop:20000824": [
+    "target shooting",
+    "bow and arrow",
+    "compound archery"
+  ],
+  "medtop:20000822": [
+    "sports",
+    "organized sports",
+    "competitive sports",
+    "athletic events"
+  ],
+  "medtop:20000829": [
+    "multi-event",
+    "track and field events",
+    "athletic competition"
+  ],
+  "medtop:20000835": [
+    "javelin",
+    "throwing event",
+    "track and field",
+    "athletics throw"
+  ],
+  "medtop:20000836": [
+    "long distance",
+    "marathon",
+    "endurance run",
+    "track and field"
+  ],
+  "medtop:20000833": [
+    "bar jump",
+    "vertical jump",
+    "athletics hurdle"
+  ],
+  "medtop:20000842": [
+    "relay",
+    "team relay",
+    "track relay",
+    "running relay"
+  ],
+  "medtop:20000839": [
+    "five events",
+    "track and field",
+    "multi-event"
+  ],
+  "medtop:20000831": [
+    "hammer",
+    "throwing event",
+    "track and field",
+    "athletics throw"
+  ],
+  "medtop:20000832": [
+    "seven events",
+    "track and field",
+    "multi-event"
+  ],
+  "medtop:20000838": [
+    "middle distance",
+    "track and field",
+    "running event"
+  ],
+  "medtop:20000834": [
+    "hurdle race",
+    "sprint hurdles",
+    "track hurdles"
+  ],
+  "medtop:20000840": [
+    "vaulting event",
+    "track and field",
+    "athletics vault"
+  ],
+  "medtop:20000837": [
+    "distance jump",
+    "track and field",
+    "athletics jump"
+  ],
+  "medtop:20000841": [
+    "walking race",
+    "athletics walking",
+    "pedestrian race"
+  ],
+  "medtop:20000846": [
+    "AFL",
+    "rugby football",
+    "football"
+  ],
+  "medtop:20000851": [
+    "basket ball",
+    "court sport",
+    "ring sport"
+  ],
+  "medtop:20000850": [
+    "softball",
+    "youth baseball",
+    "baseball"
+  ],
+  "medtop:20000854": [
+    "sled racing",
+    "winter sliding",
+    "ice racing"
+  ],
+  "medtop:20000852": [
+    "ski shooting",
+    "cross country shooting",
+    "winter sport"
+  ],
+  "medtop:20000844": [
+    "sprint",
+    "short race",
+    "running event",
+    "athletics"
+  ],
+  "medtop:20000843": [
+    "track and field",
+    "field event",
+    "athletics"
+  ],
+  "medtop:20000845": [
+    "field event",
+    "athletics",
+    "track event"
+  ],
+  "medtop:20000848": [
+    "ice football",
+    "outdoor ice hockey",
+    "ice ball"
+  ],
+  "medtop:20000853": [
+    "pool",
+    "cue sport",
+    "table sport"
+  ],
+  "medtop:20000849": [
+    "base ball",
+    "diamond sport",
+    "round ball"
+  ],
+  "medtop:20000847": [
+    "table tennis",
+    "shuttlecock game",
+    "racquet sport"
+  ],
+  "medtop:20000863": [
+    "light-heavyweight",
+    "second heavyweight",
+    "heavyweight division",
+    "intermediate weight"
+  ],
+  "medtop:20000857": [
+    "bantamweight",
+    "junior featherweight",
+    "featherweight class",
+    "lightweight division"
+  ],
+  "medtop:20000855": [
+    "petanque",
+    "lawn bowls",
+    "bocce"
+  ],
+  "medtop:20000858": [
+    "cruiserweight",
+    "middleweight class",
+    "heavyweight division",
+    "upperweight"
+  ],
+  "medtop:20000866": [
+    "lightweight",
+    "junior middleweight",
+    "middleweight class",
+    "middleweight division"
+  ],
+  "medtop:20000862": [
+    "light flyweight",
+    "junior flyweight",
+    "strawweight",
+    "lightest weight"
+  ],
+  "medtop:20000865": [
+    "light-welterweight",
+    "second light heavyweight",
+    "lightweight division",
+    "welterweight"
+  ],
+  "medtop:20000856": [
+    "pugilism",
+    "combat sports",
+    "ring sport"
+  ],
+  "medtop:20000861": [
+    "heavyweight",
+    "super middleweight",
+    "middleweight class",
+    "men's heavyweight"
+  ],
+  "medtop:20000859": [
+    "featherweight",
+    "lightweight class",
+    "junior middleweight",
+    "light division"
+  ],
+  "medtop:20000860": [
+    "flyweight",
+    "junior lightweight",
+    "lightweight division",
+    "lowerweight"
+  ],
+  "medtop:20000864": [
+    "light-middleweight",
+    "second middleweight",
+    "middleweight class",
+    "middleweight division"
+  ],
+  "medtop:20000875": [
+    "corrida",
+    "matador",
+    "bull"
+  ],
+  "medtop:20000867": [
+    "middleweight",
+    "fighters",
+    "weight class",
+    "division"
+  ],
+  "medtop:20000870": [
+    "super featherweight",
+    "fighters",
+    "weight class",
+    "division"
+  ],
+  "medtop:20000868": [
+    "strawweight",
+    "fighters",
+    "weight class",
+    "division"
+  ],
+  "medtop:20000873": [
+    "super middleweight",
+    "fighters",
+    "weight class",
+    "division"
+  ],
+  "medtop:20000871": [
+    "super flyweight",
+    "fighters",
+    "weight class",
+    "division"
+  ],
+  "medtop:20000874": [
+    "welterweight",
+    "fighters",
+    "weight class",
+    "division"
+  ],
+  "medtop:20000876": [
+    "football",
+    "gridiron",
+    "team sport"
+  ],
+  "medtop:20000869": [
+    "super bantamweight",
+    "fighters",
+    "weight class",
+    "division"
+  ],
+  "medtop:20000878": [
+    "C1",
+    "single canoe",
+    "kayak",
+    "canoe"
+  ],
+  "medtop:20000877": [
+    "kayaking",
+    "canoe race",
+    "flatwater"
+  ],
+  "medtop:20000872": [
+    "super heavyweight",
+    "fighters",
+    "weight class",
+    "division"
+  ],
+  "medtop:20000879": [
+    "canoe",
+    "kayak",
+    "dinghy",
+    "boat"
+  ],
+  "medtop:20000884": [
+    "climbing",
+    "mountaineering",
+    "rock climbing",
+    "hill climbing"
+  ],
+  "medtop:20000886": [
+    "alpine climbing",
+    "mountain ascent",
+    "peak climbing",
+    "high altitude"
+  ],
+  "medtop:20000889": [
+    "mallet sport",
+    "hoop sport",
+    "lawn game"
+  ],
+  "medtop:20000890": [
+    "stone sport",
+    "ice sport",
+    "sliding"
+  ],
+  "medtop:20000888": [
+    "baseball",
+    "batting",
+    "wicket"
+  ],
+  "medtop:20000882": [
+    "canoe racing",
+    "pontoons",
+    "boat regatta",
+    "watercraft"
+  ],
+  "medtop:20000880": [
+    "canoe",
+    "kayak",
+    "dinghy",
+    "boat"
+  ],
+  "medtop:20000887": [
+    "artificial climbing",
+    "wall climbing",
+    "indoor climbing"
+  ],
+  "medtop:20000881": [
+    "sail canoe",
+    "water sailing",
+    "boat sailing"
+  ],
+  "medtop:20000885": [
+    "glacier climbing",
+    "icefall",
+    "frozen climb"
+  ],
+  "medtop:20000883": [
+    "fishing",
+    "casting",
+    "baiting",
+    "angling"
+  ],
+  "medtop:20000896": [
+    "bicycle ball",
+    "team bicycle sport",
+    "wheeled sport"
+  ],
+  "medtop:20000901": [
+    "sprint cycling",
+    "moped sprint",
+    "paced sprint"
+  ],
+  "medtop:20000902": [
+    "team madison",
+    "relay cycling",
+    "points cycling"
+  ],
+  "medtop:20000894": [
+    "obstacle cycling",
+    "cross-country",
+    "circuit racing"
+  ],
+  "medtop:20000898": [
+    "cross country cycling",
+    "mud cycling",
+    "stage cycling"
+  ],
+  "medtop:20000893": [
+    "arena cycling",
+    "bicycle competition",
+    "team cycling"
+  ],
+  "medtop:20000899": [
+    "pursuit cycling",
+    "track pursuit",
+    "cycling pursuit"
+  ],
+  "medtop:20000900": [
+    "time trial",
+    "cycling time trial",
+    "clock race"
+  ],
+  "medtop:20000891": [
+    "curling",
+    "ice sport",
+    "stone sport",
+    "alpine sport"
+  ],
+  "medtop:20000897": [
+    "track sprint",
+    "timed sprint",
+    "cycling sprint"
+  ],
+  "medtop:20000895": [
+    "bicycle motocross",
+    "off-road cycling",
+    "motocross racing"
+  ],
+  "medtop:20000892": [
+    "bike racing",
+    "bicycle sport",
+    "road cycling"
+  ],
+  "medtop:20000912": [
+    "darts game",
+    "darts competition",
+    "board darts",
+    "target darts"
+  ],
+  "medtop:20000904": [
+    "points race",
+    "lap race",
+    "sprint cycling",
+    "circuit race"
+  ],
+  "medtop:20000905": [
+    "road race",
+    "highway cycling",
+    "open road cycling"
+  ],
+  "medtop:20000907": [
+    "team sprint",
+    "track sprint",
+    "cycle sprint",
+    "team cycling race"
+  ],
+  "medtop:20000908": [
+    "team pursuit",
+    "track pursuit",
+    "cycling pursuit",
+    "team time trial"
+  ],
+  "medtop:20000909": [
+    "time trial",
+    "cycling time trial",
+    "individual time trial",
+    "road time trial"
+  ],
+  "medtop:20000910": [
+    "track cycling",
+    "velodrome race",
+    "cycling track",
+    "track race"
+  ],
+  "medtop:20000913": [
+    "diving sport",
+    "aquatic diving",
+    "platform diving",
+    "diving competition"
+  ],
+  "medtop:20000906": [
+    "stage race",
+    "road stage race",
+    "multi-stage race",
+    "cycling stage"
+  ],
+  "medtop:20000911": [
+    "dance competition",
+    "competitive dance",
+    "dance sport",
+    "performance dance"
+  ],
+  "medtop:20000914": [
+    "high diving",
+    "diving platform",
+    "high-platform diving"
+  ],
+  "medtop:20000903": [
+    "mountain bike",
+    "off-road cycling",
+    "trail cycling",
+    "all-terrain cycling"
+  ],
+  "medtop:20000921": [
+    "dog sledding",
+    "sled dog racing"
+  ],
+  "medtop:20000917": [
+    "diving",
+    "scuba",
+    "underwater"
+  ],
+  "medtop:20000925": [
+    "mounted competition"
+  ],
+  "medtop:20000919": [
+    "hound racing"
+  ],
+  "medtop:20000923": [
+    "horse sport"
+  ],
+  "medtop:20000924": [
+    "horse riding",
+    "cross country"
+  ],
+  "medtop:20000922": [
+    "triathlon"
+  ],
+  "medtop:20000926": [
+    "show jumping"
+  ],
+  "medtop:20000915": [
+    "diving",
+    "springboard",
+    "platform diving"
+  ],
+  "medtop:20000918": [
+    "water sports",
+    "aquatic competition"
+  ],
+  "medtop:20000920": [
+    "dog racing",
+    "track racing"
+  ],
+  "medtop:20000916": [
+    "diving",
+    "synchronized swimming",
+    "team diving"
+  ],
+  "medtop:20000937": [
+    "indoor hockey",
+    "ball sport",
+    "court sport"
+  ],
+  "medtop:20000928": [
+    "harness racing",
+    "carriage driving",
+    "mounted driving"
+  ],
+  "medtop:20000934": [
+    "skating",
+    "ice skating",
+    "winter sports"
+  ],
+  "medtop:20000932": [
+    "fencing weapon",
+    "combat fencing",
+    "cutting weapon"
+  ],
+  "medtop:20000931": [
+    "fencing weapon",
+    "combat fencing",
+    "fencing"
+  ],
+  "medtop:20000927": [
+    "eventing",
+    "dressage",
+    "cross country",
+    "show jumping"
+  ],
+  "medtop:20000933": [
+    "hockey",
+    "ice hockey",
+    "stick and ball"
+  ],
+  "medtop:20000929": [
+    "swordsmanship",
+    "épée",
+    "foil"
+  ],
+  "medtop:20000930": [
+    "épée fencing",
+    "fencing weapon",
+    "combat fencing"
+  ],
+  "medtop:20000936": [
+    "gymnastics ball",
+    "ball sport",
+    "team ball"
+  ],
+  "medtop:20000935": [
+    "figure dance",
+    "synchronized skating",
+    "ice performance"
+  ],
+  "medtop:20000938": [
+    "Frisbee",
+    "disc sport",
+    "aerial disc"
+  ],
+  "medtop:20000942": [
+    "Artistic gymnastics",
+    "Gymnastic sports",
+    "Rhythmic gymnastics"
+  ],
+  "medtop:20000940": [
+    "Golfing",
+    "Links",
+    "Course golf"
+  ],
+  "medtop:20000939": [
+    "Hurling",
+    "Field football",
+    "Irish football"
+  ],
+  "medtop:20000945": [
+    "Rhythmic clubs",
+    "Gymnastics clubs",
+    "Juggling clubs",
+    "Rhythmic apparatus"
+  ],
+  "medtop:20000947": [
+    "Rhythmic hoop",
+    "Gymnastics hoop",
+    "Hoop exercise",
+    "Rhythmic apparatus"
+  ],
+  "medtop:20000943": [
+    "Rhythmic ball",
+    "Gymnastics ball",
+    "Ball exercise",
+    "Suppleness"
+  ],
+  "medtop:20000949": [
+    "Parallel bars",
+    "Gymnastics bars",
+    "Swing bars",
+    "Gymnastics apparatus"
+  ],
+  "medtop:20000946": [
+    "Floor exercise",
+    "Gymnastics floor",
+    "Artistic floor",
+    "Gymnastics mat"
+  ],
+  "medtop:20000941": [
+    "Short golf",
+    "Putt-putt",
+    "Golf course"
+  ],
+  "medtop:20000948": [
+    "Horizontal bar",
+    "Parallel bar",
+    "Gymnastics bar",
+    "Gymnastics apparatus"
+  ],
+  "medtop:20000950": [
+    "Pommel horse",
+    "Gymnastics horse",
+    "Handled horse",
+    "Gymnastics apparatus"
+  ],
+  "medtop:20000944": [
+    "Balance beam",
+    "Gymnastics beam",
+    "Artistic beam",
+    "Gymnastics apparatus"
+  ],
+  "medtop:20000960": [
+    "thoroughbred racing",
+    "mounted racing",
+    "racing"
+  ],
+  "medtop:20000961": [
+    "flat race",
+    "horse race",
+    "flat course",
+    "racing"
+  ],
+  "medtop:20000955": [
+    "trampoline gymnastics",
+    "gymnastics bounce",
+    "gymnastics tumbling"
+  ],
+  "medtop:20000952": [
+    "ribbon gymnastics",
+    "rhythmic ribbon",
+    "gymnastics ribbon",
+    "gymnastics"
+  ],
+  "medtop:20000951": [
+    "gymnastics routines",
+    "dance gymnastics",
+    "gymnastics"
+  ],
+  "medtop:20000957": [
+    "gymnastics vault",
+    "artistic vault",
+    "vaulting",
+    "gymnastics"
+  ],
+  "medtop:20000962": [
+    "harness race",
+    "buggy race",
+    "horse-drawn race",
+    "trot"
+  ],
+  "medtop:20000954": [
+    "rope gymnastics",
+    "rhythmic rope",
+    "gymnastics rope",
+    "gymnastics"
+  ],
+  "medtop:20000959": [
+    "Swiss sport",
+    "puck sport",
+    "team sport"
+  ],
+  "medtop:20000953": [
+    "rings gymnastics",
+    "artistic rings",
+    "gymnastics rings",
+    "men's rings"
+  ],
+  "medtop:20000958": [
+    "team handball",
+    "handball game",
+    "ball sport",
+    "team sport"
+  ],
+  "medtop:20000956": [
+    "uneven bars",
+    "women's bars",
+    "gymnastics bars",
+    "artistic bars"
+  ],
+  "medtop:20000972": [
+    "half-light judo",
+    "middle-weight judo"
+  ],
+  "medtop:20000971": [
+    "heavyweight judo",
+    "mid-weight judo"
+  ],
+  "medtop:20000964": [
+    "gaelic football"
+  ],
+  "medtop:20000974": [
+    "heavyweight judo",
+    "full judo"
+  ],
+  "medtop:20000973": [
+    "half-middle judo",
+    "light middle judo"
+  ],
+  "medtop:20000966": [
+    "sled hockey",
+    "disabled ice hockey"
+  ],
+  "medtop:20000965": [
+    "rink hockey"
+  ],
+  "medtop:20000970": [
+    "lightweight judo",
+    "low-weight judo"
+  ],
+  "medtop:20000969": [
+    "judoka"
+  ],
+  "medtop:20000968": [
+    "Jai Alai",
+    "pelota"
+  ],
+  "medtop:20000967": [
+    "roller skating"
+  ],
+  "medtop:20000963": [
+    "steeplechase",
+    "jump race",
+    "horse jumping"
+  ],
+  "medtop:20000979": [
+    "canoe racing",
+    "flatwater paddling",
+    "boat racing"
+  ],
+  "medtop:20000978": [
+    "contact sport",
+    "tag sport",
+    "attacking sport"
+  ],
+  "medtop:20000980": [
+    "k1 kayaking",
+    "single kayak",
+    "one-person kayak",
+    "enclosed kayak"
+  ],
+  "medtop:20000986": [
+    "netball sport",
+    "stick and ball sport",
+    "team sport"
+  ],
+  "medtop:20000983": [
+    "martial arts combat",
+    "chop combat",
+    "punch combat"
+  ],
+  "medtop:20000985": [
+    "bamboo bow archery",
+    "Japanese archery",
+    "arrow archery"
+  ],
+  "medtop:20000975": [
+    "lightweight judo",
+    "low-weight judo",
+    "junior judo",
+    "men's light judo"
+  ],
+  "medtop:20000981": [
+    "k2 kayaking",
+    "double kayak",
+    "two-person kayak",
+    "tandem kayak"
+  ],
+  "medtop:20000982": [
+    "k4 kayaking",
+    "four-person kayak",
+    "quad kayak",
+    "group kayak"
+  ],
+  "medtop:20000976": [
+    "middleweight judo",
+    "heavyweight judo",
+    "senior judo",
+    "men's middle judo"
+  ],
+  "medtop:20000977": [
+    "juken",
+    "model rifle martial arts",
+    "wooden rifle martial arts",
+    "rifle martial arts"
+  ],
+  "medtop:20000984": [
+    "bamboo sword martial arts",
+    "Japanese fencing",
+    "sword fencing"
+  ],
+  "medtop:20000990": [
+    "speedboat racing",
+    "powerboat racing",
+    "boat racing",
+    "watercraft racing"
+  ],
+  "medtop:20000993": [
+    "Formula Three",
+    "junior formula one",
+    "open wheel racing"
+  ],
+  "medtop:20000989": [
+    "five sport event",
+    "combined event",
+    "multi-sport"
+  ],
+  "medtop:20000994": [
+    "F1",
+    "grand prix",
+    "world championship racing"
+  ],
+  "medtop:20000997": [
+    "rallying",
+    "gravel racing",
+    "special stage racing"
+  ],
+  "medtop:20000988": [
+    "long distance running",
+    "road race",
+    "42.195km"
+  ],
+  "medtop:20000996": [
+    "rallycross",
+    "dirt track racing",
+    "cross country racing"
+  ],
+  "medtop:20000998": [
+    "bike racing",
+    "two-wheeled racing",
+    "motorcycle racing"
+  ],
+  "medtop:20000992": [
+    "endurance racing",
+    "long race",
+    "distance race",
+    "motor car race"
+  ],
+  "medtop:20000995": [
+    "IR",
+    "open wheel racing",
+    "American racing"
+  ],
+  "medtop:20000987": [
+    "sledding",
+    "bobsleigh",
+    "winter sports"
+  ],
+  "medtop:20000991": [
+    "auto racing",
+    "car racing",
+    "speed racing"
+  ],
+  "medtop:20001008": [
+    "motorcycle trial",
+    "trial motorcycling",
+    "off-road trial",
+    "terrain trial"
+  ],
+  "medtop:20001003": [
+    "motorcycle cross",
+    "moto cross",
+    "dirt cross",
+    "extreme motorcycling"
+  ],
+  "medtop:20001000": [
+    "enduro racing",
+    "motorcycle enduro",
+    "dirt endurance",
+    "off-road endurance"
+  ],
+  "medtop:20001005": [
+    "motorcycle rally",
+    "road rallying",
+    "motorcycle stage rally",
+    "road race motorcycling"
+  ],
+  "medtop:20001009": [
+    "pole sword",
+    "Japanese naginata",
+    "traditional naginata"
+  ],
+  "medtop:20000999": [
+    "endurance racing",
+    "long-distance motorcycling",
+    "road endurance"
+  ],
+  "medtop:20001002": [
+    "moto ball",
+    "motorcycle ball",
+    "ball sport motorcycling",
+    "team motorcycling"
+  ],
+  "medtop:20001010": [
+    "women's netball",
+    "basketball variant",
+    "team netball"
+  ],
+  "medtop:20001001": [
+    "turf racing",
+    "grass track racing",
+    "turf motorcycling",
+    "field racing"
+  ],
+  "medtop:20001004": [
+    "grand prix motorcycling",
+    "motorcycle grand prix",
+    "GP racing"
+  ],
+  "medtop:20001006": [
+    "sidecar racing",
+    "motorcycle sidecar",
+    "dual-sport sidecar",
+    "passenger sidecar"
+  ],
+  "medtop:20001007": [
+    "speedway racing",
+    "oval speedway",
+    "flat track speedway",
+    "one-gear speedway"
+  ],
+  "medtop:20001015": [
+    "Table Billiards",
+    "Cue Sports",
+    "Pocket Billiards"
+  ],
+  "medtop:20001012": [
+    "Cross-Country Skiing",
+    "Beacon Navigation",
+    "Time Trial Ski"
+  ],
+  "medtop:20001017": [
+    "Cowboy Competition",
+    "Bronc Riding",
+    "Western Sport"
+  ],
+  "medtop:20001022": [
+    "Heifer Roping",
+    "Rodeo Roping",
+    "Cowboy Roping"
+  ],
+  "medtop:20001020": [
+    "Bucking Horse",
+    "Rodeo Bull",
+    "Bronco Riding"
+  ],
+  "medtop:20001014": [
+    "Horse Polo",
+    "Mallet Sport",
+    "Field Polo"
+  ],
+  "medtop:20001016": [
+    "Motorboat Racing",
+    "Aqua Racing",
+    "Speedboating"
+  ],
+  "medtop:20001011": [
+    "Navigation",
+    "Beacons",
+    "Time Trial"
+  ],
+  "medtop:20001018": [
+    "Bareback Riding",
+    "Bronc Riding",
+    "Horseback Rodeo",
+    "Wild Horse Event"
+  ],
+  "medtop:20001021": [
+    "Calf Riding",
+    "Rodeo Calf",
+    "Cowboy Calf"
+  ],
+  "medtop:20001013": [
+    "Skydiving",
+    "Plummeting",
+    "Paragliding"
+  ],
+  "medtop:20001019": [
+    "Rodeo Run",
+    "Horse Racing",
+    "Speed Rodeo"
+  ],
+  "medtop:20001034": [
+    "solo rowing"
+  ],
+  "medtop:20001027": [
+    "four-oar boat"
+  ],
+  "medtop:20001028": [
+    "two-oar boat"
+  ],
+  "medtop:20001032": [
+    "eight-oar boat"
+  ],
+  "medtop:20001033": [
+    "four-oar race"
+  ],
+  "medtop:20001031": [
+    "double-oar boat"
+  ],
+  "medtop:20001023": [
+    "rodeo event",
+    "bull riding"
+  ],
+  "medtop:20001026": [
+    "boat racing"
+  ],
+  "medtop:20001030": [
+    "two-oar race"
+  ],
+  "medtop:20001025": [
+    "wheel hockey"
+  ],
+  "medtop:20001024": [
+    "bronco riding"
+  ],
+  "medtop:20001029": [
+    "four-oar race"
+  ],
+  "medtop:20001044": [
+    "sailing",
+    "round the world",
+    "global races",
+    "circumnavigation"
+  ],
+  "medtop:20001038": [
+    "boat racing",
+    "yachting",
+    "maritime racing"
+  ],
+  "medtop:20001041": [
+    "sailing",
+    "keelboats",
+    "hull boats",
+    "fixed keel yachts"
+  ],
+  "medtop:20001040": [
+    "sailing",
+    "dinghy boats",
+    "small yachts",
+    "one-design yachts"
+  ],
+  "medtop:20001037": [
+    "rugby",
+    "sevens",
+    "7-a-side rugby"
+  ],
+  "medtop:20001036": [
+    "rugby",
+    "union",
+    "fifteen-a-side rugby"
+  ],
+  "medtop:20001042": [
+    "sailing",
+    "sailing events",
+    "regattas",
+    "racing events"
+  ],
+  "medtop:20001046": [
+    "sailing",
+    "non-stop races",
+    "continuous races",
+    "round the world races"
+  ],
+  "medtop:20001035": [
+    "rugby",
+    "league",
+    "13-a-side rugby"
+  ],
+  "medtop:20001045": [
+    "sailing",
+    "solo sailing",
+    "individual racing",
+    "lone sailing"
+  ],
+  "medtop:20001043": [
+    "sailing",
+    "ocean racing",
+    "open water sailing",
+    "transoceanic sailing"
+  ],
+  "medtop:20001039": [
+    "sailing",
+    "multihull boats",
+    "multiple hull vessels",
+    "catamarans"
+  ],
+  "medtop:20001055": [
+    "Sled Racing",
+    "Ice Racing",
+    "Winter Sledding"
+  ],
+  "medtop:20001049": [
+    "Target Shooting",
+    "Gun Shooting",
+    "Precision Shooting",
+    "Firearms Competition"
+  ],
+  "medtop:20001057": [
+    "Downhill Skiing",
+    "Speed Skiing",
+    "Snow Slalom"
+  ],
+  "medtop:20001050": [
+    "Handgun Shooting",
+    "Pistol Competition",
+    "Firearm Event"
+  ],
+  "medtop:20001051": [
+    "Firearm Competition",
+    "Military Shooting",
+    "Long Range Shooting"
+  ],
+  "medtop:20001052": [
+    "Running Target",
+    "Airgun Shooting",
+    "Moving Target Shooting",
+    "Airgun Competition"
+  ],
+  "medtop:20001056": [
+    "Winter Skiing",
+    "Snow Skiing",
+    "Alpine Skiing"
+  ],
+  "medtop:20001058": [
+    "Acrobatic Skiing",
+    "Ski Jumps",
+    "Winter Freestyle"
+  ],
+  "medtop:20001047": [
+    "Rattan Ball Game",
+    "Volleyball Variant",
+    "Handball Sport"
+  ],
+  "medtop:20001054": [
+    "Clay Target Shooting",
+    "Flying Target Shooting",
+    "Gun Competition"
+  ],
+  "medtop:20001053": [
+    "Shotgun Competition",
+    "Double Barrel Shooting",
+    "Firearm Event"
+  ],
+  "medtop:20001048": [
+    "Caman Game",
+    "Scottish Ball Sport",
+    "Stick Game"
+  ],
+  "medtop:20001067": [
+    "figure skating"
+  ],
+  "medtop:20001070": [
+    "wave riding"
+  ],
+  "medtop:20001069": [
+    "kokugoro"
+  ],
+  "medtop:20001060": [
+    "cross-country skiing"
+  ],
+  "medtop:20001064": [
+    "board sports"
+  ],
+  "medtop:20001059": [
+    "roller skiing"
+  ],
+  "medtop:20001068": [
+    "racquetball"
+  ],
+  "medtop:20001063": [
+    "pool"
+  ],
+  "medtop:20001065": [
+    "soccer"
+  ],
+  "medtop:20001066": [
+    "baseball"
+  ],
+  "medtop:20001062": [
+    "skydiving",
+    "parachute jumping"
+  ],
+  "medtop:20001061": [
+    "aerial skiing"
+  ],
+  "medtop:20001076": [
+    "medley",
+    "medley swim",
+    "mixed stroke",
+    "combination swim"
+  ],
+  "medtop:20001078": [
+    "relay swim",
+    "team swim",
+    "swim relay",
+    "team event"
+  ],
+  "medtop:20001080": [
+    "short course",
+    "short course swim",
+    "25m pool",
+    "arena swim"
+  ],
+  "medtop:20001075": [
+    "freestyle",
+    "front crawl",
+    "front stroke",
+    "crawl stroke"
+  ],
+  "medtop:20001072": [
+    "back swimming",
+    "back crawl",
+    "stroke type"
+  ],
+  "medtop:20001082": [
+    "technical swimming",
+    "synchronised routine",
+    "technical routine",
+    "artistic routine"
+  ],
+  "medtop:20001077": [
+    "marathon swim",
+    "open water swim",
+    "long distance swim",
+    "open water racing"
+  ],
+  "medtop:20001079": [
+    "relay medley",
+    "mixed relay",
+    "team medley",
+    "combination relay"
+  ],
+  "medtop:20001073": [
+    "breast swim",
+    "frog stroke",
+    "stroke style"
+  ],
+  "medtop:20001074": [
+    "butterfly",
+    "butterfly stroke",
+    "butterfly swim",
+    "wing motion"
+  ],
+  "medtop:20001071": [
+    "aquatics",
+    "water sports",
+    "stroke"
+  ],
+  "medtop:20001081": [
+    "synchronised swimming",
+    "artistic swimming",
+    "synchronized swim",
+    "routine swim"
+  ],
+  "medtop:20001091": [
+    "pool water polo"
+  ],
+  "medtop:20001088": [
+    "rope pulling"
+  ],
+  "medtop:20001086": [
+    "ten-pin bowling",
+    "bowling"
+  ],
+  "medtop:20001087": [
+    "long distance triathlon"
+  ],
+  "medtop:20001090": [
+    "sand volleyball"
+  ],
+  "medtop:20001094": [
+    "clean and jerk",
+    "snatch"
+  ],
+  "medtop:20001092": [
+    "aquatic skiing"
+  ],
+  "medtop:20001084": [
+    "Korean martial arts"
+  ],
+  "medtop:20001085": [
+    "lawn tennis"
+  ],
+  "medtop:20001083": [
+    "ping pong"
+  ],
+  "medtop:20001089": [
+    "beach volleyball"
+  ],
+  "medtop:20001093": [
+    "weightlifting",
+    "powerlifting"
+  ],
+  "medtop:20001098": [
+    "combat wrestling",
+    "grappling",
+    "freestyle wrestling"
+  ],
+  "medtop:20001099": [
+    "freestyle",
+    "leg wrestling",
+    "modern wrestling",
+    "style wrestling"
+  ],
+  "medtop:20001102": [
+    "Chinese martial arts",
+    "Kung Fu",
+    "martial arts"
+  ],
+  "medtop:20001105": [
+    "performance drug use",
+    "drug-enhanced sport",
+    "sporting drug abuse"
+  ],
+  "medtop:20001104": [
+    "doping in sport",
+    "performance enhancing drugs",
+    "sporting drug use"
+  ],
+  "medtop:20001100": [
+    "classic wrestling",
+    "style wrestling",
+    "Olympic wrestling"
+  ],
+  "medtop:20001103": [
+    "sports sanctions",
+    "disciplinary penalties",
+    "sporting fines",
+    "competition sanctions"
+  ],
+  "medtop:20001096": [
+    "snatch",
+    "weight snatch",
+    "barbell snatch",
+    "lifting technique"
+  ],
+  "medtop:20001106": [
+    "sport drug testing",
+    "anti-doping testing",
+    "sports drug screening"
+  ],
+  "medtop:20001101": [
+    "traditional wrestling",
+    "Swiss sport",
+    "folk wrestling"
+  ],
+  "medtop:20001095": [
+    "weightlifting",
+    "strength sports",
+    "lifting"
+  ],
+  "medtop:20001097": [
+    "windboard sports",
+    "sailing",
+    "water sports"
+  ],
+  "medtop:20001109": [
+    "regional championship",
+    "continental competition",
+    "continent games"
+  ],
+  "medtop:20001112": [
+    "global competition",
+    "world games",
+    "international event"
+  ],
+  "medtop:20001118": [
+    "local competition",
+    "regional games",
+    "district championship"
+  ],
+  "medtop:20001115": [
+    "domestic competition",
+    "national games",
+    "regional championship"
+  ],
+  "medtop:20001107": [
+    "drug testing",
+    "medical doping",
+    "therapeutic use",
+    "athlete medication"
+  ],
+  "medtop:20001108": [
+    "sporting event",
+    "competition",
+    "games",
+    "athletic event"
+  ],
+  "medtop:20001116": [
+    "domestic competition",
+    "national games",
+    "regional cup"
+  ],
+  "medtop:20001114": [
+    "global competition",
+    "world games",
+    "international event"
+  ],
+  "medtop:20001113": [
+    "global competition",
+    "world games",
+    "international event"
+  ],
+  "medtop:20001110": [
+    "regional cup",
+    "continent competition",
+    "continental games"
+  ],
+  "medtop:20001117": [
+    "domestic competition",
+    "national event",
+    "regional games"
+  ],
+  "medtop:20001111": [
+    "continent games",
+    "continental competition",
+    "regional games"
+  ],
+  "medtop:20001120": [
+    "Games",
+    "Local Games",
+    "Amateur Games"
+  ],
+  "medtop:20001121": [
+    "Global Championship",
+    "International Championship",
+    "Championship"
+  ],
+  "medtop:20001123": [
+    "Global Games",
+    "International Games",
+    "Games Tournament"
+  ],
+  "medtop:20001128": [
+    "Meteorological Forecast",
+    "Weather Prediction",
+    "Climate Forecast"
+  ],
+  "medtop:20001130": [
+    "Meteorological Data",
+    "Weather Metrics",
+    "Climate Data"
+  ],
+  "medtop:20001119": [
+    "Cup",
+    "Regional Tournament",
+    "Local Competition",
+    "Amateur Cup"
+  ],
+  "medtop:20001126": [
+    "Stadiums",
+    "Sports Facilities",
+    "Event Venues"
+  ],
+  "medtop:20001131": [
+    "Severe Weather Alert",
+    "Hazard Warning",
+    "Storm Warning"
+  ],
+  "medtop:20001129": [
+    "Meteorological Events",
+    "Extreme Weather",
+    "Climate Events"
+  ],
+  "medtop:20001124": [
+    "Sports Industry",
+    "Sport Business",
+    "Sports Market",
+    "Sport Commerce"
+  ],
+  "medtop:20001122": [
+    "Global Cup",
+    "International Cup",
+    "Cup Tournament"
+  ],
+  "medtop:20001125": [
+    "Sports Association",
+    "Sports Federation",
+    "Sport Governance"
+  ],
+  "medtop:20001136": [
+    "trade fairs",
+    "industry expos",
+    "commercial exhibitions",
+    "product showcases"
+  ],
+  "medtop:20001139": [
+    "hold recommendations",
+    "stock hold recommendations",
+    "passive investments",
+    "market neutral"
+  ],
+  "medtop:20001138": [
+    "buy recommendations",
+    "stock buy recommendations",
+    "investment recommendations",
+    "stock ratings"
+  ],
+  "medtop:20001141": [
+    "volatile stocks",
+    "rising stocks",
+    "trending stocks",
+    "market movers"
+  ],
+  "medtop:20001135": [
+    "art shows",
+    "gallery exhibitions",
+    "museum displays",
+    "art presentations"
+  ],
+  "medtop:20001140": [
+    "sell recommendations",
+    "stock sell recommendations",
+    "short selling",
+    "bearish outlook"
+  ],
+  "medtop:20001137": [
+    "equity research",
+    "stock ratings",
+    "investment advice",
+    "analyst reports"
+  ],
+  "medtop:20001143": [
+    "social gatherings",
+    "celebrations",
+    "private events",
+    "parties"
+  ],
+  "medtop:20001134": [
+    "operetta music",
+    "light opera",
+    "musical theatre",
+    "stage opera"
+  ],
+  "medtop:20001142": [
+    "mountain hiking",
+    "rock climbing",
+    "outdoor pursuits",
+    "trekking"
+  ],
+  "medtop:20001132": [
+    "cultural affairs",
+    "arts policy",
+    "cultural funding",
+    "cultural programs"
+  ],
+  "medtop:20001133": [
+    "musical theatre",
+    "stage musicals",
+    "operatic productions",
+    "musical performances"
+  ],
+  "medtop:20001149": [
+    "cross country",
+    "nordic skiing",
+    "winter racing",
+    "snow sports"
+  ],
+  "medtop:20001148": [
+    "athlete transfer",
+    "player movement",
+    "sports trading",
+    "team recruitment"
+  ],
+  "medtop:20001146": [
+    "integration",
+    "diversity policy",
+    "social cohesion",
+    "community relations"
+  ],
+  "medtop:20001144": [
+    "civil service",
+    "volunteer work",
+    "public service",
+    "community service"
+  ],
+  "medtop:20001147": [
+    "sports regulations",
+    "sports law",
+    "athletic policy",
+    "game rules"
+  ],
+  "medtop:20001152": [
+    "gymnastics",
+    "figure skating",
+    "sports performance"
+  ],
+  "medtop:20001145": [
+    "military",
+    "armed forces",
+    "national guard",
+    "defense"
+  ],
+  "medtop:20001153": [
+    "telemark technique",
+    "alpine skiing",
+    "skiing style"
+  ],
+  "medtop:20001155": [
+    "wheeled sports",
+    "skate sports",
+    "board sports"
+  ],
+  "medtop:20001151": [
+    "speed skating",
+    "track skating",
+    "short track",
+    "ice racing"
+  ],
+  "medtop:20001150": [
+    "biathlon",
+    "skiathlon",
+    "winter sports"
+  ],
+  "medtop:20001154": [
+    "chess play",
+    "board games",
+    "strategy games"
+  ],
+  "medtop:20001165": [
+    "industrial equipment",
+    "machinery",
+    "fixed assets"
+  ],
+  "medtop:20001159": [
+    "public contracts",
+    "government contracts",
+    "procurement",
+    "contracting"
+  ],
+  "medtop:20001166": [
+    "railcar production",
+    "rail equipment",
+    "rolling stock"
+  ],
+  "medtop:20001167": [
+    "surgical devices",
+    "diagnostic equipment",
+    "healthcare devices"
+  ],
+  "medtop:20001160": [
+    "crafts",
+    "artisan goods",
+    "handmade items"
+  ],
+  "medtop:20001162": [
+    "investment management",
+    "portfolio management",
+    "wealth management"
+  ],
+  "medtop:20001157": [
+    "combat sports",
+    "self defense",
+    "fighting arts"
+  ],
+  "medtop:20001164": [
+    "payment services",
+    "payment processing",
+    "electronic payments",
+    "funds transfer"
+  ],
+  "medtop:20001163": [
+    "CRM",
+    "customer relationship management",
+    "sales management"
+  ],
+  "medtop:20001158": [
+    "startups",
+    "entrepreneurship",
+    "new ventures",
+    "business startups"
+  ],
+  "medtop:20001156": [
+    "board sports",
+    "action sports",
+    "extreme sports"
+  ],
+  "medtop:20001161": [
+    "IoT",
+    "connected devices",
+    "sensor networks"
+  ],
+  "medtop:20001173": [
+    "regulatory bodies",
+    "oversight agencies",
+    "compliance authorities",
+    "industry regulators"
+  ],
+  "medtop:20001176": [
+    "rugby union",
+    "rugby league",
+    "pitch and territory",
+    "scrum game"
+  ],
+  "medtop:20001168": [
+    "pet supplies",
+    "animal care",
+    "veterinary products",
+    "pet services"
+  ],
+  "medtop:20001171": [
+    "peer economy",
+    "sharing platforms",
+    "gig economy",
+    "P2P"
+  ],
+  "medtop:20001169": [
+    "e-cigs",
+    "vaping",
+    "electronic smoking",
+    "vape devices"
+  ],
+  "medtop:20001175": [
+    "synchronized swimming",
+    "aquatic artistry",
+    "diving competitions",
+    "water choreography"
+  ],
+  "medtop:20001174": [
+    "regional policies",
+    "development programs",
+    "local incentives",
+    "regional grants"
+  ],
+  "medtop:20001170": [
+    "supply chain",
+    "logistics management",
+    "transportation",
+    "warehousing"
+  ],
+  "medtop:20001178": [
+    "Paralympic events",
+    "adaptive sports",
+    "disability games",
+    "international games"
+  ],
+  "medtop:20001172": [
+    "SMEs",
+    "small businesses",
+    "micro businesses",
+    "private firms"
+  ],
+  "medtop:20001177": [
+    "Olympic events",
+    "summer games",
+    "winter games",
+    "international competition"
+  ],
+  "medtop:20001179": [
+    "television series",
+    "program series",
+    "episode series",
+    "serialized fiction"
+  ],
+  "medtop:20001190": [
+    "comedy shows",
+    "stage comedy",
+    "comic performances"
+  ],
+  "medtop:20001180": [
+    "theatre",
+    "drama",
+    "stage productions",
+    "plays"
+  ],
+  "medtop:20001183": [
+    "competitive gaming",
+    "video game tournaments",
+    "esports competitions"
+  ],
+  "medtop:20001184": [
+    "rap",
+    "urban music",
+    "hip-hop music"
+  ],
+  "medtop:20001182": [
+    "online networks",
+    "internet content",
+    "digital media"
+  ],
+  "medtop:20001186": [
+    "metal music",
+    "hard rock",
+    "extreme metal"
+  ],
+  "medtop:20001188": [
+    "electronic music",
+    "dance music",
+    "club music",
+    "EDM"
+  ],
+  "medtop:20001187": [
+    "dance music",
+    "swing music",
+    "schlager",
+    "Swedish music"
+  ],
+  "medtop:20001189": [
+    "kids' music",
+    "youth music",
+    "children's songs"
+  ],
+  "medtop:20001191": [
+    "nightclub entertainment",
+    "stage cabaret",
+    "musical cabaret"
+  ],
+  "medtop:20001181": [
+    "festivals",
+    "events",
+    "cultural events",
+    "celebrations"
+  ],
+  "medtop:20001185": [
+    "rhythm and blues",
+    "soul music",
+    "contemporary R&B"
+  ],
+  "medtop:20001197": [
+    "administrative regulations",
+    "agency law",
+    "regulatory law",
+    "governance law"
+  ],
+  "medtop:20001199": [
+    "deferred sentencing",
+    "probationary sentencing",
+    "suspended adjudication",
+    "delayed punishment"
+  ],
+  "medtop:20001203": [
+    "fiber arts",
+    "textile production",
+    "craft fiber",
+    "woven arts"
+  ],
+  "medtop:20001200": [
+    "closed investigations",
+    "abandoned cases",
+    "unresolved investigations",
+    "discontinued probes"
+  ],
+  "medtop:20001195": [
+    "tax evasion schemes",
+    "tax fraud",
+    "revenue evasion",
+    "tax delinquency"
+  ],
+  "medtop:20001193": [
+    "sexual offenses",
+    "sexual misconduct cases",
+    "sexual abuse",
+    "sexual wrongdoing"
+  ],
+  "medtop:20001198": [
+    "court mandated therapy",
+    "psychiatric incarceration",
+    "mental health sentencing",
+    "probationary treatment"
+  ],
+  "medtop:20001194": [
+    "financial fraud",
+    "accounting irregularities",
+    "fraudulent accounting",
+    "financial crimes"
+  ],
+  "medtop:20001202": [
+    "forest fires",
+    "brush fires",
+    "wild burns",
+    "vegetation fires"
+  ],
+  "medtop:20001201": [
+    "animal-vehicle collisions",
+    "wildlife crashes",
+    "animal road incidents",
+    "wildlife traffic"
+  ],
+  "medtop:20001196": [
+    "dangerous driving",
+    "traffic offenses",
+    "speeding incidents",
+    "reckless operation"
+  ],
+  "medtop:20001192": [
+    "social media influencers",
+    "online personalities",
+    "content creators",
+    "digital influencers"
+  ],
+  "medtop:20001211": [
+    "wind energy",
+    "turbine technology",
+    "aerodynamic power"
+  ],
+  "medtop:20001213": [
+    "public schools",
+    "district schools",
+    "state-funded schools",
+    "tax-supported schools"
+  ],
+  "medtop:20001212": [
+    "faith-based schools",
+    "sectarian schools",
+    "religious academies",
+    "consecrated schools"
+  ],
+  "medtop:20001209": [
+    "solar energy",
+    "photovoltaics",
+    "sun power",
+    "solar irradiance"
+  ],
+  "medtop:20001207": [
+    "bioenergy",
+    "biomass fuel",
+    "renewable fuel",
+    "ethanol production"
+  ],
+  "medtop:20001206": [
+    "freelancing",
+    "solo entrepreneurship",
+    "independent contracting"
+  ],
+  "medtop:20001210": [
+    "hydro power",
+    "water power",
+    "hydropower",
+    "turbine power"
+  ],
+  "medtop:20001208": [
+    "geothermal energy",
+    "earth energy",
+    "ground source",
+    "thermal energy"
+  ],
+  "medtop:20001214": [
+    "private education",
+    "independent schools",
+    "fee-paying schools",
+    "non-state schools"
+  ],
+  "medtop:20001205": [
+    "metalworking",
+    "smelting",
+    "hot forging",
+    "metal shaping"
+  ],
+  "medtop:20001215": [
+    "charter schools",
+    "academy schools",
+    "company-run schools",
+    "cooperative schools"
+  ],
+  "medtop:20001204": [
+    "woodcraft",
+    "cabinetry",
+    "furniture making",
+    "wood art"
+  ],
+  "medtop:20001220": [
+    "primary care",
+    "family medicine",
+    "general health",
+    "community medicine"
+  ],
+  "medtop:20001227": [
+    "mental health",
+    "psychological medicine",
+    "cognitive therapy",
+    "behavioral health"
+  ],
+  "medtop:20001219": [
+    "substance abuse",
+    "addiction treatment",
+    "drug dependency",
+    "rehab programs"
+  ],
+  "medtop:20001226": [
+    "operative medicine",
+    "surgical interventions",
+    "invasive surgery",
+    "surgical procedures"
+  ],
+  "medtop:20001217": [
+    "student assessment",
+    "grade reporting",
+    "academic grading",
+    "course grading"
+  ],
+  "medtop:20001221": [
+    "urgent care",
+    "critical care",
+    "emergency medicine",
+    "trauma care"
+  ],
+  "medtop:20001216": [
+    "vocational training",
+    "career skills",
+    "technical skills",
+    "occupational training"
+  ],
+  "medtop:20001222": [
+    "bone and joint",
+    "musculoskeletal",
+    "orthopedic surgery",
+    "sports medicine"
+  ],
+  "medtop:20001224": [
+    "medical imaging",
+    "diagnostic imaging",
+    "radiological imaging",
+    "X-ray"
+  ],
+  "medtop:20001223": [
+    "cancer treatment",
+    "tumor therapy",
+    "oncologic care",
+    "chemotherapy"
+  ],
+  "medtop:20001218": [
+    "infectious disease",
+    "epidemic",
+    "viral outbreaks",
+    "pandemic flu"
+  ],
+  "medtop:20001225": [
+    "vision care",
+    "ophthalmology",
+    "eye health",
+    "optometry"
+  ],
+  "medtop:20001236": [
+    "marriage ceremony",
+    "wedding event",
+    "celebration of marriage"
+  ],
+  "medtop:20001231": [
+    "MMA",
+    "combat sports",
+    "fighting"
+  ],
+  "medtop:20001239": [
+    "exercise",
+    "fitness programs",
+    "physical activity",
+    "wellness programs"
+  ],
+  "medtop:20001230": [
+    "ESG",
+    "corporate social responsibility",
+    "CSR",
+    "sustainability"
+  ],
+  "medtop:20001232": [
+    "elder care",
+    "aging care",
+    "senior care",
+    "long-term care"
+  ],
+  "medtop:20001238": [
+    "birth celebration",
+    "anniversary of birth",
+    "celebration of birth"
+  ],
+  "medtop:20001237": [
+    "jubilee",
+    "years milestone",
+    "celebration of years"
+  ],
+  "medtop:20001229": [
+    "clinic",
+    "medical office",
+    "doctor's office",
+    "healthcare facility"
+  ],
+  "medtop:20001228": [
+    "operations",
+    "surgical procedures",
+    "surgical interventions"
+  ],
+  "medtop:20001235": [
+    "funeral service",
+    "memorial service",
+    "death ceremony",
+    "post-mortem"
+  ],
+  "medtop:20001234": [
+    "commencement",
+    "degree ceremony",
+    "academic ceremony"
+  ],
+  "medtop:20001233": [
+    "naming ceremony",
+    "christening",
+    "name giving",
+    "infant naming"
+  ],
+  "medtop:20001245": [
+    "infrastructure",
+    "construction projects",
+    "public works",
+    "civil engineering"
+  ],
+  "medtop:20001243": [
+    "oil & gas",
+    "petroleum",
+    "energy sector",
+    "upstream"
+  ],
+  "medtop:20001240": [
+    "muscle sports",
+    "fitness",
+    "strength training",
+    "weightlifting"
+  ],
+  "medtop:20001244": [
+    "water services",
+    "energy supply",
+    "public utilities"
+  ],
+  "medtop:20001249": [
+    "hair trends",
+    "hair styling",
+    "hair fashion"
+  ],
+  "medtop:20001246": [
+    "commercial real estate",
+    "office buildings",
+    "retail properties",
+    "business buildings"
+  ],
+  "medtop:20001241": [
+    "horse riding",
+    "equestrianism",
+    "mounted sports",
+    "riding"
+  ],
+  "medtop:20001248": [
+    "personal care",
+    "makeup",
+    "beauty products"
+  ],
+  "medtop:20001250": [
+    "body art",
+    "body alteration",
+    "skin modification",
+    "piercing"
+  ],
+  "medtop:20001251": [
+    "body art",
+    "skin tattooing",
+    "pigment introduction"
+  ],
+  "medtop:20001247": [
+    "collectibles",
+    "numismatics",
+    "philately",
+    "hobby collecting"
+  ],
+  "medtop:20001242": [
+    "steeplechase",
+    "hurdles",
+    "athletics hurdles",
+    "jump racing"
+  ],
+  "medtop:20001254": [
+    "alcoholic beverages",
+    "wine",
+    "beer",
+    "spirits"
+  ],
+  "medtop:20001263": [
+    "clergy elections",
+    "church governance",
+    "religious leadership",
+    "congregational votes"
+  ],
+  "medtop:20001252": [
+    "body modification",
+    "piercings",
+    "body art",
+    "skin alteration"
+  ],
+  "medtop:20001262": [
+    "official investigations",
+    "government reviews",
+    "public inquiries",
+    "judicial reviews"
+  ],
+  "medtop:20001256": [
+    "interior design",
+    "home styling",
+    "room decoration",
+    "furnishing"
+  ],
+  "medtop:20001260": [
+    "legislative committees",
+    "policy groups",
+    "subcommittees",
+    "congressional panels"
+  ],
+  "medtop:20001258": [
+    "electronics",
+    "consumer tech",
+    "digital devices",
+    "smart gadgets"
+  ],
+  "medtop:20001259": [
+    "party convention",
+    "political caucus",
+    "nominations",
+    "party meetings"
+  ],
+  "medtop:20001255": [
+    "home improvement",
+    "renovations",
+    "property upgrades",
+    "building projects"
+  ],
+  "medtop:20001257": [
+    "horticulture",
+    "landscaping",
+    "plant care"
+  ],
+  "medtop:20001261": [
+    "executive leadership",
+    "head of state",
+    "prime minister",
+    "government chief"
+  ],
+  "medtop:20001253": [
+    "cooking",
+    "baking",
+    "culinary arts",
+    "food preparation"
+  ],
+  "medtop:20001274": [
+    "birth control",
+    "reproductive health",
+    "family planning",
+    "[ ]"
+  ],
+  "medtop:20001265": [
+    "local government",
+    "municipal policy",
+    "city council",
+    "regional governance"
+  ],
+  "medtop:20001268": [
+    "anniversary",
+    "celebration day",
+    "[ ]"
+  ],
+  "medtop:20001266": [
+    "political discourse",
+    "election debates",
+    "campaign debates",
+    "policy discussions"
+  ],
+  "medtop:20001269": [
+    "new year's day",
+    "calendar year",
+    "year end",
+    "[ ]"
+  ],
+  "medtop:20001267": [
+    "summer solstice",
+    "midsummer festival",
+    "solstice celebrations",
+    "[ ]"
+  ],
+  "medtop:20001264": [
+    "infrastructure",
+    "public works",
+    "transportation policy",
+    "utilities"
+  ],
+  "medtop:20001275": [
+    "freelance work",
+    "gig workers",
+    "short-term contracts",
+    "on-demand labor"
+  ],
+  "medtop:20001273": [
+    "christening",
+    "baptism ceremony",
+    "sacrament",
+    "[ ]"
+  ],
+  "medtop:20001270": [
+    "trick or treat",
+    "costume parties",
+    "[ ]"
+  ],
+  "medtop:20001271": [
+    "all hallows day",
+    "hallowmas",
+    "saints day",
+    "[ ]"
+  ],
+  "medtop:20001272": [
+    "saint walpurga",
+    "spring equinox",
+    "[ ]"
+  ],
+  "medtop:20001284": [
+    "school bullying",
+    "peer harassment",
+    "verbal abuse",
+    "social intimidation"
+  ],
+  "medtop:20001276": [
+    "maternity leave",
+    "family leave",
+    "birth leave"
+  ],
+  "medtop:20001278": [
+    "cooperative firms",
+    "member-owned firms",
+    "worker co-ops",
+    "joint ventures"
+  ],
+  "medtop:20001279": [
+    "digital currency",
+    "crypto",
+    "virtual currency",
+    "blockchain"
+  ],
+  "medtop:20001286": [
+    "arm grappling",
+    "hand wrestling",
+    "contest wrestling",
+    "two-man wrestling"
+  ],
+  "medtop:20001287": [
+    "superior courts",
+    "high courts",
+    "judicial review",
+    "court rulings"
+  ],
+  "medtop:20001277": [
+    "voluntary work",
+    "community service",
+    "charitable work",
+    "unpaid labour"
+  ],
+  "medtop:20001280": [
+    "tropical cyclones",
+    "hurricanes",
+    "storm systems",
+    "weather events"
+  ],
+  "medtop:20001281": [
+    "racquet sports",
+    "padel",
+    "squash",
+    "indoor sports"
+  ],
+  "medtop:20001283": [
+    "people smuggling",
+    "human trafficking",
+    "illegal migration",
+    "cross-border smuggling"
+  ],
+  "medtop:20001282": [
+    "ring hockey",
+    "ring sport",
+    "ice ring",
+    "team ring"
+  ],
+  "medtop:20001285": [
+    "property damage",
+    "vandal acts",
+    "destructive acts",
+    "public defacement"
+  ],
+  "medtop:20001299": [
+    "video surveillance",
+    "security monitoring",
+    "closed circuit television",
+    "observational systems"
+  ],
+  "medtop:20001291": [
+    "HVAC systems",
+    "temperature control",
+    "climate control",
+    "heating systems"
+  ],
+  "medtop:20001297": [
+    "high streets",
+    "retail streets",
+    "main streets",
+    "shopping streets"
+  ],
+  "medtop:20001289": [
+    "distribution channels",
+    "sales channels",
+    "retail channels",
+    "market channels"
+  ],
+  "medtop:20001290": [
+    "social housing",
+    "public housing schemes",
+    "government housing",
+    "affordable housing"
+  ],
+  "medtop:20001292": [
+    "economic incentives",
+    "subsidy programs",
+    "fiscal incentives",
+    "development grants"
+  ],
+  "medtop:20001293": [
+    "video on demand",
+    "streaming platforms",
+    "online entertainment",
+    "digital media"
+  ],
+  "medtop:20001298": [
+    "machine learning",
+    "artificial neural networks",
+    "AI systems",
+    "computational intelligence"
+  ],
+  "medtop:20001296": [
+    "shopping centers",
+    "retail centers",
+    "malls",
+    "commercial centers"
+  ],
+  "medtop:20001288": [
+    "native populations",
+    "indigenous communities",
+    "first peoples",
+    "aboriginal groups"
+  ],
+  "medtop:20001294": [
+    "crowd funding",
+    "online fundraising",
+    "donation campaigns",
+    "people funding"
+  ],
+  "medtop:20001295": [
+    "business process outsourcing",
+    "offshore outsourcing",
+    "contracting services",
+    "externalization"
+  ],
+  "medtop:20001303": [
+    "medals",
+    "trophies",
+    "awards",
+    "sporting awards"
+  ],
+  "medtop:20001307": [
+    "SUP",
+    "paddleboarding",
+    "standing boards",
+    "water boards"
+  ],
+  "medtop:20001308": [
+    "combat sport",
+    "self defence",
+    "fighting sport"
+  ],
+  "medtop:20001301": [
+    "records",
+    "achievements",
+    "medal counts",
+    "sporting records"
+  ],
+  "medtop:20001310": [
+    "combat sport",
+    "striking",
+    "boxing"
+  ],
+  "medtop:20001302": [
+    "records",
+    "achievements",
+    "best performances",
+    "sporting records"
+  ],
+  "medtop:20001304": [
+    "honours",
+    "recognitions",
+    "awards",
+    "sporting honours"
+  ],
+  "medtop:20001311": [
+    "sambo",
+    "wrestling",
+    "martial art",
+    "combat sport"
+  ],
+  "medtop:20001306": [
+    "windsurfing",
+    "kiteboarding",
+    "hydro planing"
+  ],
+  "medtop:20001300": [
+    "confidentiality",
+    "data protection",
+    "personal data",
+    "privacy rights"
+  ],
+  "medtop:20001309": [
+    "squads",
+    "gymnastics",
+    "team sport"
+  ],
+  "medtop:20001305": [
+    "racquet sport",
+    "doubles sport",
+    "court sport"
+  ],
+  "medtop:20001314": [
+    "animal cruelty",
+    "animal neglect",
+    "zoo abuse",
+    "wildlife abuse"
+  ],
+  "medtop:20001316": [
+    "territorial disputes",
+    "border conflicts",
+    "cross-border issues",
+    "state boundaries"
+  ],
+  "medtop:20001318": [
+    "pests",
+    "insect control",
+    "rodent control",
+    "vector control"
+  ],
+  "medtop:20001312": [
+    "political figures",
+    "leadership",
+    "government officials",
+    "executive branch"
+  ],
+  "medtop:20001322": [
+    "chemical poisoning",
+    "toxic exposure",
+    "substance abuse",
+    "poison incidents"
+  ],
+  "medtop:20001319": [
+    "fake news",
+    "false information",
+    "disinformation campaigns",
+    "misinformation"
+  ],
+  "medtop:20001320": [
+    "state-sponsored torture",
+    "physical abuse",
+    "psychological torture",
+    "prisoner abuse"
+  ],
+  "medtop:20001321": [
+    "drowning incidents",
+    "water fatalities",
+    "aquatic accidents",
+    "near-drowning"
+  ],
+  "medtop:20001315": [
+    "zoos",
+    "animal parks",
+    "wildlife reserves",
+    "menageries"
+  ],
+  "medtop:20001323": [
+    "sports training",
+    "coaching staff",
+    "team management",
+    "sports instruction"
+  ],
+  "medtop:20001317": [
+    "child welfare",
+    "early childhood",
+    "daycare",
+    "youth services"
+  ],
+  "medtop:20001313": [
+    "gun violence",
+    "mass shootings",
+    "armed attacks",
+    "police shootings"
+  ],
+  "medtop:20001329": [
+    "mini basketball",
+    "three-on-three",
+    "basketball"
+  ],
+  "medtop:20001333": [
+    "road races",
+    "road time trials",
+    "cycling"
+  ],
+  "medtop:20001330": [
+    "white-water racing",
+    "kayak slalom",
+    "river rapids"
+  ],
+  "medtop:20001328": [
+    "male demographic",
+    "gender demographic",
+    "masculinity"
+  ],
+  "medtop:20001332": [
+    "freestyle BMX",
+    "BMX tricks",
+    "bike acrobatics"
+  ],
+  "medtop:20001331": [
+    "flatwater racing",
+    "canoe race",
+    "speed canoe"
+  ],
+  "medtop:20001325": [
+    "game officials",
+    "referees",
+    "umpire"
+  ],
+  "medtop:20001327": [
+    "female demographic",
+    "gender demographic",
+    "women's achievements"
+  ],
+  "medtop:20001324": [
+    "sports ownership",
+    "team management",
+    "sports leadership",
+    "sports executives"
+  ],
+  "medtop:20001334": [
+    "track races",
+    "cycling events",
+    "track competitions"
+  ],
+  "medtop:20001326": [
+    "gender equality",
+    "feminism",
+    "women's issues"
+  ],
+  "medtop:20001335": [
+    "football 5s",
+    "five-a-side football",
+    "paralympic football",
+    "small-sided football"
+  ],
+  "medtop:20001346": [
+    "beatification",
+    "saint declaration",
+    "sainthood"
+  ],
+  "medtop:20001341": [
+    "league play",
+    "tournament play",
+    "scheduled sports"
+  ],
+  "medtop:20001345": [
+    "bar mitzvah",
+    "coming of age",
+    "Jewish adulthood",
+    "religious milestone"
+  ],
+  "medtop:20001339": [
+    "health and wellness",
+    "wellbeing",
+    "mental health"
+  ],
+  "medtop:20001347": [
+    "Shia Muslim",
+    "Islamic Shia",
+    "Twelver Shia"
+  ],
+  "medtop:20001340": [
+    "psychological health",
+    "emotional health",
+    "wellness programs"
+  ],
+  "medtop:20001338": [
+    "school policy",
+    "educational legislation",
+    "learning policy"
+  ],
+  "medtop:20001337": [
+    "online learning",
+    "remote education",
+    "e-learning",
+    "virtual schooling"
+  ],
+  "medtop:20001343": [
+    "championship game",
+    "decider game",
+    "playoff finale"
+  ],
+  "medtop:20001342": [
+    "championship playoffs",
+    "postseason playoffs",
+    "tournament finals"
+  ],
+  "medtop:20001344": [
+    "Roman Catholicism",
+    "Catholic Church",
+    "Catholic faith"
+  ],
+  "medtop:20001336": [
+    "blind sports",
+    "seated sports",
+    "vis impairment sport"
+  ],
+  "medtop:20001359": [
+    "Pregnancy",
+    "Childbirth"
+  ],
+  "medtop:20001354": [
+    "Healthcare",
+    "Medical sector"
+  ],
+  "medtop:20001349": [
+    "Atheism",
+    "Agnosticism"
+  ],
+  "medtop:20001348": [
+    "Islam"
+  ],
+  "medtop:20001358": [
+    "Community health"
+  ],
+  "medtop:20001352": [
+    "Chanukah"
+  ],
+  "medtop:20001357": [
+    "Anxiety",
+    "Stress"
+  ],
+  "medtop:20001351": [
+    "Jewish faith"
+  ],
+  "medtop:20001356": [
+    "Mood disorder"
+  ],
+  "medtop:20001350": [
+    "Hajj"
+  ],
+  "medtop:20001353": [
+    "Coastal hazard"
+  ],
+  "medtop:20001355": [
+    "Learning disability"
+  ],
+  "medtop:20001361": [
+    "cyber attacks",
+    "online warfare",
+    "digital warfare"
+  ],
+  "medtop:20001367": [
+    "commercial property",
+    "office buildings",
+    "retail real estate",
+    "business properties"
+  ],
+  "medtop:20001368": [
+    "residential property",
+    "housing market",
+    "home sales",
+    "real estate"
+  ],
+  "medtop:20001366": [
+    "corporate restructuring",
+    "business reorganization",
+    "company restructuring",
+    "operational changes"
+  ],
+  "medtop:20001369": [
+    "audio podcasts",
+    "podcast networks",
+    "audio content",
+    "digital audio"
+  ],
+  "medtop:20001371": [
+    "business services",
+    "professional services",
+    "consulting services",
+    "management services"
+  ],
+  "medtop:20001360": [
+    "social groups",
+    "community organizations",
+    "civic groups",
+    "fraternal societies"
+  ],
+  "medtop:20001370": [
+    "financial services",
+    "investment services",
+    "banking services",
+    "asset management"
+  ],
+  "medtop:20001365": [
+    "business performance",
+    "financial reporting",
+    "corporate results",
+    "earnings reports"
+  ],
+  "medtop:20001364": [
+    "car sharing",
+    "bike sharing",
+    "micro-mobility",
+    "rental vehicles"
+  ],
+  "medtop:20001362": [
+    "public transit",
+    "mass transit",
+    "bus routes",
+    "rail transport"
+  ],
+  "medtop:20001363": [
+    "ride-hailing services",
+    "taxi services",
+    "on-demand transport",
+    "shared mobility"
+  ],
+  "medtop:20001380": [
+    "special elections",
+    "runoff elections",
+    "replacement elections",
+    "contingency elections"
+  ],
+  "medtop:20001372": [
+    "news media",
+    "journalism",
+    "media outlets",
+    "press"
+  ],
+  "medtop:20001373": [
+    "diversity initiatives",
+    "equity programs",
+    "inclusion efforts",
+    "DEI"
+  ],
+  "medtop:20001381": [
+    "recall votes",
+    "special elections",
+    "removal elections",
+    "elections to remove"
+  ],
+  "medtop:20001378": [
+    "missing personnel",
+    "POW status",
+    "unaccounted for",
+    "military missing"
+  ],
+  "medtop:20001376": [
+    "corporate debt",
+    "fixed-rate bonds",
+    "issuer bonds",
+    "company bonds"
+  ],
+  "medtop:20001375": [
+    "profit sharing plans",
+    "employee profit",
+    "equity compensation",
+    "share profits"
+  ],
+  "medtop:20001379": [
+    "breakdancing",
+    "battle dancing",
+    "urban dance",
+    "break competitions"
+  ],
+  "medtop:20001383": [
+    "land-use planning",
+    "zoning regulations",
+    "development controls",
+    "urban planning"
+  ],
+  "medtop:20001377": [
+    "conflict casualties",
+    "civilian deaths",
+    "battle fatalities"
+  ],
+  "medtop:20001382": [
+    "power-sharing agreements",
+    "coalition governments",
+    "inter-party alliances",
+    "political coalitions"
+  ],
+  "medtop:20001374": [
+    "climate action",
+    "environmental policy",
+    "green initiatives"
+  ],
+  "medtop:20001386": [
+    "communist ideology",
+    "communist system",
+    "Marxism-Leninism"
+  ],
+  "medtop:20001393": [
+    "indoor football",
+    "five-a-side football",
+    "court football"
+  ],
+  "medtop:20001389": [
+    "hereditary monarchy",
+    "unelected monarchy",
+    "divine right monarchy"
+  ],
+  "medtop:20001387": [
+    "social democracy",
+    "socialist government",
+    "socialist system"
+  ],
+  "medtop:20001395": [
+    "pesticide",
+    "herbicide",
+    "weed killer",
+    "crop protection"
+  ],
+  "medtop:20001385": [
+    "political movement",
+    "political association",
+    "political group",
+    "advocacy group"
+  ],
+  "medtop:20001384": [
+    "political group",
+    "party",
+    "political organization"
+  ],
+  "medtop:20001391": [
+    "vegetarianism",
+    "veganism",
+    "plant-based diet",
+    "meat-free diet"
+  ],
+  "medtop:20001388": [
+    "religious government",
+    "theocratic state",
+    "clergy government"
+  ],
+  "medtop:20001394": [
+    "sand football",
+    "beach football",
+    "coastal football"
+  ],
+  "medtop:20001390": [
+    "alpine mountaineering",
+    "winter mountaineering",
+    "ski ascents"
+  ],
+  "medtop:20001392": [
+    "park",
+    "playground",
+    "public park",
+    "recreation area"
+  ],
+  "medtop:20001396": [
+    "security",
+    "guarding",
+    "access control",
+    "surveillance"
+  ]
+}
