@@ -41,3 +41,6 @@ NEWS_SUMMARY_AGENT_MODEL = "gemma3:4b"
 
 # context lengths
 MAX_ARTICLE_TOKENS = 8000  # Maximum length of the article content to be summarized
+
+# uncertain article reanalysis
+UNCERTAIN_ARTICLE_REANALYSIS_CONTENT_TRUNCATE = 2000  # Maximum length of the article content to be reanalyzed

@@ -246,6 +246,9 @@ Do not filter an article solely because its title is short or lacks detail. If i
 - A valid event may contain only one article.
 - Event IDs are local to this input batch. Do not imply that they are stable database IDs or match events from earlier batches.
 
+## Confidence score
+- Assign a confidence score from 0.0 to 1.0 for each event, reflecting the likelihood that the event is real and accurately represented by the articles.
+
 ## Evidence and Safety
 - Use only the supplied article titles and metadata.
 - Do not invent event details, locations, participants, causes, outcomes, or event dates.
@@ -260,23 +263,19 @@ Return valid JSON only, with no markdown or commentary. Follow this schema:
   "events": [
     {
       "event_title": "A concise, neutral title supported by the article titles",
-      "article_ids": [article_id_1, article_id_2, ...],
-      "published_at_range": {
-        "first": "earliest supplied publication timestamp",
-        "last": "latest supplied publication timestamp"
-      },
-      "confidence": 0.0
+      "article_ids": [123, 456, 128, ...],
+      "confidence_score": 0.0
     }
   ],
   "filtered_articles": [
     {
-      "article_id": article_id_3,
+      "article_id": 42,
       "reason": "opinion | analysis_without_new_event | evergreen | service_or_how_to | review_or_promotion | preview_or_speculation | no_identifiable_event | insufficient_information"
     }
   ],
   "uncertain_articles": [
     {
-      "article_id": article_id_4,
+      "article_id": 111,
       "reason": "A brief explanation of what is unclear from the title alone"
     }
   ]
@@ -287,7 +286,9 @@ Every input article must appear exactly once:
 - in filtered_articles,
 - or in uncertain_articles.
 
-Do not include an article in more than one event. Use an empty array when a section has no entries. Use only supplied publication timestamps when calculating published_at_range; do not present them as event occurrence dates.
+Preserve article IDs as integers. Never convert them to strings.
+
+Do not include an article in more than one event. Use an empty array when a section has no entries. 
 '''
 }
 
@@ -310,10 +311,10 @@ You will receive a JSON object containing:
 
 ### existing_events
 Each event may contain:
-- event_id: the event's existing identifier
+- event_id: a unique identifier
 - event_title: a concise title
 - published_at_range: earliest and latest publication timestamps
-- confidence: the confidence of the original event detection
+- confidence_score: the confidence score of the original event detection
 - article_titles: titles of the articles associated with the event, if available
 - other metadata, if available
 
@@ -368,28 +369,20 @@ Return valid JSON only, with no markdown or commentary. Use this schema:
   "existing_event_updates": [
     {
       "event_id": "existing event ID",
-      "article_ids_to_add": ["article_id"],
-      "published_at_range": {
-        "first": "earliest publication timestamp across the existing range and added articles",
-        "last": "latest publication timestamp across the existing range and added articles"
-      },
-      "match_confidence": 0.0
+      "article_ids_to_add": [123, 456, 128, ...],
+      "match_confidence_score": 0.0
     }
   ],
   "new_events": [
     {
       "event_title": "A concise, neutral title supported by the articles",
-      "article_ids": ["article_id"],
-      "published_at_range": {
-        "first": "earliest supplied publication timestamp among these articles",
-        "last": "latest supplied publication timestamp among these articles"
-      },
-      "confidence": 0.0
+      "article_ids": [121, 436, 127, ...],
+      "confidence_score": 0.0
     }
   ],
   "filtered_articles": [
     {
-      "article_id": article_id,
+      "article_id": 42,
       "reason": "opinion | analysis_without_new_event | evergreen | service_or_how_to | review_or_promotion | preview_or_speculation | no_identifiable_event | insufficient_information"
     }
   ]
@@ -401,7 +394,6 @@ Return valid JSON only, with no markdown or commentary. Use this schema:
 - Do not include an article in more than one event or output section.
 - Include an existing_event_updates entry only if at least one article is being added to that event.
 - Preserve existing event IDs and article IDs exactly.
-- Calculate publication ranges only from supplied publication timestamps. Do not describe them as event occurrence dates.
 - If a timestamp is missing or invalid, do not invent one; use null for that endpoint when it cannot be determined.
 - Use an empty array when a section has no entries.
 - Confidence values must be between 0.0 and 1.0.

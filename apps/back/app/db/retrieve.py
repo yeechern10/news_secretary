@@ -1,4 +1,5 @@
 import sqlite3
+from datetime import datetime
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
 
@@ -27,6 +28,8 @@ def structure_keywords(keywords):
     return keyword_dict
 
 def get_articles_id(news_list):
+    articles_dict = {}
+    
     with sqlite3.connect(SQLITE_DB_PATH) as conn:
         with conn:
             cursor = conn.cursor()
@@ -38,45 +41,46 @@ def get_articles_id(news_list):
                 if result:
                     articles_id = result[0]
                     news['id'] = articles_id
-    return news_list
+                    articles_dict[articles_id] = news
+    return articles_dict
 
-def fetch_articles_records(results, articles_set):
+def fetch_articles_records(results, articles_dict):
     for row in results:
-                articles_set.add({
+                articles_dict[row[0]] = {
                     "id": row[0],
-                    "created_at": row[1],
+                    "created_at": datetime.fromtimestamp(row[1]) if row[1] is not None else None,
                     "title": row[2],
                     "link": row[3],
                     "snippet": row[4],
-                    "published_at": row[5],
+                    "published_at": datetime.fromtimestamp(row[5]) if row[5] is not None else None,
                     "source": row[6],
                     "language": row[7],
                     "region": row[8],
                     "content": row[9]
-                })
-    return articles_set
+                }
+    return articles_dict
 
 def retrieve_articles_from_db(cursor, ids: list = None, links: list = None, titles: list = None):
-    articles_set = set()
+    articles_dict = {}
     if ids:
         placeholders = ', '.join(ids)
         query = f"SELECT id, created_at, title, link, snippet, published_at, source, language, region, content FROM {TABLE_NAMES['articles']} WHERE id IN ({placeholders})"
         cursor.execute(query, ids)
         results = cursor.fetchall()
-        articles_set = fetch_articles_records(results, articles_set)
+        articles_dict = fetch_articles_records(results, articles_dict)
         
     if links:
         placeholders = ', '.join(['?'] * len(links))
         query = f"SELECT id, created_at, title, link, snippet, published_at, source, language, region, content FROM {TABLE_NAMES['articles']} WHERE link IN ({placeholders})"
         cursor.execute(query, links)
         results = cursor.fetchall()
-        articles_set = fetch_articles_records(results, articles_set)
+        articles_dict = fetch_articles_records(results, articles_dict)
         
     if titles:
         placeholders = ', '.join(['?'] * len(titles))
         query = f"SELECT id, created_at, title, link, snippet, published_at, source, language, region, content FROM {TABLE_NAMES['articles']} WHERE title IN ({placeholders})"
         cursor.execute(query, titles)
         results = cursor.fetchall()
-        articles_set = fetch_articles_records(results, articles_set)
+        articles_dict = fetch_articles_records(results, articles_dict)
     
-    return list(articles_set)
+    return articles_dict

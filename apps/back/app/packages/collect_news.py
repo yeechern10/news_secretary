@@ -8,6 +8,7 @@ import pandas as pd
 
 from ..configuration import NEWS_SOURCE, SQLITE_DB_PATH
 from ..packages.logger import get_logger
+from ..db.retrieve import get_articles_id
 from ..db.insert_data import insert_articles_record
 
 def request_news(query, time_range, serper_api_key, news_list,language ='en', region = None,logger = None):
@@ -47,19 +48,19 @@ def convert_news_date(news_list):
         if delta_t.endswith('ago'):
             if 'hour' in delta_t:
                 hours = int(delta_t.split()[0])
-                news_list[i]['date'] = (current_date - datetime.timedelta(hours=hours)).strftime('%Y-%m-%d')
+                news_list[i]['date'] = (current_date - datetime.timedelta(hours=hours))
             elif 'day' in delta_t:
                 days = int(delta_t.split()[0])
-                news_list[i]['date'] = (current_date - datetime.timedelta(days=days)).strftime('%Y-%m-%d')
+                news_list[i]['date'] = (current_date - datetime.timedelta(days=days))
             elif 'week' in delta_t:
                 weeks = int(delta_t.split()[0])
-                news_list[i]['date'] = (current_date - datetime.timedelta(weeks=weeks)).strftime('%Y-%m-%d')
+                news_list[i]['date'] = (current_date - datetime.timedelta(weeks=weeks))
             elif 'month' in delta_t:
                 months = int(delta_t.split()[0])
-                news_list[i]['date'] = (current_date - datetime.timedelta(days=30*months)).strftime('%Y-%m-%d')
+                news_list[i]['date'] = (current_date - datetime.timedelta(days=30*months))
             elif 'year' in delta_t:
                 years = int(delta_t.split()[0])
-                news_list[i]['date'] = (current_date - datetime.timedelta(days=365*years)).strftime('%Y-%m-%d')
+                news_list[i]['date'] = (current_date - datetime.timedelta(days=365*years))
             else:
                 news_list[i]['date'] = 'null'
         else:
@@ -195,10 +196,12 @@ def news_article_pipeline(query_list, time_range, serper_api_key, language='en',
             news['content'] = "failed"
     
     # insert articles into the database
-    for article in news_list:
-        with sqlite3.connect(SQLITE_DB_PATH) as conn:
-            with conn:
+    with sqlite3.connect(SQLITE_DB_PATH) as conn:
+        with conn:
+            for article in news_list:
                 cursor = conn.cursor()
-                insert_articles_record(article, cursor, conn, logger)
+                insert_articles_record(article, cursor, logger)
     
-    return news_list
+    article_ids_dict = get_articles_id(news_list)
+    
+    return article_ids_dict

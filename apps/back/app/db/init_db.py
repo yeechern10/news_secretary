@@ -100,9 +100,11 @@ def create_evets_table(cursor, logger=None):
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         event_title TEXT NOT NULL,
         event_description TEXT,
-        event_summary TEXT,
+        article_ids TEXT,
+        published_at_range_start TIMESTAMP,
+        published_at_range_end TIMESTAMP,
+        confidence_score REAL,
         tags TEXT,
-        summary TEXT,
         importance_score INTEGER,
         created_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         last_updated_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP

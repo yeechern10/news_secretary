@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: pgvector/pgvector:0.8.7-pg18-trixie
+    container_name: tellme-postgres
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: mydb
+    ports:
+      - "5432:5432"
+    volumes:
+      - tellme-postgres-data:/var/lib/postgresql/data
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+  tellme-postgres-data:
