@@ -207,7 +207,7 @@ def event_detection_pipeline(news_list, api_key = " ", logger=None):
     # save detected events to the database
     with sqlite3.connect(SQLITE_DB_PATH) as conn:
         with conn:
-            cursor = conn.cursor()
+            cursor = conn.cursor(row_factory=dict_row)
             for event in event_list:
                 insert_events_record(event, cursor, logger=logger)
 

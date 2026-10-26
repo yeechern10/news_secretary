@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS keywords (
     parent_id       UUID REFERENCES keywords(id) ON DELETE SET NULL,
     child_ids       TEXT DEFAULT NULL, -- comma-separated list of child keyword IDs
     source          TEXT,
-    embedding       vector(1536),  -- for OpenAI's text-embedding-3-small
+    embedding       vector(	1024),  -- for BAAI/bge-m3
     created_at      TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
@@ -56,7 +56,9 @@ CREATE TABLE IF NOT EXISTS articles (
     language        TEXT,
     region          TEXT,
     content         TEXT,
-    embedding       vector(1536)            -- for OpenAI's text-embedding-3-small
+    content_status  TEXT,  -- e.g., "success", "failed", "pending"
+    content_error   TEXT,  -- error message if content fetching failed
+    embedding       vector(1024)            -- for BAAI/bge-m3
 );
 
 -- vector search index for articles embedding
@@ -75,7 +77,7 @@ CREATE TABLE IF NOT EXISTS events (
     confidence_score         REAL,
     tags                     TEXT,
     importance_score         INTEGER,
-    embedding                vector(1536),  -- for OpenAI's text-embedding-3-small
+    embedding                vector(1024),  -- for BAAI/bge-m3
     created_timestamp        TIMESTAMPTZ NOT NULL DEFAULT now(),
     last_updated_timestamp   TIMESTAMPTZ NOT NULL DEFAULT now()
 );

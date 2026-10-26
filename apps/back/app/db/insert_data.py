@@ -2,6 +2,7 @@ import sqlite3
 import json
 import datetime
 
+from ..db.retrieve import structure_article
 from ..configuration import SQLITE_DB_PATH, TABLE_NAMES
 
 
@@ -30,7 +31,7 @@ def insert_keywords_record(keyword ,cursor, logger=None):
             }
             with sqlite3.connect(SQLITE_DB_PATH) as new_conn:
                 with new_conn:
-                    new_cursor = new_conn.cursor()
+                    new_cursor = new_conn.cursor(row_factory=dict_row)
                     new_cursor.execute(f"""
                         SELECT * FROM {TABLE_NAMES['keywords']} WHERE {conflict_field} = ?
                     """, (field_value_map[conflict_field],))
@@ -44,6 +45,7 @@ def insert_articles_record(article, cursor, logger=None):
         cursor.execute(f"""
             INSERT INTO {TABLE_NAMES['articles']} (title, link, snippet, published_at, source, language, region, content)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            RETURNING id, created_at, title, link, snippet, published_at, source, language, region, content, content_status, content_error, embedding
         """, (
             article['title'],
             article['link'],
@@ -54,6 +56,7 @@ def insert_articles_record(article, cursor, logger=None):
             article.get('region', None),
             article.get('content', None)
         ))
+        return cursor.fetchone()
     except sqlite3.IntegrityError as e:
         if logger:
             logger.error(f"Error inserting article {article['title']}: {e}")
@@ -68,16 +71,17 @@ def insert_articles_record(article, cursor, logger=None):
             }
             with sqlite3.connect(SQLITE_DB_PATH) as new_conn:
                 with new_conn:
-                    new_cursor = new_conn.cursor()
+                    new_cursor = new_conn.cursor(row_factory=dict_row)
                     new_cursor.execute(f"""
-                        SELECT * FROM {TABLE_NAMES['articles']} WHERE {conflict_field} = ?
+                        SELECT id, created_at, title, link, snippet, published_at, source, language, region, content, content_status, content_error, embedding FROM {TABLE_NAMES['articles']} WHERE {conflict_field} = ?
                     """, (field_value_map[conflict_field],))
                     existing_record = new_cursor.fetchone()
                     if logger:
                         logger.info(f"Existing record: {existing_record}")
                     else:
                         print(f"Existing record: {existing_record}")
-                        
+                        return existing_record
+
 def insert_events_record(event: dict, cursor, saved_events: dict, logger=None):
     try:
         cursor.execute(f"""
@@ -103,7 +107,7 @@ def insert_events_record(event: dict, cursor, saved_events: dict, logger=None):
             }
             with sqlite3.connect(SQLITE_DB_PATH) as new_conn:
                 with new_conn:
-                    new_cursor = new_conn.cursor()
+                    new_cursor = new_conn.cursor(row_factory=dict_row)
                     new_cursor.execute(f"""
                         SELECT * FROM {TABLE_NAMES['events']} WHERE {conflict_field} = ?
                     """, (field_value_map[conflict_field],))

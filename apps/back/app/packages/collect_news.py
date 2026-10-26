@@ -3,20 +3,21 @@ from envs.da.Lib import sqlite3
 import requests
 import datetime
 import trafilatura
-from bs4 import BeautifulSoup
 import pandas as pd
+from psycopg.rows import dict_row
 
-from ..configuration import NEWS_SOURCE, SQLITE_DB_PATH
+from ..configuration import NEWS_SOURCE, SQLITE_DB_PATH, SERPER_API
 from ..packages.logger import get_logger
-from ..db.retrieve import get_articles_id
+from ..db.connect_db import connect_to_postgres
+from ..db.retrieve import get_articles_id, check_article_exists_embedded
 from ..db.insert_data import insert_articles_record
 
-def request_news(query, time_range, serper_api_key, news_list,language ='en', region = None,logger = None):
+def request_news(query, time_range, news_list,language ='en', region = None,logger = None):
     # get news
     response = requests.post(
         NEWS_SOURCE,
         headers={
-            "X-API-KEY": serper_api_key,
+            "X-API-KEY": SERPER_API,
             "Content-Type": "application/json"
             },
         json={
@@ -89,7 +90,7 @@ def restructure_news_list(news_list):
         })
     return restructured_news_list
 
-def collect_news(query, time_range, serper_api_key, language='en', region=None, logger=None):
+def collect_news(query, time_range, language='en', region=None, logger=None):
     tbs = 'qdr:d' # default to last 24 hours
     
     current_date = datetime.datetime.now().date()
@@ -111,7 +112,7 @@ def collect_news(query, time_range, serper_api_key, language='en', region=None, 
             print(f"Invalid time_range '{time_range}' provided. Defaulting to last 24 hours.")
     
     news_list = []
-    request_news(query, tbs, serper_api_key, news_list, language, region, logger)
+    request_news(query, tbs, news_list, language, region, logger)
     
     # Add language, region, and location information to each news item
     add_news_info(news_list, language, region)
@@ -141,7 +142,7 @@ def fetch_article_content(url, scraper, logger=None):
                 logger.warning(f"Empty content extracted from {url}")
             else:
                 print(f"Warning: Empty content extracted from {url}")
-            return None
+            return "failed: Empty content extracted"
         
         return text
     except requests.HTTPError as e:
@@ -149,58 +150,80 @@ def fetch_article_content(url, scraper, logger=None):
         if logger:
             status = e.response.status_code if e.response is not None else "?"
             logger.warning(f"HTTP {status} for {url}")
-        return f"fail: {e}"
+        return f"failed: HTTP {status} for {url}"
     except Exception as e:
         if logger:
             logger.error(f"Error fetching article content from {url}: {e}")
-        else:
-            print(f"Error fetching article content from {url}: {e}")
-        return f"fail: {e}"
+        return f"failed: Error fetching article content from {url}: {e}"
     
-def remove_duplicates(news_list):    
+def remove_duplicates_missing(news_list):    
     df = pd.DataFrame(news_list)
     
     # remove duplicates based on url
     df = df.drop_duplicates(subset='link')
+    
+    # remove rows with missing or null values in the 'link' column
+    df = df.dropna(subset=['link'])
     
     # convert back to news_list
     news_list = df.to_dict(orient='records')
     
     return news_list
     
-def news_article_pipeline(query_list, time_range, serper_api_key, language='en', region=None):
-    logger = get_logger()
+def new_article(article,scraper, cursor, article_dicts, logger=None):
+    article_content = fetch_article_content(article['link'], scraper, logger)
+    article['content'] = article_content
     
-    news_list = []
+    # insert the article into the database
+    article_id = insert_articles_record(article, cursor, logger)
+    
+    if article_id:
+        article_dicts[article_id] = article
+    else:
+        if logger:
+            logger.error(f"Failed to insert article into database: {article['title']}")
+
+def article_pipeline(query_list, time_range, language='en', region=None, logger=None):
+    if logger is None:
+        logger = get_logger()
+    
+    article_list = []
     for query in query_list:
-        news_list.extend(collect_news(query, time_range, serper_api_key, language, region, logger))
+        article_list.extend(collect_news(query, time_range, language, region, logger))
     
     # remove duplicates based on url
-    news_list = remove_duplicates(news_list)
+    article_list = remove_duplicates_missing(article_list)
     
     # convert relative dates to absolute dates in the news list
-    news_list = convert_news_date(news_list)
+    article_list = convert_news_date(article_list)
     
     # restructure the news list
-    news_list = restructure_news_list(news_list)
+    article_list = restructure_news_list(article_list)
     
     # fetch the full article content for each news item
     scraper = cloudscraper.create_scraper(
         browser={"browser": "chrome", "platform": "windows", "mobile": False}
     )    
-    for news in news_list:
-        if news.get('link'):
-            article_content = fetch_article_content(news['link'], scraper, logger)
-            news['content'] = article_content
-        else:
-            news['content'] = "failed"
     
-    # insert articles into the database
-    with sqlite3.connect(SQLITE_DB_PATH) as conn:
+    article_dicts = {}
+    to_fetch_articles = []
+    to_embedding_articles = []
+    
+    with connect_to_postgres() as conn:
         with conn:
-            for article in news_list:
-                cursor = conn.cursor()
-                insert_articles_record(article, cursor, logger)
+            cursor = conn.cursor(row_factory=dict_row)
+            for article in article_list:
+                link = article.get('link')
+                
+                # check if the article already exists in the database and already embedded
+                existing_article = check_article_exists_embedded(cursor, link)
+                
+                if not existing_article:
+                    new_article(article, scraper, cursor, article_dicts, logger)
+                    
+                            
+                    
+
     
     article_ids_dict = get_articles_id(news_list)
     
