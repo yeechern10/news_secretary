@@ -1,5 +1,4 @@
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import linear_kernel
+from langchain_openai import OpenAIEmbeddings
 
 from ..db.retrieve import retrieve_leaves_keywords_from_db, structure_keywords
 
@@ -23,23 +22,15 @@ def keywords_structure_to_text(keyword_dict):
         keywords_texts.append(text)
     return keywords_texts
 
-def text_keywords_vector_similarity(events, language="en", top_k= 20):
+def vectorize_text_keywords(keywords, language="en", top_k= 20):
     keywords = retrieve_leaves_keywords_from_db()
     keyword_dict = structure_keywords(keywords)
     keywords_texts = keywords_structure_to_text(keyword_dict)
     
     if language == "zh":
-        vectorizer = TfidfVectorizer(
-            analyzer="char",
-            ngram_range=(2, 4),
-            min_df=1,
-        )
+        vectorizer = OpenAIEmbeddings(model="text-embedding-3-small")
     else:
-        vectorizer = TfidfVectorizer(
-            analyzer="word",
-            ngram_range=(1, 3),
-            min_df=1,
-        )
+        vectorizer = OpenAIEmbeddings(model="text-embedding-3-small")
 
     tfidf_matrix = vectorizer.fit_transform(keywords_texts)
     

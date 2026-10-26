@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS keywords (
     definition      TEXT,
     synonyms        TEXT,
     parent_id       UUID REFERENCES keywords(id) ON DELETE SET NULL,
-    child_ids       TEXT,
+    child_ids       TEXT DEFAULT NULL, -- comma-separated list of child keyword IDs
     source          TEXT,
     embedding       vector(1536),  -- for OpenAI's text-embedding-3-small
     created_at      TIMESTAMPTZ NOT NULL DEFAULT now()

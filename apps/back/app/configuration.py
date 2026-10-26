@@ -1,9 +1,18 @@
+import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # db
 DB_DIR = Path(__file__).parent.parent / "db"
 DB_DIR.mkdir(parents=True, exist_ok=True)
-SQLITE_DB_PATH = DB_DIR / "news_secretart.db"
+
+# postgres
+username = os.getenv("POSTGRES_USER", "postgres")
+password = os.getenv("POSTGRES_PASSWORD", "postgres")
+db_name = os.getenv("POSTGRES_DB", "news_secretary")
+PG_CONNECTION_STRING = f"postgresql://{username}:{password}@localhost:5432/news_secretary"
 
 # table names
 TABLE_NAMES = {

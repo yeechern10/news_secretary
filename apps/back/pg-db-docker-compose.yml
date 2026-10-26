@@ -3,9 +3,9 @@ services:
     image: pgvector/pgvector:0.8.7-pg18-trixie
     container_name: tellme-postgres
     environment:
-      POSTGRES_USER: myuser
-      POSTGRES_PASSWORD: mypassword
-      POSTGRES_DB: mydb
+      POSTGRES_USER: ${POSTGRES_ADMIN}
+      POSTGRES_PASSWORD: ${POSTGRES_ADMIN_PASSWORD}
+      POSTGRES_DB: tellme_db
     ports:
       - "5432:5432"
     volumes:

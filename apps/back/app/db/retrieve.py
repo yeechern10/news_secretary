@@ -1,16 +1,9 @@
-import sqlite3
+import psycopg
 from datetime import datetime
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
 
 from app.configuration import SQLITE_DB_PATH, TABLE_NAMES
-
-def retrieve_leaves_keywords_from_db():
-    with sqlite3.connect(SQLITE_DB_PATH) as conn:
-        cursor = conn.cursor()
-        cursor.execute(f"SELECT * FROM {TABLE_NAMES['keywords']} WHERE parent_id IS NULL")
-        keywords = cursor.fetchall()
-    return keywords
 
 def structure_keywords(keywords):
     keyword_dict = {}
@@ -18,6 +11,7 @@ def structure_keywords(keywords):
         # ('medtop:20000893', 'artistic cycling', 'Individual or teams on one or two bicycles in an arena. Points are awarded by a jury.', 'arena cycling , bicycle competition , team cycling', 'medtop:20000892', None, '2026-10-16 06:40:33')
         keyword_id, name, description, synonyms, parent_id, child_ids, created_at = keyword
         keyword_dict[keyword_id] = {
+            "id": keyword_id,
             "keyword": name,
             "description": description,
             "synonyms": synonyms.split(" , ") if synonyms else [],
@@ -26,6 +20,22 @@ def structure_keywords(keywords):
             "created_at": created_at
         }
     return keyword_dict
+
+def retrieve_leaves_keywords_from_db():
+    with psycopg.connect(SQLITE_DB_PATH) as conn:
+        cursor = conn.cursor()
+        cursor.execute(f"SELECT * FROM {TABLE_NAMES['keywords']} WHERE child_ids IS NULL")
+        keywords = cursor.fetchall()
+        columns = [d[0] for d in cursor.description]
+        keyword_dicts = []
+        for row in keywords:
+            keyword_dict = {}
+            for i in range(len(cursor.description)):
+                keyword_dicts.append(dict(zip(columns, row)))
+        
+    return keyword_dicts
+
+
 
 def get_articles_id(news_list):
     articles_dict = {}
