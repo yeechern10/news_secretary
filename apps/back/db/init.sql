@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS keywords (
     synonyms        TEXT,
     parent_id       UUID REFERENCES keywords(id) ON DELETE SET NULL,
     child_ids       TEXT DEFAULT NULL, -- comma-separated list of child keyword IDs
-    source          TEXT,
+    type            TEXT,
     embedding       vector(	1024),  -- for BAAI/bge-m3
     created_at      TIMESTAMPTZ NOT NULL DEFAULT now()
 );
@@ -70,16 +70,16 @@ CREATE INDEX IF NOT EXISTS idx_articles_embedding
 -- =========================================================
 CREATE TABLE IF NOT EXISTS events (
     id              UUID PRIMARY KEY DEFAULT uuidv7(),
-    event_title              TEXT NOT NULL,
-    event_description        TEXT,
-    published_at_range_start TIMESTAMPTZ,
-    published_at_range_end   TIMESTAMPTZ,
-    confidence_score         REAL,
-    tags                     TEXT,
-    importance_score         INTEGER,
-    embedding                vector(1024),  -- for BAAI/bge-m3
-    created_timestamp        TIMESTAMPTZ NOT NULL DEFAULT now(),
-    last_updated_timestamp   TIMESTAMPTZ NOT NULL DEFAULT now()
+    event_title                 TEXT NOT NULL,
+    event_summary               TEXT,
+    published_at_range_start    TIMESTAMPTZ,
+    published_at_range_end      TIMESTAMPTZ,
+    confidence_score            REAL,
+    tags                        TEXT,
+    importance_score            INTEGER,
+    embedding                   vector(1024),  -- for BAAI/bge-m3
+    created_timestamp           TIMESTAMPTZ NOT NULL DEFAULT now(),
+    last_updated_timestamp      TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
 -- =========================================================

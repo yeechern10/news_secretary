@@ -54,7 +54,7 @@ def retrieve_leaves_keywords_from_db():
 #         }
 
 def check_article_exists_embedded(cursor: psycopg.Cursor, link: str):
-    cursor.execute(f"SELECT id, created_at, title, link, snippet, published_at, source, language, region, content, content_status, content_error, embedding FROM {TABLE_NAMES['articles']} WHERE link = ?", (link,))
+    cursor.execute(f"SELECT id, created_at, title, link, snippet, published_at, source, language, region, content, content_status, content_error, embedding FROM {TABLE_NAMES['articles']} WHERE link = %s", (link,))
     article_dict = cursor.fetchone()
         
     # TODO: Check if the article is outdated and needs to fetch new content or re-embed.
@@ -69,7 +69,7 @@ def check_article_exists_embedded(cursor: psycopg.Cursor, link: str):
 #             cursor = conn.cursor(row_factory=dict_row)
 #             for news in news_list:
 #                 if news.get('link'):
-#                     cursor.execute(f"SELECT id FROM {TABLE_NAMES['articles']} WHERE link = ?", (news['link'],))
+#                     cursor.execute(f"SELECT id FROM {TABLE_NAMES['articles']} WHERE link = %s", (news['link'],))
 #                     result = cursor.fetchone()
 #                 if result:
 #                     articles_id = result[0]
@@ -103,14 +103,14 @@ def check_article_exists_embedded(cursor: psycopg.Cursor, link: str):
 #         articles_dict = fetch_articles_records(results, articles_dict)
         
 #     if links:
-#         placeholders = ', '.join(['?'] * len(links))
+#         placeholders = ', '.join(['%s'] * len(links))
 #         query = f"SELECT id, created_at, title, link, snippet, published_at, source, language, region, content FROM {TABLE_NAMES['articles']} WHERE link IN ({placeholders})"
 #         cursor.execute(query, links)
 #         results = cursor.fetchall()
 #         articles_dict = fetch_articles_records(results, articles_dict)
         
 #     if titles:
-#         placeholders = ', '.join(['?'] * len(titles))
+#         placeholders = ', '.join(['%s'] * len(titles))
 #         query = f"SELECT id, created_at, title, link, snippet, published_at, source, language, region, content FROM {TABLE_NAMES['articles']} WHERE title IN ({placeholders})"
 #         cursor.execute(query, titles)
 #         results = cursor.fetchall()

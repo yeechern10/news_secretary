@@ -205,7 +205,7 @@ def event_detection_pipeline(news_list, api_key = " ", logger=None):
     event_list, filtered_articles, uncertain_articles = event_restructuring(response, news_list, logger=logger)
     
     # save detected events to the database
-    with sqlite3.connect(SQLITE_DB_PATH) as conn:
+    with connect_to_postgres() as conn:
         with conn:
             cursor = conn.cursor(row_factory=dict_row)
             for event in event_list:

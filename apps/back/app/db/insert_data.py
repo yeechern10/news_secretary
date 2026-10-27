@@ -1,6 +1,7 @@
 import sqlite3
 import json
 import datetime
+from psycopg.rows import dict_row
 
 from ..db.retrieve import structure_article
 from ..configuration import SQLITE_DB_PATH, TABLE_NAMES
@@ -10,15 +11,18 @@ from ..configuration import SQLITE_DB_PATH, TABLE_NAMES
 def insert_keywords_record(keyword ,cursor, logger=None):
     try:
         cursor.execute(f"""
-            INSERT INTO {TABLE_NAMES['keywords']} (id, keyword, definition, synonyms, parent_id, child_ids)
-            VALUES (?, ?, ?, ?, ?, ?)
+            INSERT INTO {TABLE_NAMES['keywords']} 
+            (id, keyword, definition, synonyms, parent_id, child_ids, type, embedding)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
         """, (
             id,
             keyword["label"],
             keyword["definition"],
             " , ".join(keyword["synonyms"]) if keyword.get("synonyms") else None,
             keyword["parent"],
-            " , ".join(keyword["children"]) if keyword.get("children") else None
+            " , ".join(keyword["children"]) if keyword.get("children") else None,
+            keyword.get("type", None),
+            keyword.get("embedding", None)
         ))
     except sqlite3.IntegrityError as e:
         print(f"Error inserting keyword {id} {keyword['label']}: {e}")
@@ -29,11 +33,11 @@ def insert_keywords_record(keyword ,cursor, logger=None):
                 "id": id,
                 "keyword": keyword["label"]
             }
-            with sqlite3.connect(SQLITE_DB_PATH) as new_conn:
+            with connect_to_postgres() as new_conn:
                 with new_conn:
                     new_cursor = new_conn.cursor(row_factory=dict_row)
                     new_cursor.execute(f"""
-                        SELECT * FROM {TABLE_NAMES['keywords']} WHERE {conflict_field} = ?
+                        SELECT * FROM {TABLE_NAMES['keywords']} WHERE {conflict_field} = %s
                     """, (field_value_map[conflict_field],))
                     existing_record = new_cursor.fetchone()
                     print(f"Existing record: {existing_record}")
@@ -44,7 +48,7 @@ def insert_articles_record(article, cursor, logger=None):
     try:
         cursor.execute(f"""
             INSERT INTO {TABLE_NAMES['articles']} (title, link, snippet, published_at, source, language, region, content)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
             RETURNING id, created_at, title, link, snippet, published_at, source, language, region, content, content_status, content_error, embedding
         """, (
             article['title'],
@@ -69,11 +73,11 @@ def insert_articles_record(article, cursor, logger=None):
                 "title": article['title'],
                 "link": article['link']
             }
-            with sqlite3.connect(SQLITE_DB_PATH) as new_conn:
+            with connect_to_postgres() as new_conn:
                 with new_conn:
                     new_cursor = new_conn.cursor(row_factory=dict_row)
                     new_cursor.execute(f"""
-                        SELECT id, created_at, title, link, snippet, published_at, source, language, region, content, content_status, content_error, embedding FROM {TABLE_NAMES['articles']} WHERE {conflict_field} = ?
+                        SELECT id, created_at, title, link, snippet, published_at, source, language, region, content, content_status, content_error, embedding FROM {TABLE_NAMES['articles']} WHERE {conflict_field} = %s
                     """, (field_value_map[conflict_field],))
                     existing_record = new_cursor.fetchone()
                     if logger:
@@ -85,44 +89,47 @@ def insert_articles_record(article, cursor, logger=None):
 def insert_events_record(event: dict, cursor, saved_events: dict, logger=None):
     try:
         cursor.execute(f"""
-            INSERT INTO {TABLE_NAMES['events']} (event_title, article_ids, published_at_range_start, published_at_range_end, confidence_score)
-            VALUES (?, ?, ?, ?, ?)
+            INSERT INTO {TABLE_NAMES['events']} (event_title,  published_at_range_start, published_at_range_end, confidence_score)
+            VALUES (%s, %s, %s, %s)
+            RETURNING id, event_title, event_summary, published_at_range_start, published_at_range_end, confidence_score, tags, importance_score, embedding, created_timestamp, last_updated_timestamp
         """, (
             event['event_title'],
-            json.dumps(event['article_ids']),
             event.get('published_at_range_start', None).totimestamp() if event.get('published_at_range_start', None) else None,
             event.get('published_at_range_end', None).totimestamp() if event.get('published_at_range_end', None) else None,
             event.get('confidence_score', None)
         ))
+        
+        returned_event = cursor.fetchone()
+        returned_event['embedded'] = True if returned_event.pop('embedding') is not None else False
+        
+        
     except sqlite3.IntegrityError as e:
         if logger:
             logger.error(f"Error inserting event {event['event_title']}: {e}")
-        else:
-            print(f"Error inserting event {event['event_title']}: {e}")
+            
         if "UNIQUE constraint failed" in str(e):
             # retrieve the existing record
             conflict_field = str(e).split('.')[-1]
             field_value_map = {
                 "event_title": event['event_title']
             }
-            with sqlite3.connect(SQLITE_DB_PATH) as new_conn:
+            with connect_to_postgres() as new_conn:
                 with new_conn:
                     new_cursor = new_conn.cursor(row_factory=dict_row)
                     new_cursor.execute(f"""
-                        SELECT * FROM {TABLE_NAMES['events']} WHERE {conflict_field} = ?
+                        SELECT * FROM {TABLE_NAMES['events']} WHERE {conflict_field} = %s
                     """, (field_value_map[conflict_field],))
                     existing_record = new_cursor.fetchone()
                     if logger:
                         logger.info(f"Existing record: {existing_record}")
-                    else:
-                        print(f"Existing record: {existing_record}")
+
 
 def update_event_articles(event: dict, cursor, logger=None):
     try:
         cursor.execute(f"""
             UPDATE {TABLE_NAMES['events']}
-            SET article_ids = ?, published_at_range_start = ?, published_at_range_end = ?, confidence_score = ?
-            WHERE event_id = ?
+            SET article_ids = %s, published_at_range_start = %s, published_at_range_end = %s, confidence_score = %s
+            WHERE event_id = %s
         """, (
             json.dumps(event['article_ids']),
             event.get('published_at_range_start', None).totimestamp() if event.get('published_at_range_start', None) else None,
