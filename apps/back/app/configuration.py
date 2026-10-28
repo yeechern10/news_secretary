@@ -34,7 +34,8 @@ TABLE_NAMES = {
 KEYWORDS_FILE_PATH = Path(__file__).parent.parent / "db" / "keywords.json"
 
 # news
-NEWS_SOURCE = "https://google.serper.dev/news"  # News API endpoint
+# NEWS_SOURCE = "https://google.serper.dev/news"  # News API endpoint
+NEWS_SOURCE = "https://api.search.brave.com/res/v1/web/search"  # News API endpoint
 
 # llm
 CHAT_AGENT_BASE_URL = "http://localhost:11434/v1/"
@@ -50,7 +51,8 @@ NEWS_SUMMARY_AGENT_BASE_URL = "http://localhost:11434/v1/"
 NEWS_SUMMARY_AGENT_MODEL = "gemma3:4b"
 
 # api keys
-SERPER_API = os.getenv("SERPER_API", None)
+SERPER_API = os.getenv("SERPER_API_KEY", None)
+BRAVE_SEARCH_API = os.getenv("BRAVE_SEARCH_API_KEY", None)
 
 CHAT_AGENT_API_KEY = os.getenv("CHAT_AGENT_API_KEY", "null")
 ARTICLE_SUMMARIZER_API_KEY = os.getenv("ARTICLE_SUMMARIZER_API_KEY", CHAT_AGENT_API_KEY)

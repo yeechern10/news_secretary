@@ -1,73 +1,109 @@
 import cloudscraper
-from envs.da.Lib import sqlite3
 import requests
 import datetime
 import trafilatura
 import pandas as pd
 from psycopg.rows import dict_row
+from typing import Literal
 
-from ..configuration import NEWS_SOURCE, SQLITE_DB_PATH, SERPER_API
+from ..configuration import NEWS_SOURCE, SQLITE_DB_PATH, BRAVE_SEARCH_API_KEY
 from ..packages.logger import get_logger
+from ..pydantic_model import ArticleModel
 from ..db.connect_db import connect_to_postgres
 from ..db.retrieve import get_articles_id, check_article_exists_embedded
 from ..db.insert_data import insert_articles_record
 
-def request_news(query, time_range, news_list,language ='en', region = None,logger = None):
+def request_news(
+    query: str,
+    time_range: Literal["pd", "pw", "pm", "py"] = "pd", # pd = past day, pw = past week, pm = past month, py = past year
+    language: str = "en",
+    country: str = "ALL",
+    logger: object = None
+):
+    search_params = {"q": query, "safesearch": "stict"}
+    if time_range:
+        search_params['freshness'] = time_range
+    if language:
+        search_params['search_lang'] = language
+    if country:
+        search_params['country'] = country
+    
+
     # get news
+    
     response = requests.post(
         NEWS_SOURCE,
         headers={
-            "X-API-KEY": SERPER_API,
-            "Content-Type": "application/json"
+            "X-Subscription-Token": BRAVE_SEARCH_API_KEY,
+            "accept": "application/json"
             },
-        json={
-            "q": query,
-            "gl": region,
-            "hl": language,
-            "tbs": time_range
-        }
+        params = search_params
     )
 
-    if response.status_code == 200:
-        search_results = response.json()
-        news_list.extend(search_results.get('news', []))
-        
-        return news_list
-    else:
+    if response.status_code != 200:
         if logger:
-            logger.error(f"Search request failed, status code : {response.status_code}, message: {response.text}, query: {query}, time_range: {time_range}, language: {language}, region: {region}")
-        else:
-            print(f"Search request failed with status code {response.status_code}, message: {response.text}, query: {query}, time_range: {time_range}, language: {language}, region: {region}")
+            logger.error(f"Search request failed, status code : {response.status_code}, message: {response.text}, query: {query}, time_range: {time_range}, language: {language}, region: {country}")
     
+    return response.json()
 
-def convert_news_date(news_list):
+def brave_search_result_interpretation(response, logger=None):
+    articles = []
+    query = response.get("query", {})
+    region = query.get("country", None)
+    
+    for article_type in ['news', 'discussions']:
+        if response.get(article_type):
+            for article in response[article_type].get("results", []):
+                published_at = convert_relative_date(article.get("age"), logger) if article.get("age") is not None else None
+                if article.get("meta_url") and article.get("meta_url").get("hostname"):
+                    source = article.get("meta_url").get("hostname")
+            else:
+                source = None
+
+                articles.append(ArticleModel(
+                    title=article.get("title"),
+                    link=article.get("url"),
+                    snippet=article.get("description"),
+                    published_at= published_at,
+                    source=source,
+                    language=article.get("language"),
+                    region=region,
+                    article_type=article_type
+                ))
+
+    
+    return articles
+
+def convert_relative_date(delta_t: str, logger=None):
     # Convert relative dates to absolute dates in the news list
     current_date = datetime.datetime.now().date()
-    
-    for i in range(len(news_list)):
-        delta_t = news_list[i].get('date', None)
-        if delta_t.endswith('ago'):
-            if 'hour' in delta_t:
-                hours = int(delta_t.split()[0])
-                news_list[i]['date'] = (current_date - datetime.timedelta(hours=hours))
-            elif 'day' in delta_t:
-                days = int(delta_t.split()[0])
-                news_list[i]['date'] = (current_date - datetime.timedelta(days=days))
-            elif 'week' in delta_t:
-                weeks = int(delta_t.split()[0])
-                news_list[i]['date'] = (current_date - datetime.timedelta(weeks=weeks))
-            elif 'month' in delta_t:
-                months = int(delta_t.split()[0])
-                news_list[i]['date'] = (current_date - datetime.timedelta(days=30*months))
-            elif 'year' in delta_t:
-                years = int(delta_t.split()[0])
-                news_list[i]['date'] = (current_date - datetime.timedelta(days=365*years))
-            else:
-                news_list[i]['date'] = 'null'
+
+    if delta_t.endswith('ago'):
+        if 'hour' in delta_t:
+            hours = int(delta_t.split()[0])
+            published_at = (current_date - datetime.timedelta(hours=hours))
+        elif 'day' in delta_t:
+            days = int(delta_t.split()[0])
+            published_at = (current_date - datetime.timedelta(days=days))
+        elif 'week' in delta_t:
+            weeks = int(delta_t.split()[0])
+            published_at = (current_date - datetime.timedelta(weeks=weeks))
+        elif 'month' in delta_t:
+            months = int(delta_t.split()[0])
+            published_at = (current_date - datetime.timedelta(days=30*months))
+        elif 'year' in delta_t:
+            years = int(delta_t.split()[0])
+            published_at = (current_date - datetime.timedelta(days=365*years))
         else:
-            news_list[i]['date'] = 'null'
-    
-    return news_list
+            if logger:
+                logger.warning(f"Invalid delta_t '{delta_t}' provided. Defaulting to null.")
+        return published_at
+
+    else:
+        if logger:
+            logger.warning(f"Invalid delta_t '{delta_t}' provided. Defaulting to null.")
+
+
 
 def add_news_info(news_list, language, region):
     for news in news_list:

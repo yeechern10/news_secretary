@@ -1,128 +1,226 @@
 import sqlite3
 import json
-import datetime
+from datetime import datetime
+from psycopg import Cursor
+from psycopg import errors
 from psycopg.rows import dict_row
+import re
+import uuid
+from typing import Literal
+from pydantic import validate_call
+from logging import Logger
 
+from ..pydantic_model import KeywordModel, ArticleModel, EventModel
+from ..db.connect_db import connect_to_postgres
 from ..db.retrieve import structure_article
 from ..configuration import SQLITE_DB_PATH, TABLE_NAMES
 
+def get_conflict_condition(error_message: str):
+    match = re.search(r'Key \((.*?)\)=\((.*?)\)', error_message)
+    if match:
+        conflict_fields = match.group(1).split(',')
+        conflict_values = match.group(2).split(',')
+        conditions = []
+        for field, value in zip(conflict_fields, conflict_values):
+            conditions.append(f"{field.strip()} = '{value.strip()}'")
+        conflict_condition = " AND ".join(conditions)
+        
+        return conflict_condition
+    return None
 
-
-def insert_keywords_record(keyword ,cursor, logger=None):
+@validate_call
+def insert_keywords_record(
+    cursor: Cursor,
+    keyword_label: str, 
+    keyword_type: Literal["iptc_media_topic", "location", "custom"] | None = None,
+    keyword_source_id: str = None, 
+    keyword_definition: str = None, 
+    keyword_synonyms: list = None, 
+    keyword_embedding: list[float] = None, 
+    logger: Logger = None
+    ):
+    returning_fields = ", ".join(["id", "source_id", "label", "definition", "synonyms", "type", "embedding", "created_at", "last_updated"])
+    
     try:
         cursor.execute(f"""
             INSERT INTO {TABLE_NAMES['keywords']} 
-            (id, keyword, definition, synonyms, parent_id, child_ids, type, embedding)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+            (source_id, label, definition, synonyms, keyword_type, embedding)
+            VALUES (%s, %s, %s, %s, %s, %s)
+            RETURNING {returning_fields}
         """, (
-            id,
-            keyword["label"],
-            keyword["definition"],
-            " , ".join(keyword["synonyms"]) if keyword.get("synonyms") else None,
-            keyword["parent"],
-            " , ".join(keyword["children"]) if keyword.get("children") else None,
-            keyword.get("type", None),
-            keyword.get("embedding", None)
+            keyword_source_id,
+            keyword_label,
+            keyword_definition,
+            keyword_synonyms,
+            keyword_type,
+            keyword_embedding
         ))
-    except sqlite3.IntegrityError as e:
-        print(f"Error inserting keyword {id} {keyword['label']}: {e}")
-        if "UNIQUE constraint failed" in str(e):
-            # retrieve the existing record
-            conflict_field = str(e).split('.')[-1]
-            field_value_map = {
-                "id": id,
-                "keyword": keyword["label"]
-            }
+        result = cursor.fetchone()
+        if result:
+            result['embedded'] = True if result.pop('embedding') is not None else False
+            return KeywordModel(**result)
+    except errors.UniqueViolation as e:
+        if logger:
+            logger.error(f"Error inserting keyword {keyword_source_id} {keyword_label}: {e.diag.message_detail}")
+
+        conflict_condition = get_conflict_condition(e.diag.message_detail)
+        
+        # retrieve the existing record
+        if conflict_condition:                
             with connect_to_postgres() as new_conn:
                 with new_conn:
                     new_cursor = new_conn.cursor(row_factory=dict_row)
                     new_cursor.execute(f"""
-                        SELECT * FROM {TABLE_NAMES['keywords']} WHERE {conflict_field} = %s
-                    """, (field_value_map[conflict_field],))
+                        SELECT {returning_fields} FROM {TABLE_NAMES['keywords']} WHERE {conflict_condition}
+                    """)
                     existing_record = new_cursor.fetchone()
-                    print(f"Existing record: {existing_record}")
-        return e
+                    existing_record['embedded'] = True if existing_record.pop('embedding') is not None else False
+                    if logger:
+                        logger.info(f"Existing record: {existing_record}")
+                    
+                    return KeywordModel(**existing_record)
+        return None
+    except errors.IntegrityError as e:
+        if logger:
+            logger.error(f"Integrity error inserting keyword {keyword_source_id} {keyword_label}: {e.diag.message_detail}")
+        return None
+            
 
 
-def insert_articles_record(article, cursor, logger=None):
+def insert_articles_record(
+    cursor: Cursor,
+    article_title: str,
+    article_link: str,
+    article_snippet: str = None,
+    article_published_at: datetime = None,
+    article_source: str = None,
+    article_language: str = None,
+    article_content: str = None,
+    article_content_status: Literal["pending", "completed", "failed"] = None,
+    article_content_error: str = None,
+    article_embedding: list[float] = None,
+    logger: Logger = None
+    ):
+    returning_fields = ", ".join([
+        "id", "title", "link", "snippet", "published_at", 
+        "source", "language", "content", "content_status",
+        "content_error", "embedding", "created_at", "last_updated"
+    ])
+
     try:
         cursor.execute(f"""
-            INSERT INTO {TABLE_NAMES['articles']} (title, link, snippet, published_at, source, language, region, content)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
-            RETURNING id, created_at, title, link, snippet, published_at, source, language, region, content, content_status, content_error, embedding
+            INSERT INTO {TABLE_NAMES['articles']} 
+            (title, link, snippet, published_at, source, language, 
+            content, content_status, content_error, embedding)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            RETURNING {returning_fields}
         """, (
-            article['title'],
-            article['link'],
-            article.get('snippet', None),
-            article.get('published_at').timestamp() if article.get('published_at', None) else None,
-            article.get('source', None),
-            article.get('language', None),
-            article.get('region', None),
-            article.get('content', None)
+            article_title,
+            article_link,
+            article_snippet,
+            article_published_at.timestamp() if article_published_at else None,
+            article_source,
+            article_language,
+            article_content,
+            article_content_status,
+            article_content_error,
+            article_embedding
         ))
-        return cursor.fetchone()
-    except sqlite3.IntegrityError as e:
+        returned_article = cursor.fetchone()
+        if returned_article:
+            returned_article['embedded'] = True if returned_article.pop('embedding') is not None else False
+            return ArticleModel(**returned_article)
+        return None
+    except errors.UniqueViolation as e:
         if logger:
-            logger.error(f"Error inserting article {article['title']}: {e}")
-        else:
-            print(f"Error inserting article {article['title']}: {e}")
-        if "UNIQUE constraint failed" in str(e):
-            # retrieve the existing record
-            conflict_field = str(e).split('.')[-1]
-            field_value_map = {
-                "title": article['title'],
-                "link": article['link']
-            }
+            logger.error(f"Error inserting article {article_title}: {e.diag.message_detail}")
+
+        conflict_condition = get_conflict_condition(e.diag.message_detail)
+                
+        # retrieve the existing record
+        if conflict_condition:                
             with connect_to_postgres() as new_conn:
                 with new_conn:
                     new_cursor = new_conn.cursor(row_factory=dict_row)
                     new_cursor.execute(f"""
-                        SELECT id, created_at, title, link, snippet, published_at, source, language, region, content, content_status, content_error, embedding FROM {TABLE_NAMES['articles']} WHERE {conflict_field} = %s
-                    """, (field_value_map[conflict_field],))
+                        SELECT {returning_fields} 
+                        FROM {TABLE_NAMES['articles']} 
+                        WHERE {conflict_condition}
+                    """)
                     existing_record = new_cursor.fetchone()
                     if logger:
                         logger.info(f"Existing record: {existing_record}")
-                    else:
-                        print(f"Existing record: {existing_record}")
-                        return existing_record
+                    if existing_record:
+                        existing_record['embedded'] = True if existing_record.pop('embedding') is not None else False
+                        return ArticleModel(**existing_record)
+        return None
+    except errors.IntegrityError as e:
+        if logger:
+            logger.error(f"Integrity error inserting article {article_title}: {e.diag.message_detail}")
+        return None
 
-def insert_events_record(event: dict, cursor, saved_events: dict, logger=None):
+def insert_events_record(
+    cursor: Cursor, 
+    event_title: str,
+    event_summary: str = None,
+    event_published_at_range_start: datetime = None,
+    event_published_at_range_end: datetime = None,
+    event_confidence_score: float = None,
+    event_importance_score: int = None,
+    event_embedding: list[float] = None,
+    logger=None
+    ):
+    returning_fields = ", ".join([
+        "id", "title", "summary", "published_at_range_start",
+        "published_at_range_end", "confidence_score", "importance_score",
+        "embedding", "created_at", "last_updated"
+    ])
     try:
         cursor.execute(f"""
-            INSERT INTO {TABLE_NAMES['events']} (event_title,  published_at_range_start, published_at_range_end, confidence_score)
-            VALUES (%s, %s, %s, %s)
-            RETURNING id, event_title, event_summary, published_at_range_start, published_at_range_end, confidence_score, tags, importance_score, embedding, created_timestamp, last_updated_timestamp
+            INSERT INTO {TABLE_NAMES['events']} 
+            (title, summary, published_at_range_start, 
+            published_at_range_end, confidence_score,
+            importance_score, embedding)
+            VALUES (%s, %s, %s, %s, %s, %s, %s)
+            RETURNING {returning_fields}
         """, (
-            event['event_title'],
-            event.get('published_at_range_start', None).totimestamp() if event.get('published_at_range_start', None) else None,
-            event.get('published_at_range_end', None).totimestamp() if event.get('published_at_range_end', None) else None,
-            event.get('confidence_score', None)
+            event_title,
+            event_summary,
+            event_published_at_range_start,
+            event_published_at_range_end,
+            event_confidence_score,
+            event_importance_score,
+            event_embedding
         ))
         
         returned_event = cursor.fetchone()
         returned_event['embedded'] = True if returned_event.pop('embedding') is not None else False
         
-        
-    except sqlite3.IntegrityError as e:
+        return EventModel(**returned_event)
+    except errors.UniqueViolation as e:
         if logger:
-            logger.error(f"Error inserting event {event['event_title']}: {e}")
+            logger.error(f"Error inserting event {event_title}: {e.diag.message_detail}")
             
-        if "UNIQUE constraint failed" in str(e):
-            # retrieve the existing record
-            conflict_field = str(e).split('.')[-1]
-            field_value_map = {
-                "event_title": event['event_title']
-            }
+        conflict_condition = get_conflict_condition(e.diag.message_detail)
+                        
+        # retrieve the existing record
+        if conflict_condition:  
             with connect_to_postgres() as new_conn:
                 with new_conn:
                     new_cursor = new_conn.cursor(row_factory=dict_row)
                     new_cursor.execute(f"""
-                        SELECT * FROM {TABLE_NAMES['events']} WHERE {conflict_field} = %s
-                    """, (field_value_map[conflict_field],))
+                        SELECT {returning_fields}
+                        FROM {TABLE_NAMES['events']} 
+                        WHERE {conflict_condition}
+                    """)
                     existing_record = new_cursor.fetchone()
                     if logger:
                         logger.info(f"Existing record: {existing_record}")
-
+                    if existing_record:
+                        existing_record['embedded'] = True if existing_record.pop('embedding') is not None else False
+                        return EventModel(**existing_record)
+                    
+        return None
 
 def update_event_articles(event: dict, cursor, logger=None):
     try:
@@ -137,7 +235,7 @@ def update_event_articles(event: dict, cursor, logger=None):
             event.get('confidence_score', None),
             event['event_id']
         ))
-    except sqlite3.Error as e:
+    except errors.UniqueViolation as e:
         if logger:
             logger.error(f"Error updating event {event['event_title']}: {e}")
         else:

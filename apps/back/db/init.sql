@@ -19,18 +19,27 @@ CREATE TABLE IF NOT EXISTS users (
 -- =========================================================
 CREATE TABLE IF NOT EXISTS keywords (
     id              UUID PRIMARY KEY DEFAULT uuidv7(),
-    keyword         TEXT NOT NULL,
+    source_id       TEXT UNIQUE,    -- unique identifier for the keyword from the source
+    label           TEXT NOT NULL,
     definition      TEXT,
-    synonyms        TEXT,
-    parent_id       UUID REFERENCES keywords(id) ON DELETE SET NULL,
-    child_ids       TEXT DEFAULT NULL, -- comma-separated list of child keyword IDs
-    type            TEXT,
+    synonyms        TEXT[],  -- array of synonyms
+    keyword_type    TEXT,
     embedding       vector(	1024),  -- for BAAI/bge-m3
-    created_at      TIMESTAMPTZ NOT NULL DEFAULT now()
+    created_at      TIMESTAMPTZ NOT NULL DEFAULT now(),
+    last_updated    TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
 -- =========================================================
--- 3. user_keywords
+-- 3. keyword_relationships
+-- =========================================================
+CREATE TABLE keyword_relations (
+    parent_id UUID REFERENCES keywords(id) ON DELETE CASCADE,
+    child_id  UUID REFERENCES keywords(id) ON DELETE CASCADE,
+    PRIMARY KEY (parent_id, child_id)
+);
+
+-- =========================================================
+-- 4. user_keywords
 --    relationship table between users and keywords, with interest level.
 -- =========================================================
 CREATE TABLE IF NOT EXISTS user_keywords (
@@ -43,47 +52,49 @@ CREATE TABLE IF NOT EXISTS user_keywords (
 );
 
 -- =========================================================
--- 4. articles
+-- 5. articles
 -- =========================================================
 CREATE TABLE IF NOT EXISTS articles (
     id              UUID PRIMARY KEY DEFAULT uuidv7(),
-    created_at      TIMESTAMPTZ NOT NULL DEFAULT now(),
     title           TEXT NOT NULL,
     link            TEXT NOT NULL UNIQUE,
     snippet         TEXT,
     published_at    TIMESTAMPTZ,
     source          TEXT,
     language        TEXT,
-    region          TEXT,
+    article_type    TEXT,  -- e.g., "news", "discussion", "research"
     content         TEXT,
-    content_status  TEXT,  -- e.g., "success", "failed", "pending"
+    content_status  TEXT,  -- e.g., "pending", "completed", "failed"
     content_error   TEXT,  -- error message if content fetching failed
-    embedding       vector(1024)            -- for BAAI/bge-m3
+    embedding       vector(1024),            -- for BAAI/bge-m3
+    created_at      TIMESTAMPTZ NOT NULL DEFAULT now(),
+    last_updated    TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
 -- vector search index for articles embedding
 CREATE INDEX IF NOT EXISTS idx_articles_embedding
     ON articles USING hnsw (embedding vector_cosine_ops);
 
+-- TODO: Consider use url hash as unique identifier if using mutiple db
+
 -- =========================================================
--- 5. events
+-- 6. events
 -- =========================================================
 CREATE TABLE IF NOT EXISTS events (
-    id              UUID PRIMARY KEY DEFAULT uuidv7(),
-    event_title                 TEXT NOT NULL,
-    event_summary               TEXT,
+    id                          UUID PRIMARY KEY DEFAULT uuidv7(),
+    title                       TEXT NOT NULL,
+    summary                     TEXT,
     published_at_range_start    TIMESTAMPTZ,
     published_at_range_end      TIMESTAMPTZ,
     confidence_score            REAL,
-    tags                        TEXT,
     importance_score            INTEGER,
     embedding                   vector(1024),  -- for BAAI/bge-m3
-    created_timestamp           TIMESTAMPTZ NOT NULL DEFAULT now(),
-    last_updated_timestamp      TIMESTAMPTZ NOT NULL DEFAULT now()
+    created_at                  TIMESTAMPTZ NOT NULL DEFAULT now(),
+    last_updated                TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
 -- =========================================================
--- 6. user_article_interactions
+-- 7. user_article_interactions
 -- =========================================================
 CREATE TABLE IF NOT EXISTS user_article_interactions (
     user_id              UUID NOT NULL REFERENCES users(id)    ON DELETE CASCADE,
@@ -97,7 +108,7 @@ CREATE INDEX IF NOT EXISTS idx_uai_user    ON user_article_interactions(user_id)
 CREATE INDEX IF NOT EXISTS idx_uai_article ON user_article_interactions(article_id);
 
 -- =========================================================
--- 7. user_event_interactions
+-- 8. user_event_interactions
 -- =========================================================
 CREATE TABLE IF NOT EXISTS user_event_interactions (
     user_id              UUID NOT NULL REFERENCES users(id)  ON DELETE CASCADE,
@@ -108,7 +119,7 @@ CREATE TABLE IF NOT EXISTS user_event_interactions (
 );
 
 -- =========================================================
--- 8. event_article_relationships
+-- 9. event_article_relationships
 -- =========================================================
 CREATE TABLE IF NOT EXISTS event_article_relationships (
     event_id   UUID NOT NULL REFERENCES events(id)   ON DELETE CASCADE,
@@ -119,7 +130,7 @@ CREATE TABLE IF NOT EXISTS event_article_relationships (
 CREATE INDEX IF NOT EXISTS idx_ear_article ON event_article_relationships(article_id);
 
 -- =========================================================
--- 9. events_keywords_relationships
+-- 10. events_keywords_relationships
 -- =========================================================
 CREATE TABLE IF NOT EXISTS events_keywords_relationships (
     event_id        UUID NOT NULL REFERENCES events(id)   ON DELETE CASCADE,
